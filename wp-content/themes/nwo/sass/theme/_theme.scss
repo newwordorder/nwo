@@ -16,6 +16,14 @@ body {
   background: $light;
 }
 
+.container {
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 section {
 
   &.bg {
@@ -72,7 +80,7 @@ section {
 
   }
 
-  &.bg-effect {
+  & .bg-effect {
     &--ken-burns{
         overflow: hidden;
       & > .background-image-holder,
@@ -246,6 +254,9 @@ section {
 
 .page-header {
 
+  padding: 160px 0;
+  background-color: $dark;
+
   &--home {
     padding: 200px 0;
     height: 80vh;
@@ -258,23 +269,18 @@ section {
     }
   }
 
-  &--page {
-    padding: 200px 0;
-    height: 50vh;
-    max-height: 800px;
-    min-height: 400px;
-    position: relative;
-
-    & .pos-vertical-center {
-      transform: translateY(-20%);
-    }
-  }
-
-  padding: 200px 0 100px;
-  background-color: $dark;
-
   @include media-breakpoint-down(sm) {
     padding: 150px 0 50px;
+  }
+
+  .back-to {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: $link-decoration;
+    font-size: 0.765rem;
+    opacity: 0.75;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
   }
 }
 

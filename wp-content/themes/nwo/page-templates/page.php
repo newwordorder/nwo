@@ -24,7 +24,7 @@ $video = get_field('youtube_code');
 $fallbackImage = get_field('fallback_image');
 ?>
 
-<section id="sub-header"
+<header id="sub-header"
 
 class="page-header page-header--page bg-effect--<?php echo $backgroundEffect ?> imagebg videobg <?php if( $invertColours == 'yes' ): echo 'image--light'; endif; ?>"
 data-overlay="<?php echo $imageOverlay ?>"
@@ -60,7 +60,7 @@ data-overlay="<?php echo $imageOverlay ?>"
     </div>
   <?php endif; ?>
 <?php endif; ?>
-<div class="container pos-vertical-center">
+<div class="container">
   <div class="row justify-content-center">
     <div class="col-md-8">
 
@@ -70,7 +70,9 @@ data-overlay="<?php echo $imageOverlay ?>"
              </a></p>
           <?php } ?>
       <h1><?php the_title(); ?></h1>
-      <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing</h1>
+      <?php if(get_field('page_intro')): ?>
+        <p class="lead"><?php the_field('page_intro'); ?></p>
+      <?php endif; ?>
 
     </div>
   </div>
@@ -78,12 +80,12 @@ data-overlay="<?php echo $imageOverlay ?>"
 
 
 
-</section>
-<section class="page-content">
+</header>
+<main class="page-content">
 
   <?php get_template_part( 'page-templates/blocks' ); ?>
 
-</section>
+</main>
 
 
 <?php get_footer();
