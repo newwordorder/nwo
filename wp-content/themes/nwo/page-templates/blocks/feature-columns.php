@@ -39,7 +39,7 @@ if( get_row_layout() == 'feature_columns' ):
                 $height = $image['sizes'][ $size . '-height' ];
 
                 ?>
-                <div class="media media-3-2 feature-column__image imagebg">
+                <div class="media media-2-3 feature-column__image imagebg">
                   <div class="background-image-holder">
                     <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
                   </div>

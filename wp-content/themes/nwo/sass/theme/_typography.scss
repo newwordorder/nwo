@@ -43,6 +43,13 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: $avenir-bold;
 }
 
+.h6, h6 {
+    font-size: 0.825em;
+    letter-spacing: 0.1em;
+    font-family: "AvenirNextBold", sans-serif;
+    text-transform: uppercase;
+}
+
 p {
   color: $body-color;
   font-family: $avenir-regular;

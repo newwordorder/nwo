@@ -171,7 +171,6 @@ section {
 .btn {
   font-size: 0.825em;
   letter-spacing: 0.1em;
-  font-weight: 700;
   font-family: $avenir-bold;
   text-transform: uppercase;
   color: $primary;
@@ -291,36 +290,11 @@ section {
 }
 
 .project-thumb {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  padding-bottom: 50%;
-
-  @include media-breakpoint-down(sm) {
-    padding-bottom: 100%;
-  }
-
-  * {
-    transition: 0.2s;
-  }
-
-  &--large {
-    width: 100%;
-
-  }
-
-  &--small {
-    width: 50%;
-
-
-    @include media-breakpoint-down(sm) {
-      width: 100%;
-    }
-  }
+  margin-bottom: 10px;
 
   &__title {
   padding: 1.85714286em;
-  z-index: 2;
+  z-index: 10;
   position: absolute;
   bottom:0;
 
@@ -340,7 +314,7 @@ section {
 
 .blog-tile {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 
   * {
     transition: 0.2s;
@@ -449,6 +423,21 @@ section {
     border-color: $pagination-disabled-border-color;
   }
 }
+
+.project {
+  &__header {
+    padding: 100px;
+  }
+
+  &__feature-image {
+    margin: 0;
+  }
+
+  &__content {
+    margin: 0;
+  }
+}
+
 
 
 .media {

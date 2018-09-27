@@ -2030,7 +2030,6 @@ section.slider .flickity-page-dots {
 .hover-element {
   position: relative;
   overflow: hidden;
-  margin-bottom: 30px;
 }
 .hover-element * {
   transition: 0.3s ease;
@@ -8647,9 +8646,9 @@ section.unpad > article .imagebg + div {
 .project-thumb:not(.hover-element) > a:hover {
   opacity: .85;
 }
-.project-thumb.hover-element {
+/** .project-thumb.hover-element {
   margin: 0;
-}
+} **/
 .project-thumb.hover-element > a {
   height: 24.14285714em;
   text-decoration: none;
@@ -8691,9 +8690,9 @@ section.unpad > article .imagebg + div {
 .project-thumb.hover-element [data-scrim-top]:before {
   height: 100%;
 }
-.project-thumb h4 {
+/**.project-thumb h4 {
   margin-bottom: 0;
-}
+}**/
 .project-thumb.height-40 {
   min-height: 350px;
 }
