@@ -1,0 +1,12 @@
+.client-logos {
+
+    opacity: 0.5;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    &__image {
+        margin: 5px 0;
+    }
+}

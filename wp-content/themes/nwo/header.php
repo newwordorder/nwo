@@ -20,7 +20,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<meta name="apple-mobile-web-app-title" content="<?php bloginfo( 'name' ); ?> - <?php bloginfo( 'description' ); ?>">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:400,700|Libre+Franklin:400,700" rel="stylesheet">
 	<?php wp_head(); ?>
 
 </head>
@@ -34,8 +33,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<a href="<?php echo get_home_url(); ?>" id="site-logo" class="header__logo">
 
-				<img class="logo logo--white" src="<?php bloginfo('template_directory'); ?>/img/logo--white.svg" alt="New Life">
-				<img class="logo logo--black" src="<?php bloginfo('template_directory'); ?>/img/logo--black.svg" alt="New Life">
+				<img class="logo logo__desktop logo__desktop--white" src="<?php bloginfo('template_directory'); ?>/img/logo--white.svg" alt="New Life">
+				<img class="logo logo__desktop logo__desktop--black" src="<?php bloginfo('template_directory'); ?>/img/logo--black.svg" alt="New Life">
 
 			</a>
 

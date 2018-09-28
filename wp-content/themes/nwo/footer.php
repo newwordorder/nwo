@@ -52,7 +52,9 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/scripts.js"></script>
 
 <script>
-	AOS.init();
+	AOS.init({
+		duration: 2000, // values from 0 to 3000, with step 50ms
+	});
 </script>
 
 </body>

@@ -269,7 +269,7 @@ section {
   }
 
   @include media-breakpoint-down(sm) {
-    padding: 150px 0 50px;
+    padding: 100px 0;
   }
 
   .back-to {
@@ -291,6 +291,14 @@ section {
 
 .project-thumb {
   margin-bottom: 10px;
+
+  
+    @include media-breakpoint-down(sm) {
+      padding-top: 100%!important;
+    }
+
+
+  
 
   &__title {
   padding: 1.85714286em;
@@ -426,7 +434,7 @@ section {
 
 .project {
   &__header {
-    padding: 100px;
+    padding: 100px 0;
   }
 
   &__feature-image {
