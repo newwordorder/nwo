@@ -25,7 +25,7 @@ class="page-header page-header--work bg--dark" >
   <div class="row justify-content-center">
     <div class="col-lg-6 col-md-8 text-center">
 
-      <h1 class="page-title">News</h1>
+      <h1>Neology</h1>
 
     </div>
   </div>
@@ -48,35 +48,42 @@ class="page-header page-header--work bg--dark" >
 					<div class="row">
 
 					<?php while ( have_posts() ) : the_post(); ?>
-						<div class="col-sm-6 col-md-4 text-center blog-tile">
+						<div class="col-sm-6 col-md-3">
 
-							<a href="<?php the_permalink(); ?>" class="">
-                  <div class="blog-tile__thumb">
+							<a href="<?php the_permalink(); ?>" class="blog-tile">
+                  				<div class="blog-tile__thumb">
 						          <?php
 						          $workImage = get_field('background_image_background_image');
 
 						          if( !empty($workImage) ):
 
 						            // vars
-                        $url = $workImage['url'];
-                        $alt = $workImage['alt'];
+										$url = $workImage['url'];
+										$alt = $workImage['alt'];
 
-                        $size = '600x400';
-                        $thumb = $workImage['sizes'][ $size ];
-                        $width = $workImage['sizes'][ $size . '-width' ];
-                        $height = $workImage['sizes'][ $size . '-height' ];
+										$size = '600x400';
+										$thumb = $workImage['sizes'][ $size ];
+										$width = $workImage['sizes'][ $size . '-width' ];
+										$height = $workImage['sizes'][ $size . '-height' ];
 
 						            ?>
-                        <div class="background-image-holder ">
+                        			<div class="background-image-holder ">
 						              <img class="rounded" src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
-                        </div>
+                        			</div>
 						          <?php endif; ?>
-                    </div>
-
-										<h3><?php the_title(); ?></h3>
-										<?php the_excerpt(); ?>
-                    <a class="link" href="<?php the_permalink(); ?>">Read</a>
-								</a>
+								</div>
+								<div class="blog-tile__content">
+									<h5><?php the_title(); ?></h5>
+									<?php the_excerpt(); ?>
+									<span class="blog-tile__category">
+									<?php 
+										foreach((get_the_category()) as $category){
+											echo $category->name;
+											}
+										?>
+									</span>	
+								</div>
+							</a>
 
 
 					</div>

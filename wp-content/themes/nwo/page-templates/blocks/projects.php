@@ -25,13 +25,13 @@ if( get_row_layout() == 'projects' ):
 
 
 
-    <div class="<?php if( $tileSize == 'small' ): echo 'col-md-6'; endif; ?><?php if( $tileSize == 'large' ): echo 'col-md-12'; endif; ?>">
+    <div class="<?php if( $tileSize == '66' ): echo 'col-md-8'; endif; ?><?php if( $tileSize == '33' ): echo 'col-md-4'; endif; ?><?php if( $tileSize == '50' ): echo 'col-md-6'; endif; ?><?php if( $tileSize == '100' ): echo 'col-md-12'; endif; ?>">
 
-  <div class="project-thumb media <?php if( $tileSize == 'small' ): echo 'media-1'; endif; ?><?php if( $tileSize == 'large' ): echo 'media-16-9'; endif; ?> hover-element" data-aos="fade-up" data-aos-delay="300">
+  <div class="project-thumb  hover-element" data-aos="fade-up" data-aos-delay="300">
     <a href="<?php the_permalink(); ?>">
       <div class="hover-element__initial">
         <?php
-        $workImage = get_field('background_image_background_image');
+        $workImage = get_field('feature_image');
 
         if( !empty($workImage) ):
 

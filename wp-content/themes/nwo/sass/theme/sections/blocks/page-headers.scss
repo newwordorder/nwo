@@ -13,6 +13,28 @@
     z-index: 100;
   }
 
+  &--home {
+    padding: 200px 0;
+    height: 80vh;
+    max-height: 800px;
+    min-height: 400px;
+    position: relative;
+
+    & .pos-vertical-center {
+      transform: translateY(-20%);
+    }
+  }
+
+  &--work {
+    background-color: $light;
+    padding: 100px 0;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: 100px 0;
+  }
+
+
   .back-to {
     color: $white;
     text-transform: uppercase;

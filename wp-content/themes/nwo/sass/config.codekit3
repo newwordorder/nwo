@@ -256,6 +256,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/theme\/sections\/blocks\/_map.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/theme\/sections\/blocks\/_map.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/theme\/sections\/blocks\/_service-tiles.scss": {
 		"aP": 0,
 		"bl": 0,

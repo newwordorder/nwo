@@ -1,4 +1,4 @@
-<?php // TEXT BLOCK
+<?php // LINE BREAK
 
 if( get_row_layout() == 'line_break' ):
 
