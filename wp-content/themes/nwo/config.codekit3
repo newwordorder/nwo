@@ -38,24 +38,6 @@
 		"oO": 0,
 		"oS": 1
 		},
-	"\/CHANGELOG.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/CHANGELOG.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
 	"\/codesniffer.ruleset.xml": {
 		"cB": 0,
 		"ft": 8192,
@@ -98,6 +80,16 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/css\/theme-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/theme-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/css\/theme.css": {
 		"aP": 1,
 		"bl": 0,
@@ -125,77 +117,128 @@
 		"oAP": "\/css\/theme.min.css.map",
 		"oF": 0
 		},
-	"\/fonts\/fontawesome-webfont.eot": {
+	"\/fonts\/avenir-next\/avenir-next-bold.eot": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/fonts\/fontawesome-webfont.eot",
+		"oAP": "\/fonts\/avenir-next\/avenir-next-bold.eot",
 		"oF": 0
 		},
-	"\/fonts\/fontawesome-webfont.svg": {
+	"\/fonts\/avenir-next\/avenir-next-bold.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/fonts\/fontawesome-webfont.svg",
+		"oAP": "\/fonts\/avenir-next\/avenir-next-bold.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/fonts\/fontawesome-webfont.ttf": {
+	"\/fonts\/avenir-next\/avenir-next-bold.ttf": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/fonts\/fontawesome-webfont.ttf",
+		"oAP": "\/fonts\/avenir-next\/avenir-next-bold.ttf",
 		"oF": 0
 		},
-	"\/fonts\/fontawesome-webfont.woff": {
+	"\/fonts\/avenir-next\/avenir-next-bold.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/fonts\/fontawesome-webfont.woff",
+		"oAP": "\/fonts\/avenir-next\/avenir-next-bold.woff",
 		"oF": 0
 		},
-	"\/fonts\/fontawesome-webfont.woff2": {
+	"\/fonts\/avenir-next\/avenir-next-italic.eot": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/fonts\/fontawesome-webfont.woff2",
+		"oAP": "\/fonts\/avenir-next\/avenir-next-italic.eot",
 		"oF": 0
 		},
-	"\/fonts\/sofia\/Sofia Pro Bold Italic.otf": {
+	"\/fonts\/avenir-next\/avenir-next-italic.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/fonts\/avenir-next\/avenir-next-italic.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/fonts\/avenir-next\/avenir-next-italic.ttf": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/fonts\/sofia\/Sofia Pro Bold Italic.otf",
+		"oAP": "\/fonts\/avenir-next\/avenir-next-italic.ttf",
 		"oF": 0
 		},
-	"\/fonts\/sofia\/Sofia Pro Bold.otf": {
+	"\/fonts\/avenir-next\/avenir-next-italic.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/fonts\/sofia\/Sofia Pro Bold.otf",
+		"oAP": "\/fonts\/avenir-next\/avenir-next-italic.woff",
 		"oF": 0
 		},
-	"\/fonts\/sofia\/Sofia Pro Italic.otf": {
+	"\/fonts\/avenir-next\/avenir-next-regular.eot": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/fonts\/sofia\/Sofia Pro Italic.otf",
+		"oAP": "\/fonts\/avenir-next\/avenir-next-regular.eot",
 		"oF": 0
 		},
-	"\/fonts\/sofia\/Sofia Pro Regular.otf": {
+	"\/fonts\/avenir-next\/avenir-next-regular.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/fonts\/avenir-next\/avenir-next-regular.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/fonts\/avenir-next\/avenir-next-regular.ttf": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/fonts\/sofia\/Sofia Pro Regular.otf",
+		"oAP": "\/fonts\/avenir-next\/avenir-next-regular.ttf",
 		"oF": 0
 		},
-	"\/fonts\/trump-gothic\/Trump Gothic East Bold.ttf": {
+	"\/fonts\/avenir-next\/avenir-next-regular.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/fonts\/trump-gothic\/Trump Gothic East Bold.ttf",
+		"oAP": "\/fonts\/avenir-next\/avenir-next-regular.woff",
+		"oF": 0
+		},
+	"\/fonts\/avenir-next\/avenir-next-thin.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/avenir-next\/avenir-next-thin.eot",
+		"oF": 0
+		},
+	"\/fonts\/avenir-next\/avenir-next-thin.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/fonts\/avenir-next\/avenir-next-thin.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/fonts\/avenir-next\/avenir-next-thin.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/avenir-next\/avenir-next-thin.ttf",
+		"oF": 0
+		},
+	"\/fonts\/avenir-next\/avenir-next-thin.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/avenir-next\/avenir-next-thin.woff",
 		"oF": 0
 		},
 	"\/footer.php": {
@@ -258,6 +301,13 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/header-landing.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/header-landing.php",
+		"oF": 0
+		},
 	"\/header.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -304,6 +354,13 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/inc\/acf-map.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/inc\/acf-map.php",
+		"oF": 0
 		},
 	"\/inc\/bootstrap-wp-navwalker.php": {
 		"cB": 0,
@@ -359,6 +416,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/inc\/jetpack.php",
+		"oF": 0
+		},
+	"\/inc\/loadmore.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/inc\/loadmore.php",
 		"oF": 0
 		},
 	"\/inc\/pagination.php": {
@@ -567,12 +631,72 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/js\/loadmore.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/loadmore-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/map.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/map-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/mixitup.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/mixitup-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/nav.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/nav-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/navigation-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/navigation-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/js\/navigation.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/js\/navigation-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/navigation0.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/navigation0-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -670,6 +794,16 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/js\/spectragram.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/theme-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/theme-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1040,6 +1174,13 @@
 		"oAP": "\/page-templates\/blocks\/carousel.php",
 		"oF": 0
 		},
+	"\/page-templates\/blocks\/client-logos.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page-templates\/blocks\/client-logos.php",
+		"oF": 0
+		},
 	"\/page-templates\/blocks\/cta.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1075,11 +1216,25 @@
 		"oAP": "\/page-templates\/blocks\/line-break.php",
 		"oF": 0
 		},
+	"\/page-templates\/blocks\/map.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page-templates\/blocks\/map.php",
+		"oF": 0
+		},
 	"\/page-templates\/blocks\/projects.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/page-templates\/blocks\/projects.php",
+		"oF": 0
+		},
+	"\/page-templates\/blocks\/service-tiles.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page-templates\/blocks\/service-tiles.php",
 		"oF": 0
 		},
 	"\/page-templates\/blocks\/text-block.php": {
@@ -1103,27 +1258,6 @@
 		"oAP": "\/page-templates\/blocks\/video.php",
 		"oF": 0
 		},
-	"\/page-templates\/both-sidebarspage.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/page-templates\/both-sidebarspage.php",
-		"oF": 0
-		},
-	"\/page-templates\/empty.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/page-templates\/empty.php",
-		"oF": 0
-		},
-	"\/page-templates\/fullwidthpage.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/page-templates\/fullwidthpage.php",
-		"oF": 0
-		},
 	"\/page-templates\/home.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1131,25 +1265,11 @@
 		"oAP": "\/page-templates\/home.php",
 		"oF": 0
 		},
-	"\/page-templates\/left-sidebarpage.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/page-templates\/left-sidebarpage.php",
-		"oF": 0
-		},
 	"\/page-templates\/page.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/page-templates\/page.php",
-		"oF": 0
-		},
-	"\/page-templates\/right-sidebarpage.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/page-templates\/right-sidebarpage.php",
 		"oF": 0
 		},
 	"\/page-templates\/work.php": {
@@ -1399,6 +1519,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/sass\/theme\/sections\/blocks\/_client-logos.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/theme\/sections\/blocks\/_client-logos.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/sass\/theme\/sections\/blocks\/_feature-columns.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1421,6 +1554,45 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/theme\/sections\/blocks\/_feature-tiles.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/theme\/sections\/blocks\/_map.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/theme\/sections\/blocks\/_map.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/theme\/sections\/blocks\/_page-headers.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/theme\/sections\/blocks\/_page-headers.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/theme\/sections\/blocks\/_service-tiles.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/theme\/sections\/blocks\/_service-tiles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1476,46 +1648,32 @@
 		"oAP": "\/searchform.php",
 		"oF": 0
 		},
-	"\/sidebar-footerfull.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/sidebar-footerfull.php",
-		"oF": 0
-		},
-	"\/sidebar-hero.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/sidebar-hero.php",
-		"oF": 0
-		},
-	"\/sidebar-left.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/sidebar-left.php",
-		"oF": 0
-		},
-	"\/sidebar-right.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/sidebar-right.php",
-		"oF": 0
-		},
-	"\/sidebar-statichero.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/sidebar-statichero.php",
-		"oF": 0
-		},
 	"\/sidebar.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/sidebar.php",
+		"oF": 0
+		},
+	"\/single-landing_page.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/single-landing_page.php",
+		"oF": 0
+		},
+	"\/single-people.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/single-people.php",
+		"oF": 0
+		},
+	"\/single-projects.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/single-projects.php",
 		"oF": 0
 		},
 	"\/single.php": {
@@ -2934,7 +3092,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 552910644,
-	"displayValue": "NewLife",
+	"displayValue": "nwo",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_purple"
 	},

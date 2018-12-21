@@ -34,7 +34,54 @@ class="page-header page-header--work bg--dark" >
 
 
 </section>
+
+<section
+
+class="page-header page-header--work"
+>
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-6 col-md-8 text-center">
+
+      <h1 class="">Neology</h1>
+
+    </div>
+  </div>
+</div>
+
+
+
+</section>
 <div class="wrapper blog-feed" id="index-wrapper">
+
+	<div class="container">
+		<div class="row justify-content-center mb-5">
+			<div class="col-md-8 text-center">
+
+				<?php
+				$categories = get_categories( array(
+						'orderby' => 'name',
+						'order'   => 'ASC'
+				) );
+				echo '<ul class="blog-categories">';
+				foreach( $categories as $category ) {
+						$category_link = sprintf( 
+								'<a class="blog-categories__link" href="%1$s" alt="%2$s">%3$s</a>',
+								esc_url( get_category_link( $category->term_id ) ),
+								esc_attr( sprintf( __( 'View all posts in %s', 'textdomain' ), $category->name ) ),
+								esc_html( $category->name )
+						);
+
+						echo '<li>' . sprintf( esc_html__( '%s', 'textdomain' ), $category_link ) . '</li> ';
+						
+				} 
+				echo '</ul>';
+				?>
+
+			</div>
+		</div>
+	</div>
 
 	<div class="container" id="content" tabindex="-1">
 
@@ -45,19 +92,19 @@ class="page-header page-header--work bg--dark" >
 
 					<?php /* Start the Loop */ ?>
 
-					<div class="row">
+					<div id="posts_row" class="row">
 
 					<?php while ( have_posts() ) : the_post(); ?>
-						<div class="col-sm-6 col-md-3">
+						<div class="col-sm-4">
 
 							<a href="<?php the_permalink(); ?>" class="blog-tile">
-                  				<div class="blog-tile__thumb">
-						          <?php
-						          $workImage = get_field('background_image_background_image');
+								<div class="blog-tile__thumb">
+									<?php
+									$workImage = get_field('background_image_background_image');
 
-						          if( !empty($workImage) ):
+									if( !empty($workImage) ):
 
-						            // vars
+										// vars
 										$url = $workImage['url'];
 										$alt = $workImage['alt'];
 
@@ -66,15 +113,14 @@ class="page-header page-header--work bg--dark" >
 										$width = $workImage['sizes'][ $size . '-width' ];
 										$height = $workImage['sizes'][ $size . '-height' ];
 
-						            ?>
-                        			<div class="background-image-holder ">
-						              <img class="rounded" src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
-                        			</div>
-						          <?php endif; ?>
+										?>
+										<div class="background-image-holder ">
+											<img class="rounded" src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
+										</div>
+									<?php endif; ?>
 								</div>
 								<div class="blog-tile__content">
 									<h5><?php the_title(); ?></h5>
-									<?php the_excerpt(); ?>
 									<span class="blog-tile__category">
 									<?php 
 										foreach((get_the_category()) as $category){
@@ -99,12 +145,18 @@ class="page-header page-header--work bg--dark" >
 				<?php endif; ?>
 
 
+
+
 			<!-- The pagination component -->
-			<?php understrap_pagination(); ?>
-
-
-
-
+			<div class="row justify-content-center">
+			<?php global $wp_query; // you can remove this line if everything works for you
+			
+			// don't display the button if there are not enough posts
+			if (  $wp_query->max_num_pages > 1 )
+				echo '<div class="btn btn--outline loadmore m-auto">More posts</div>'; 
+			?>
+		
+</div>
 </div><!-- Container end -->
 
 </div><!-- Wrapper end -->

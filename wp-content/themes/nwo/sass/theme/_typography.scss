@@ -1,23 +1,33 @@
 @font-face {
   font-family: 'AvenirNextRegular';
-  src: url('../fonts/avenir-next/avenir-next-regular.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/avenir-next/avenir-next-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/avenir-next/avenir-next-regular.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/avenir-next/avenir-next-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+  src: url('../fonts/avenir-next/avenir-next-regular.eot');
+  /* IE9 Compat Modes */
+  src: url('../fonts/avenir-next/avenir-next-regular.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('../fonts/avenir-next/avenir-next-regular.woff') format('woff'),
+    /* Pretty Modern Browsers */
+    url('../fonts/avenir-next/avenir-next-regular.ttf') format('truetype'),
+    /* Safari, Android, iOS */
 }
 
 @font-face {
   font-family: 'AvenirNextBold';
-  src: url('../fonts/avenir-next/avenir-next-bold.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/avenir-next/avenir-next-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/avenir-next/avenir-next-bold.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/avenir-next/avenir-next-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+  src: url('../fonts/avenir-next/avenir-next-bold.eot');
+  /* IE9 Compat Modes */
+  src: url('../fonts/avenir-next/avenir-next-bold.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('../fonts/avenir-next/avenir-next-bold.woff') format('woff'),
+    /* Pretty Modern Browsers */
+    url('../fonts/avenir-next/avenir-next-bold.ttf') format('truetype'),
+    /* Safari, Android, iOS */
 }
 
 
 
-$avenir-bold: 'AvenirNextBold', sans-serif;
-$avenir-regular: 'AvenirNextRegular', sans-serif;
+$avenir-bold: 'AvenirNextBold',
+sans-serif;
+$avenir-regular: 'AvenirNextRegular',
+sans-serif;
 
 
 
@@ -37,18 +47,30 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  margin-bottom: 20px;
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  margin-bottom: 1.5rem;
   color: $heading-color;
   font-family: $avenir-bold;
 }
 
-.h6, h6 {
-    font-size: 0.825em;
-    letter-spacing: 0.1em;
-    font-family: "AvenirNextBold", sans-serif;
-    text-transform: uppercase;
-}
+.h6,
+h6 {
+  font-size: 0.825em;
+  letter-spacing: 0.1em;
+  font-family: $avenir-bold;
+  text-transform: uppercase; 
+} 
 
 p {
   color: $body-color;
@@ -71,7 +93,8 @@ p:last-of-type {
 }
 
 
-ul, ol {
+ul,
+ol {
   font-family: $avenir-regular;
 }
 

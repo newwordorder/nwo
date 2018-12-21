@@ -19,8 +19,7 @@ if( get_row_layout() == 'services' ):
         <?php	// loop through the rows of data
         while ( have_rows('service_tile') ) : the_row(); ?>
 
-        <div class="col-md-4 col-sm-6">
-          <div class="service-tile" data-aos="fadein" data-aos-delay="<?php echo $counter;?>00">
+        <div class="col-md-4 col-sm-6 service-tile" data-aos="fadein" data-aos-delay="<?php echo $counter;?>00"">
             <div class="service-tile__body">
 
               <?php the_sub_field('text_box'); ?>
@@ -33,7 +32,6 @@ if( get_row_layout() == 'services' ):
 
             </div>
 
-          </div>
 
         </div>
         <?php $counter++; // add one per row ? ?>

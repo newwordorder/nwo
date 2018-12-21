@@ -22,6 +22,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php wp_head(); ?>
 
+	<script src="<?php echo get_template_directory_uri(); ?>/js/mixitup.js"></script>
+
 </head>
 
 <body <?php body_class(); ?>>
@@ -33,8 +35,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<a href="<?php echo get_home_url(); ?>" id="site-logo" class="header__logo">
 
-				<img class="logo logo__desktop logo__desktop--white" src="<?php bloginfo('template_directory'); ?>/img/logo--white.svg" alt="New Life">
-				<img class="logo logo__desktop logo__desktop--black" src="<?php bloginfo('template_directory'); ?>/img/logo--black.svg" alt="New Life">
+				<img class="logo logo__desktop logo__desktop--white" src="<?php bloginfo('template_directory'); ?>/img/logo--white.svg" alt="New Word Order">
+				<img class="logo logo__desktop logo__desktop--black" src="<?php bloginfo('template_directory'); ?>/img/logo--black.svg" alt="New Word Order">
 
 			</a>
 

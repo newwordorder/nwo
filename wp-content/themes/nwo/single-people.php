@@ -1,6 +1,5 @@
 <?php
 /**
-* Template Name: Page
 *
 *
 * @package understrap
@@ -62,7 +61,7 @@ data-overlay="<?php echo $imageOverlay ?>"
 <?php endif; ?>
 <div class="container">
   <div class="row justify-content-center">
-    <div class="col-md-8">
+    <div class="col-md-8 text-center">
 
       <?php if ( $post->post_parent ) { ?>
              <p><a class="back-to" href="<?php echo get_permalink( $post->post_parent ); ?>" >
@@ -70,8 +69,8 @@ data-overlay="<?php echo $imageOverlay ?>"
              </a></p>
           <?php } ?>
       <h1><?php the_title(); ?></h1>
-      <?php if(get_field('page_intro')): ?>
-        <p class="lead"><?php the_field('page_intro'); ?></p>
+      <?php if(get_field('title')): ?>
+        <p class="lead"><?php the_field('title'); ?></p>
       <?php endif; ?>
 
     </div>
@@ -82,10 +81,44 @@ data-overlay="<?php echo $imageOverlay ?>"
 
 </header>
 <main class="page-content">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-md-3">
+        <?php $image = get_field('profile_photo');
+              if( !empty($image) ):
 
-  <?php get_template_part( 'page-templates/blocks' ); ?>
+                // vars
+                $url = $image['url'];
+                $alt = $image['alt'];
 
+                $size = '400x600';
+                $thumb = $image['sizes'][ $size ];
+                $width = $image['sizes'][ $size . '-width' ];
+                $height = $image['sizes'][ $size . '-height' ];
+
+                ?>
+                <div class="media media-2-3 feature-column__image imagebg">
+                  <div class="background-image-holder">
+                    <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
+                  </div>
+                </div>
+            <?php endif; ?>
+      </div>
+      <div class="col-md-8">
+
+        <?php the_field('biography'); ?>
+      </div>
+    
+      
+    </div>
+  </div>
 </main>
-
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3 media-1">
+      
+    </div>
+  </div>
+</div>
 
 <?php get_footer();

@@ -1,6 +1,7 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
 @import "stack";
 @import "typography";
+
 @import "sections/sections";
 
 body {
@@ -32,7 +33,7 @@ section {
       background-color: transparent;
     }
 
-    &--white{
+    &--white {
       background-color: $white;
     }
 
@@ -42,6 +43,7 @@ section {
 
     &--dark {
       background-color: $charcoal;
+
       * {
         color: #fff;
       }
@@ -49,6 +51,7 @@ section {
 
     &--primary {
       background-color: $primary;
+
       * {
         color: #fff;
       }
@@ -81,10 +84,11 @@ section {
   }
 
   & .bg-effect {
-    &--ken-burns{
-        overflow: hidden;
-      & > .background-image-holder,
-      & > img:only-child {
+    &--ken-burns {
+      overflow: hidden;
+
+      &>.background-image-holder,
+      &>img:only-child {
         animation: kenBurns 15s ease alternate infinite;
         -webkit-animation: kenBurns 15s ease alternate infinite;
       }
@@ -129,7 +133,7 @@ section {
     order: 2;
 
     @include media-breakpoint-down(sm) {
-        margin-bottom: 30px;
+      margin-bottom: 30px;
     }
   }
 
@@ -176,6 +180,7 @@ section {
   color: $primary;
   padding: 0.8em 1.6em;
   border-radius: 0;
+  text-decoration: none;
 
   &--solid {
     background: $primary;
@@ -213,6 +218,10 @@ section {
     &:first-of-type {
       padding: 0.8em 0em;
     }
+  }
+
+  &:hover {
+    text-decoration: none;
   }
 
 }
@@ -259,19 +268,19 @@ section {
 .project-thumb {
   margin-bottom: 10px;
   height: 450px;
-  
-    @include media-breakpoint-down(sm) {
-      padding-top: 100%!important;
-    }
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 100% !important;
+  }
 
 
-  
+
 
   &__title {
-  padding: 1.85714286em;
-  z-index: 10;
-  position: absolute;
-  bottom:0;
+    padding: 1.85714286em;
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
 
     & * {
       color: #fff;
@@ -291,7 +300,23 @@ section {
   background: $light;
 }
 
-.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 .modal-video {
   display: flex;
@@ -299,7 +324,7 @@ section {
   justify-content: center;
 
   &__text {
-        display: inline-block;
+    display: inline-block;
   }
 }
 
@@ -345,6 +370,7 @@ section {
       border-radius: 0;
     }
   }
+
   &:last-child {
     .page-link {
       margin-right: 0;
@@ -392,16 +418,16 @@ section {
   height: 0;
   position: relative;
 
-  & > svg,
-  & > img,
-  & > video,
-  & > iframe,
-  & > canvas,
-  & > .media-inner {
+  &>svg,
+  &>img,
+  &>video,
+  &>iframe,
+  &>canvas,
+  &>.media-inner {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     display: block;
     border-radius: inherit;
   }
@@ -456,7 +482,13 @@ section {
 }
 
 
-p > a, h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a  {
+p>a,
+h1>a,
+h2>a,
+h3>a,
+h4>a,
+h5>a,
+h6>a {
   display: inline-block;
   text-decoration: none;
   position: relative;
@@ -474,13 +506,15 @@ p > a, h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a  {
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
+
   &:hover {
     color: $purple;
   }
+
   &:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
-    
+
   }
 }
 
@@ -511,17 +545,19 @@ p > a, h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a  {
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
+
   &:hover {
     color: $primary;
   }
+
   &:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
-    
+
   }
 
   &.mixitup-control-active {
-    color: $teal!important;
+    color: $teal !important;
   }
 }
 
@@ -559,18 +595,19 @@ p > a, h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a  {
     overflow: hidden;
     padding-bottom: 66%;
 
-    
+
   }
 
   &:hover .background-image-holder {
-      transform: scale(1.1);
-    }
+    transform: scale(1.1);
+  }
 
   p {
     margin-bottom: 20px;
   }
 
   &__category {
+    display: block;
     border-top: 1px solid $light;
     display: block;
     padding-top: 0.875rem;
@@ -593,5 +630,36 @@ p > a, h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a  {
 
 }
 
+.blog-categories {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+
+  &__link {
+    background: transparent;
+    color: $primary;
+    font-size: 0.825em;
+    font-weight: 700;
+    font-family: $avenir-bold;
+    text-transform: uppercase;
+    margin: 0 0.5rem;
+
+    &:hover {
+      color: darken($primary, 10%);
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
 
 
+#landing-page {
+  margin: 0;
+  padding: 0;
+  background-color: $light;
+}

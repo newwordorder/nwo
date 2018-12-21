@@ -75,3 +75,8 @@ require get_template_directory() . '/inc/editor.php';
  */
 require get_template_directory() . '/inc/acf-map.php';
 
+/**
+ * Loadmore.
+ */
+require get_template_directory() . '/inc/loadmore.php';
+
