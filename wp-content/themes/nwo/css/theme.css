@@ -8750,7 +8750,7 @@ img {
 [data-overlay]:before {
   position: absolute;
   content: '';
-  background: #343a40;
+  background: #2e3b42;
   width: 100%;
   height: 100%;
   top: 0;
@@ -10346,7 +10346,6 @@ iframe {
     /** min-height: 220px; **/ } }
 
 .videobg {
-  background: #252525;
   position: relative;
   overflow: hidden; }
 
@@ -16817,16 +16816,18 @@ footer.footer-7 {
     margin-right: auto; } }
 
 @font-face {
-  font-family: 'AvenirNextRegular';
+  font-family: "AvenirNextRegular";
   src: url("../fonts/avenir-next/avenir-next-regular.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/avenir-next/avenir-next-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/avenir-next/avenir-next-regular.woff") format("woff"), url("../fonts/avenir-next/avenir-next-regular.ttf") format("truetype"); }
+  src: url("../fonts/avenir-next/avenir-next-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/avenir-next/avenir-next-regular.woff") format("woff"), url("../fonts/avenir-next/avenir-next-regular.ttf") format("truetype");
+  /* Safari, Android, iOS */ }
 
 @font-face {
-  font-family: 'AvenirNextBold';
+  font-family: "AvenirNextBold";
   src: url("../fonts/avenir-next/avenir-next-bold.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/avenir-next/avenir-next-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/avenir-next/avenir-next-bold.woff") format("woff"), url("../fonts/avenir-next/avenir-next-bold.ttf") format("truetype"); }
+  src: url("../fonts/avenir-next/avenir-next-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/avenir-next/avenir-next-bold.woff") format("woff"), url("../fonts/avenir-next/avenir-next-bold.ttf") format("truetype");
+  /* Safari, Android, iOS */ }
 
 html {
   font-size: 1rem; }
@@ -16852,7 +16853,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   color: #2e3b42;
   font-family: "AvenirNextBold", sans-serif; }
 
@@ -17256,24 +17257,17 @@ hr.short {
   width: 150px; }
 
 .feature-column {
-  margin: 15px 0; }
+  margin: 0.5rem 0;
+  height: 100%; }
   .feature-column--boxed {
-    border: 1px solid #efefef;
-    border-radius: 4px;
     overflow: hidden;
     background-color: #fff; }
     .feature-column--boxed__inner {
-      padding: 20px; }
+      padding: 1.5rem; }
     .feature-column--boxed .feature-column__image {
-      margin-bottom: 0;
-      border-radius: 0; }
-    .feature-column--boxed .rounded {
-      border-radius: 0 !important; }
-  @media (max-width: 767.98px) {
-    .feature-column {
-      margin-bottom: 30px; } }
+      margin-bottom: 0; }
   .feature-column__image, .feature-column__icon {
-    margin-bottom: 30px; }
+    margin-bottom: 1.5rem; }
   .feature-column__icon {
     width: 70px; }
 
@@ -17304,7 +17298,6 @@ hr.short {
 
 .page-header {
   padding: 160px 0;
-  background-color: #2e3b42;
   position: relative; }
   .page-header:after {
     content: "";
@@ -17325,6 +17318,9 @@ hr.short {
       -webkit-transform: translateY(-20%);
               transform: translateY(-20%); }
   .page-header--work {
+    background-color: #f8f9fa;
+    padding: 100px 0; }
+  .page-header--people {
     background-color: #f8f9fa;
     padding: 100px 0; }
   .page-header--landing-page {
@@ -17416,7 +17412,7 @@ hr.short {
   .client-logos:hover {
     opacity: 1; }
   .client-logos__image {
-    margin: 5px 0; }
+    margin: 1rem; }
 
 .acf-map {
   width: 100%;
@@ -17430,7 +17426,7 @@ hr.short {
   max-width: inherit !important; }
 
 body {
-  background: #343a40; }
+  background: #2e3b42; }
 
 * {
   -webkit-transition: 0.2s;
@@ -17604,11 +17600,8 @@ section .bg-effect--ken-burns {
       text-align: left;
       margin-top: 30px; } }
 
-.work-tiles {
-  padding: 50px 0 100px; }
-
 .project-thumb {
-  margin-bottom: 10px;
+  margin: 0.5rem 0;
   height: 450px; }
   @media (max-width: 767.98px) {
     .project-thumb {
@@ -17798,7 +17791,7 @@ h6 > a {
   h4 > a::after,
   h5 > a::after,
   h6 > a::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     -webkit-transform: scaleX(0);
@@ -17847,7 +17840,7 @@ h6 > a {
   font-family: "AvenirNextBold", sans-serif;
   text-transform: uppercase; }
   .filter-button::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     -webkit-transform: scaleX(0);
@@ -17949,6 +17942,41 @@ h6 > a {
   margin: 0;
   padding: 0;
   background-color: #f8f9fa; }
+
+.avatar {
+  border-radius: 50%;
+  overflow: hidden; }
+
+.people-contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.25rem; }
+  .people-contact__item {
+    margin-right: 1.25rem; }
+  .people-contact__link {
+    -webkit-transition: 0.2;
+    transition: 0.2; }
+    .people-contact__link:hover {
+      opacity: 0.8; }
+
+.people-tile {
+  padding: 1.5rem;
+  text-align: center;
+  position: relative; }
+  .people-tile .avatar {
+    margin-bottom: 1.5rem; }
+  .people-tile__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; }
+  .people-tile:hover {
+    background: #fff; }
 
 /*
 * Use existing Bootstrap 4 classes and

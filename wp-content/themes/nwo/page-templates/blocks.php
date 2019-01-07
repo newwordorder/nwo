@@ -28,6 +28,7 @@ if( have_rows('blocks') ) {
          get_template_part( 'page-templates/blocks/service-tiles' );
          get_template_part( 'page-templates/blocks/client-logos' );
          get_template_part( 'page-templates/blocks/map' );
+         get_template_part( 'page-templates/blocks/people' );
 
       }
 

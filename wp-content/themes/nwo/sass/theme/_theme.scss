@@ -5,7 +5,7 @@
 @import "sections/sections";
 
 body {
-  background: $dark;
+  background: $charcoal;
 }
 
 * {
@@ -26,9 +26,7 @@ body {
 }
 
 section {
-
   &.bg {
-
     &--none {
       background-color: transparent;
     }
@@ -56,11 +54,9 @@ section {
         color: #fff;
       }
     }
-
   }
 
   &.space {
-
     &--none {
       padding: 0;
     }
@@ -80,25 +76,22 @@ section {
     &--xlg {
       padding: 200px 0;
     }
-
   }
 
   & .bg-effect {
     &--ken-burns {
       overflow: hidden;
 
-      &>.background-image-holder,
-      &>img:only-child {
+      & > .background-image-holder,
+      & > img:only-child {
         animation: kenBurns 15s ease alternate infinite;
         -webkit-animation: kenBurns 15s ease alternate infinite;
       }
     }
   }
-
 }
 
 .space-below {
-
   &--none {
     margin-bottom: 0;
   }
@@ -118,7 +111,6 @@ section {
   &--xlg {
     margin-bottom: 200px;
   }
-
 }
 
 .flippable {
@@ -137,7 +129,6 @@ section {
     }
   }
 
-
   &--flip {
     .flippable__text {
       order: 2;
@@ -145,7 +136,6 @@ section {
 
     .flippable__image {
       order: 1;
-
     }
   }
 
@@ -161,7 +151,6 @@ section {
 }
 
 .text-center {
-
   hr.short {
     margin-left: auto;
     margin-right: auto;
@@ -223,7 +212,6 @@ section {
   &:hover {
     text-decoration: none;
   }
-
 }
 
 .link {
@@ -244,7 +232,6 @@ section {
 }
 
 .cta {
-
   &__buttons {
     text-align: right;
 
@@ -257,24 +244,18 @@ section {
       margin-top: 30px;
     }
   }
-
 }
 
-
 .work-tiles {
-  padding: 50px 0 100px;
 }
 
 .project-thumb {
-  margin-bottom: 10px;
+  margin: 0.5rem 0;
   height: 450px;
 
   @include media-breakpoint-down(sm) {
     padding-top: 100% !important;
   }
-
-
-
 
   &__title {
     padding: 1.85714286em;
@@ -291,10 +272,6 @@ section {
     transform: scale(1.1);
   }
 }
-
-
-
-
 
 .related-posts {
   background: $light;
@@ -409,8 +386,6 @@ section {
   }
 }
 
-
-
 .media {
   display: block;
   position: relative;
@@ -418,12 +393,12 @@ section {
   height: 0;
   position: relative;
 
-  &>svg,
-  &>img,
-  &>video,
-  &>iframe,
-  &>canvas,
-  &>.media-inner {
+  & > svg,
+  & > img,
+  & > video,
+  & > iframe,
+  & > canvas,
+  & > .media-inner {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -481,21 +456,20 @@ section {
   padding-top: calc((1 / 2) * 100%);
 }
 
-
-p>a,
-h1>a,
-h2>a,
-h3>a,
-h4>a,
-h5>a,
-h6>a {
+p > a,
+h1 > a,
+h2 > a,
+h3 > a,
+h4 > a,
+h5 > a,
+h6 > a {
   display: inline-block;
   text-decoration: none;
   position: relative;
   color: $purple;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     transform: scaleX(0);
@@ -514,7 +488,6 @@ h6>a {
   &:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
-
   }
 }
 
@@ -534,7 +507,7 @@ h6>a {
   text-transform: uppercase;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     transform: scaleX(0);
@@ -553,7 +526,6 @@ h6>a {
   &:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
-
   }
 
   &.mixitup-control-active {
@@ -564,7 +536,6 @@ h6>a {
 .blog-feed {
   padding: 50px 0 100px;
 }
-
 
 .blog-tile {
   display: block;
@@ -586,7 +557,6 @@ h6>a {
 
   &:hover {
     text-decoration: none;
-
   }
 
   &__thumb {
@@ -594,8 +564,6 @@ h6>a {
     height: 0;
     overflow: hidden;
     padding-bottom: 66%;
-
-
   }
 
   &:hover .background-image-holder {
@@ -627,7 +595,6 @@ h6>a {
     position: absolute;
     bottom: 0;
   }
-
 }
 
 .blog-categories {
@@ -657,9 +624,54 @@ h6>a {
   }
 }
 
-
 #landing-page {
   margin: 0;
   padding: 0;
   background-color: $light;
+}
+
+.avatar {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.people-contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  font-size: 1.25rem;
+
+  &__item {
+    margin-right: 1.25rem;
+  }
+
+  &__link {
+    transition: 0.2;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.people-tile {
+  padding: 1.5rem;
+  text-align: center;
+  position: relative;
+
+  .avatar {
+    margin-bottom: 1.5rem;
+  }
+
+  &__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  &:hover {
+    background: $white;
+  }
 }
