@@ -1223,6 +1223,13 @@
 		"oAP": "\/page-templates\/blocks\/map.php",
 		"oF": 0
 		},
+	"\/page-templates\/blocks\/people.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page-templates\/blocks\/people.php",
+		"oF": 0
+		},
 	"\/page-templates\/blocks\/projects.php": {
 		"cB": 0,
 		"ft": 8192,
