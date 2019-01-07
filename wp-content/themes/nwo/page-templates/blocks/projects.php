@@ -12,7 +12,30 @@ if( get_row_layout() == 'projects' ):
 
 ?>
 
-<div class="container space-below--<?php echo $spaceBelow ?>">
+<div class="container work-tiles space-below--<?php echo $spaceBelow ?>">
+  <div class="row">
+    <div class="col-12 justify-content-center text-center filters">
+        <!-- Get a list of all categories in the database, excluding those not assigned to posts -->
+
+        <?php
+        $categories = get_terms( array(
+          'posttype' => 'projects',
+          'taxonomy' => 'category',
+          'hide_empty' => true,
+        ) );
+        ?>
+          <fieldset data-filter-group>
+              <!-- Iterate through each category -->
+              <a class="filter-button" data-filter="all">All</a>
+
+              <!-- Output control button markup, setting the data-filter attribute as the category "slug" -->
+              <?php foreach($categories as $category): ?>
+                <a  class="filter-button" data-filter=".<?php echo $category->slug; ?>"><?php echo $category->name; ?></a>
+              <?php endforeach; ?>
+            </select>
+          </fieldset>
+      </div>
+    </div>
   <div class="row">
 
 <?php while ( have_rows('work_tiles') ) : the_row();?>
@@ -23,9 +46,15 @@ if( get_row_layout() == 'projects' ):
 
 <?php setup_postdata($post); ?>
 
+<?php
+          $categories = get_the_category();
+          $slugs = wp_list_pluck($categories, 'slug');
+          $class_names = join(' ', $slugs);
+          ?>
 
 
-    <div class="<?php if( $tileSize == '66' ): echo 'col-md-8'; endif; ?><?php if( $tileSize == '33' ): echo 'col-md-4'; endif; ?><?php if( $tileSize == '50' ): echo 'col-md-6'; endif; ?><?php if( $tileSize == '100' ): echo 'col-md-12'; endif; ?>">
+
+    <div class="mix<?php if ($class_names) { echo ' ' . $class_names;} ?> <?php echo $service_class_array; ?> <?php if( $tileSize == '66' ): echo 'col-md-8'; endif; ?><?php if( $tileSize == '33' ): echo 'col-md-4'; endif; ?><?php if( $tileSize == '50' ): echo 'col-md-6'; endif; ?><?php if( $tileSize == '100' ): echo 'col-md-12'; endif; ?>">
 
   <div class="project-thumb  hover-element" data-aos="fade-up" data-aos-delay="300">
     <a href="<?php the_permalink(); ?>">

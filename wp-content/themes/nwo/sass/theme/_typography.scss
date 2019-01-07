@@ -1,39 +1,34 @@
 @font-face {
-  font-family: 'AvenirNextRegular';
-  src: url('../fonts/avenir-next/avenir-next-regular.eot');
+  font-family: "AvenirNextRegular";
+  src: url("../fonts/avenir-next/avenir-next-regular.eot");
   /* IE9 Compat Modes */
-  src: url('../fonts/avenir-next/avenir-next-regular.eot?#iefix') format('embedded-opentype'),
-    /* IE6-IE8 */
-    url('../fonts/avenir-next/avenir-next-regular.woff') format('woff'),
+  src: url("../fonts/avenir-next/avenir-next-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/avenir-next/avenir-next-regular.woff")
+      format("woff"),
     /* Pretty Modern Browsers */
-    url('../fonts/avenir-next/avenir-next-regular.ttf') format('truetype'),
-    /* Safari, Android, iOS */
+      url("../fonts/avenir-next/avenir-next-regular.ttf") format("truetype");
+  /* Safari, Android, iOS */
 }
 
 @font-face {
-  font-family: 'AvenirNextBold';
-  src: url('../fonts/avenir-next/avenir-next-bold.eot');
+  font-family: "AvenirNextBold";
+  src: url("../fonts/avenir-next/avenir-next-bold.eot");
   /* IE9 Compat Modes */
-  src: url('../fonts/avenir-next/avenir-next-bold.eot?#iefix') format('embedded-opentype'),
-    /* IE6-IE8 */
-    url('../fonts/avenir-next/avenir-next-bold.woff') format('woff'),
+  src: url("../fonts/avenir-next/avenir-next-bold.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/avenir-next/avenir-next-bold.woff")
+      format("woff"),
     /* Pretty Modern Browsers */
-    url('../fonts/avenir-next/avenir-next-bold.ttf') format('truetype'),
-    /* Safari, Android, iOS */
+      url("../fonts/avenir-next/avenir-next-bold.ttf") format("truetype");
+  /* Safari, Android, iOS */
 }
 
-
-
-$avenir-bold: 'AvenirNextBold',
-sans-serif;
-$avenir-regular: 'AvenirNextRegular',
-sans-serif;
-
-
+$avenir-bold: "AvenirNextBold", sans-serif;
+$avenir-regular: "AvenirNextRegular", sans-serif;
 
 html {
   font-size: 1rem;
-
 }
 
 /** @include media-breakpoint-up(lg) {
@@ -59,7 +54,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   color: $heading-color;
   font-family: $avenir-bold;
 }
@@ -69,8 +64,8 @@ h6 {
   font-size: 0.825em;
   letter-spacing: 0.1em;
   font-family: $avenir-bold;
-  text-transform: uppercase; 
-} 
+  text-transform: uppercase;
+}
 
 p {
   color: $body-color;
@@ -91,7 +86,6 @@ p {
 p:last-of-type {
   margin-bottom: 0;
 }
-
 
 ul,
 ol {

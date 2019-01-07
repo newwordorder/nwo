@@ -666,7 +666,7 @@ img {
 [data-overlay]:before {
   position: absolute;
   content: '';
-  background: $dark;
+  background: $charcoal;
   width: 100%;
   height: 100%;
   top: 0;
@@ -2739,7 +2739,6 @@ iframe {
 }
 
 .videobg {
-  background: #252525;
   position: relative;
   overflow: hidden;
 }

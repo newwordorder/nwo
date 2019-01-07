@@ -1,6 +1,5 @@
 .page-header {
   padding: 160px 0;
-  background-color: $charcoal;
   position: relative;
   &:after {
     content: "";
@@ -29,6 +28,11 @@
     padding: 100px 0;
   }
 
+  &--people {
+    background-color: $light;
+    padding: 100px 0;
+  }
+
   &--landing-page {
     padding: 250px 0 100px;
   }
@@ -36,7 +40,6 @@
   @include media-breakpoint-down(sm) {
     padding: 100px 0;
   }
-
 
   .back-to {
     color: $white;
