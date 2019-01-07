@@ -16,9 +16,9 @@ get_header();
 $container   = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<section id="sub-header"
+<section
 
-class="page-header page-header--work bg--dark" >
+class="featured-post bg--dark" >
 
 
 <div class="container">
@@ -37,7 +37,7 @@ class="page-header page-header--work bg--dark" >
 
 <section
 
-class="page-header page-header--work"
+class="page-header page-header--blog"
 >
 
 <div class="container">
@@ -96,8 +96,10 @@ class="page-header page-header--work"
 
 					<?php while ( have_posts() ) : the_post(); ?>
 						<div class="col-sm-4">
+						
 
-							<a href="<?php the_permalink(); ?>" class="blog-tile">
+							<article class="blog-tile">
+							<a href="<?php the_permalink(); ?>" class="blog-tile__link"></a>
 								<div class="blog-tile__thumb">
 									<?php
 									$workImage = get_field('background_image_background_image');
@@ -129,10 +131,10 @@ class="page-header page-header--work"
 										?>
 									</span>	
 								</div>
-							</a>
+							</article>
 
 
-					</div>
+										</div>
 
 					<?php endwhile; ?>
 
@@ -148,7 +150,7 @@ class="page-header page-header--work"
 
 
 			<!-- The pagination component -->
-			<div class="row justify-content-center">
+			<div class="row justify-content-center mt-4 p-4">
 			<?php global $wp_query; // you can remove this line if everything works for you
 			
 			// don't display the button if there are not enough posts

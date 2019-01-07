@@ -34,12 +34,21 @@ if( !empty($image) ):
   </div>
 <?php endif; ?>
 
-<div class="container">
+<div class="container ">
   <div class="row justify-content-center">
     <div class="col-lg-6 col-md-8 text-center">
-
-      <h1 class="page-title"><?php the_title(); ?></h1>
-
+<p class="h6 mb-4">
+									<?php 
+										foreach((get_the_category()) as $category){
+											echo $category->name;
+											}
+										?>
+									</p>	
+      <h1 class="page-title mb-4"><?php the_title(); ?></h1>
+      
+<?php if(get_field('page_intro')): ?>
+        <p class="lead"><?php the_field('page_intro'); ?></p>
+      <?php endif; ?>
 
     </div>
   </div>
@@ -49,7 +58,7 @@ if( !empty($image) ):
 
 </section>
 
-<section id="single-wrapper">
+<section id="single-wrapper" class="page-content">
 
 	<div class="container" id="content" tabindex="-1">
 
@@ -59,7 +68,7 @@ if( !empty($image) ):
 
 
 
-					<?php the_content();
+					<?php 
 
           // check if the flexible content field has rows of data
           if( have_rows('posts_blocks') ):
@@ -87,7 +96,11 @@ if( !empty($image) ):
           endif;
 
           ?>
-
+<div class="row justify-content-center">
+              <div class="col-md-8">
+          <?php the_content(); ?>
+ </div>
+            </div>
 
 
 

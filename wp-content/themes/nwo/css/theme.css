@@ -17320,6 +17320,9 @@ hr.short {
   .page-header--work {
     background-color: #f8f9fa;
     padding: 100px 0; }
+  .page-header--blog {
+    background-color: #f8f9fa;
+    padding: 60px 0; }
   .page-header--people {
     background-color: #f8f9fa;
     padding: 100px 0; }
@@ -17607,7 +17610,7 @@ section .bg-effect--ken-burns {
     .project-thumb {
       padding-top: 100% !important; } }
   .project-thumb__title {
-    padding: 1.85714286em;
+    padding: 1.5em;
     z-index: 10;
     position: absolute;
     bottom: 0; }
@@ -17869,15 +17872,40 @@ h6 > a {
   padding: 50px 0 100px; }
 
 .blog-tile {
-  display: block;
-  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0.5rem 0;
   background: #fff;
-  height: 100%; }
+  height: calc(100% - 1rem);
+  position: relative; }
   .blog-tile * {
     -webkit-transition: 0.2s;
     transition: 0.2s; }
+  .blog-tile__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1; }
   .blog-tile__content {
-    padding: 20px; }
+    padding: 1.5rem;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     .blog-tile__content p {
       font-size: 0.825em; }
   .blog-tile:hover {
@@ -17893,25 +17921,17 @@ h6 > a {
   .blog-tile p {
     margin-bottom: 20px; }
   .blog-tile__category {
-    display: block;
     border-top: 1px solid #f8f9fa;
-    display: block;
-    padding-top: 0.875rem;
-    padding-bottom: 20px;
-    font-size: 0.875rem;
+    padding-top: 1rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
     margin-top: auto;
-    position: relative;
     -webkit-transition: 0.2s;
     transition: 0.2s;
-    font-size: 0.825em;
     letter-spacing: 0.1em;
     font-family: "AvenirNextBold", sans-serif;
-    text-transform: uppercase;
-    color: #343a40;
-    border-radius: 0;
-    position: absolute;
-    bottom: 0; }
+    color: #2e3b42;
+    text-transform: uppercase; }
 
 .blog-categories {
   margin: 0;
@@ -17966,7 +17986,9 @@ h6 > a {
 .people-tile {
   padding: 1.5rem;
   text-align: center;
-  position: relative; }
+  position: relative;
+  height: 100%;
+  margin: 0.5rem 0; }
   .people-tile .avatar {
     margin-bottom: 1.5rem; }
   .people-tile__link {
