@@ -1,0 +1,113 @@
+body {
+    margin: 0px;
+    background: white
+  }
+
+  .slider {
+    width: 80%;
+    height: 100%;
+    position: relative;
+    display:inline-block;
+  }
+
+  .balloon-ctr {
+    text-align: center;
+  }
+
+  .demos-ctr .demo {
+    display: inline-block;
+  }
+
+  .control {
+    margin: 0px 20px;
+    font-size:2rem;
+  }
+
+  .control svg{
+    color:#fff;
+  }
+
+  .ctrls{
+    position:absolute;
+    bottom:1rem;
+    right:calc(20% + 2rem);
+    display:flex;
+  }
+
+  .line{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:0%;
+    height:2px;
+    background-color:#fff;
+  }
+
+  .slide__container{
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    overflow:hidden;
+  }
+
+  .slide{
+
+    position:absolute;
+
+    opacity:0;
+  }
+  
+  .slide *{
+    color:#fff;
+    font-family: sans-serif;
+    text-align:left;
+  }
+
+  .slide__title{
+    font-size:4rem;
+  }
+
+
+  .slide__subtitle{
+    font-size:2rem;
+  }
+
+  .right-tile{
+    display: inline-flex;
+    position:absolute;
+    right:0;
+    width:20%;
+    height:100%;
+    flex-direction:column;
+    .tile{
+      width:100%;
+      height:calc(50% - 40px);
+      .project-thumb{
+        margin-bottom:0;
+        height:100%;
+      }
+      &--1{
+        background-color:#555555;
+      }
+      &--2{
+        background-color:#777777;
+    }
+
+  }
+    .btn{
+      height:80px;
+      width:100%;
+      background-color:$light;
+      text-align:center;
+      display:flex;
+      flex-direction:column;
+      justify-content: center;
+      align-items:center;
+      a{
+        margin:auto;
+        color:$primary;
+      }
+    }
+ }

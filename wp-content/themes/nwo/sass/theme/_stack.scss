@@ -675,7 +675,7 @@ img {
 }
 
 [data-overlay] *:not(.container):not(.background-image-holder) {
-  z-index: 3;
+  /* z-index: 3; */
 }
 
 [data-overlay].image--light:before {
