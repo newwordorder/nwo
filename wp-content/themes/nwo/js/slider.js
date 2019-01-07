@@ -222,14 +222,10 @@ var sliderEffect = function(opts) {
     function textShow(slide){
       TweenMax.to(slide, 0,{
         opacity:0,
-        xPercent:50,
-        yPercent:25,
         ease:Power2.easeOut,
       });
       TweenMax.to(slide, 0.4,{
         opacity:1,
-        xPercent:50,
-        yPercent:50,
         ease:Power2.easeOut,
         delay: 0.4,
       });
@@ -238,14 +234,10 @@ var sliderEffect = function(opts) {
     function textHide(slide){
       TweenMax.to(slide, 0.4,{
         opacity:0,
-        xPercent:50,
-        yPercent:75,
         ease:Power2.easeOut,
       });
       TweenMax.to(slide, 0,{
         opacity:0,
-        xPercent:50,
-        yPercent:0,
         ease:Power2.easeOut,
         delay:0.4,
       });

@@ -93,7 +93,7 @@ class="page-header page-header--home bg-effect--<?php echo $backgroundEffect ?> 
         <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
 
         <?php setup_postdata($post); ?>
-            <div class="project-thumb  hover-element">
+            <div class="project-thumb  hover-element" >
               <a href="<?php the_permalink(); ?>">
                 <div class="hover-element__initial">
                   <?php
@@ -176,11 +176,7 @@ class="page-header page-header--home bg-effect--<?php echo $backgroundEffect ?> 
 
 <script>
   var displacement = [
-    '<?php bloginfo('template_directory'); ?>' + '/img/1.jpg',
-    '<?php bloginfo('template_directory'); ?>' + '/img/2.jpg',
-    '<?php bloginfo('template_directory'); ?>' + '/img/3.jpg',
-    '<?php bloginfo('template_directory'); ?>' + '/img/4.jpg',
-    '<?php bloginfo('template_directory'); ?>' + '/img/5.jpg',
+    '<?php bloginfo('template_directory'); ?>' + '/img/20.jpg',
 ];
 var assets = [
   '<?php bloginfo('template_directory'); ?>' + '/img/Asset2-80.jpg',
