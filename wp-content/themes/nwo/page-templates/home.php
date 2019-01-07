@@ -93,38 +93,36 @@ class="page-header page-header--home bg-effect--<?php echo $backgroundEffect ?> 
         <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
 
         <?php setup_postdata($post); ?>
+            <div class="project-thumb  hover-element">
+              <a href="<?php the_permalink(); ?>">
+                <div class="hover-element__initial">
+                  <?php
+                  $workImage = get_field('background_image');
 
+                  if( !empty($workImage) ):
 
-          <div class="project-thumb  hover-element">
-            <a href="<?php the_permalink(); ?>">
-              <div class="hover-element__initial">
-                <?php
-                $workImage = get_field('background_image');
-
-                if( !empty($workImage) ):
-
-                  // vars
-                  $url = $workImage['background_image'];
-                  $alt = $workImage['alt'];
-                  ?>
-                  <div class="background-image-holder">
-                    <img src="<?php echo $url['url']; ?>" alt="<?php echo $alt; ?>"/>
+                    // vars
+                    $url = $workImage['background_image'];
+                    $alt = $workImage['alt'];
+                    ?>
+                    <div class="background-image-holder">
+                      <img src="<?php echo $url['url']; ?>" alt="<?php echo $alt; ?>"/>
+                    </div>
+                  <?php endif; ?>
+                </div>
+                <div class="project-thumb__title">
+                  <h6><?php the_field('client'); ?></h6>
+                  <h4><?php the_title(); ?></h4>
+                  <p class="lead"><?php the_field('one_liner'); ?></span>
                   </div>
-                <?php endif; ?>
-              </div>
-              <div class="project-thumb__title">
-                <h6><?php the_field('client'); ?></h6>
-                <h4><?php the_title(); ?></h4>
-                <p class="lead"><?php the_field('one_liner'); ?></span>
-                </div>
-                <div class="hover-element__reveal" data-overlay="9">
+                  <div class="hover-element__reveal" data-overlay="9">
 
+                  </div>
+                </a>
                 </div>
-              </a>
-          <?php endforeach; ?>
-          <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-        <?php endif; ?>
-      </div>
+            <?php endforeach; ?>
+            <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+          <?php endif; ?>
       </div>
       <div class="tile tile--2">
       <?php $posts = get_field('featured_project'); if( $posts ): ?>
@@ -161,6 +159,7 @@ class="page-header page-header--home bg-effect--<?php echo $backgroundEffect ?> 
 
                 </div>
               </a>
+              </div>
           <?php endforeach; ?>
           <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
         <?php endif; ?>
