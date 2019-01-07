@@ -143,12 +143,25 @@ data-overlay="<?php echo $imageOverlay ?>"
     </div>
   </div>
 </main>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-3">
-      
+  <?php 
+
+$images = get_field('gallery');
+
+if( $images ): ?>
+<section class="people-gallery">
+    <div class="row">
+        <?php foreach( $images as $image ): ?>
+            <div class="col-6 col-md-3 ">
+              <div class="media-1">
+                  <div class="background-image-holder">
+                    <img src="<?php echo $image['sizes']['600x600']; ?>" alt="<?php echo $image['alt']; ?>" />
+                  </div>
+                  
+              </div>
+              </div>
+        <?php endforeach; ?>
     </div>
-  </div>
-</div>
+</section>
+<?php endif; ?>
 
 <?php get_footer();
