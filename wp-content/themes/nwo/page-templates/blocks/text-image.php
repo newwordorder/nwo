@@ -47,7 +47,7 @@ $spaceBelow = get_sub_field('space_below');
             <?php endif; //end $media ?>
 
             <?php if( $media == 'gallery' ): ?>
-
+                
             <?php endif; //end $media ?>
 
             <?php if( $media == 'video' ): ?>

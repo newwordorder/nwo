@@ -73,8 +73,6 @@ var sliderEffect = function(opts) {
       return;
     }
 
-
-
     var scene = new THREE.Scene();
     var camera = new THREE.OrthographicCamera(
       parent.offsetWidth / -2,
