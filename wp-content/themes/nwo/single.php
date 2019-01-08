@@ -34,12 +34,21 @@ if( !empty($image) ):
   </div>
 <?php endif; ?>
 
-<div class="container">
+<div class="container ">
   <div class="row justify-content-center">
     <div class="col-lg-6 col-md-8 text-center">
-
-      <h1 class="page-title"><?php the_title(); ?></h1>
-
+<p class="h6 mb-4">
+									<?php 
+										foreach((get_the_category()) as $category){
+											echo $category->name;
+											}
+										?>
+									</p>	
+      <h1 class="page-title mb-4"><?php the_title(); ?></h1>
+      
+<?php if(get_field('page_intro')): ?>
+        <p class="lead"><?php the_field('page_intro'); ?></p>
+      <?php endif; ?>
 
     </div>
   </div>
@@ -49,7 +58,7 @@ if( !empty($image) ):
 
 </section>
 
-<section id="single-wrapper">
+<section id="single-wrapper" class="page-content">
 
 	<div class="container" id="content" tabindex="-1">
 
@@ -59,7 +68,7 @@ if( !empty($image) ):
 
 
 
-					<?php the_content();
+					<?php 
 
           // check if the flexible content field has rows of data
           if( have_rows('posts_blocks') ):
@@ -87,7 +96,11 @@ if( !empty($image) ):
           endif;
 
           ?>
-
+<div class="row justify-content-center">
+              <div class="col-md-8">
+          <?php the_content(); ?>
+ </div>
+            </div>
 
 
 
@@ -101,17 +114,81 @@ if( !empty($image) ):
 
 </section><!-- Wrapper end -->
 
-<section class="related-posts">
+<?php
+           // the query
+           $the_query = new WP_Query( array(
+             'category__in' => wp_get_post_categories( $post->ID ), 
+              'posts_per_page' => 3,
+              'post__not_in' => array( $post->ID ) 
+           ));
+        ?>
+
+			<?php if ( $the_query->have_posts() ) : ?>
+
+<section class="related-posts space--lg">
   <div class="container">
     <div class="row">
       <div class="col text-center">
-        <h2>Related posts</h2>
+        <h4>Related posts</h4>
       </div>
     </div>
+    <div class="row justify-content-center">
+    
+        <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+				<div class="col-sm-4">
+						
+
+							<article class="blog-tile">
+							<a href="<?php the_permalink(); ?>" class="blog-tile__link"></a>
+								<div class="blog-tile__thumb">
+									<?php
+									$workImage = get_field('background_image_background_image');
+
+									if( !empty($workImage) ):
+
+										// vars
+										$url = $workImage['url'];
+										$alt = $workImage['alt'];
+
+										$size = '600x400';
+										$thumb = $workImage['sizes'][ $size ];
+										$width = $workImage['sizes'][ $size . '-width' ];
+										$height = $workImage['sizes'][ $size . '-height' ];
+
+										?>
+										<div class="background-image-holder ">
+											<img class="rounded" src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
+										</div>
+									<?php endif; ?>
+								</div>
+								<div class="blog-tile__content">
+									<h5><?php the_title(); ?></h5>
+									<span class="blog-tile__category">
+									<?php 
+										foreach((get_the_category()) as $category){
+											echo $category->name;
+											}
+										?>
+									</span>	
+								</div>
+							</article>
+
+
+										</div>
+
+			<?php endwhile;
+
+          // reset post data
+          wp_reset_postdata();
+
+      ?>
   </div>
 
-
+</div>
 </section>
+
+
+    <?php endif; ?>
 
 <?php endwhile; // end of the loop. ?>
 

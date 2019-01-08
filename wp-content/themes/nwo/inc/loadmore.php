@@ -40,37 +40,45 @@ function misha_loadmore_ajax_handler(){
 
 
 					<?php while ( have_posts() ) : the_post(); ?>
-						<article class="col-sm-6 col-md-4 text-center blog-tile">
+						<div class="col-sm-4">
 
-							<a href="<?php the_permalink(); ?>" class="">
-                  <div class="blog-tile__thumb ">
-						          <?php
-						          $workImage = get_field('background_image_background_image');
+							<article class="blog-tile">
+							<a href="<?php the_permalink(); ?>" class="blog-tile__link"></a>
+								<div class="blog-tile__thumb">
+									<?php
+									$workImage = get_field('background_image_background_image');
 
-						          if( !empty($workImage) ):
+									if( !empty($workImage) ):
 
-						            // vars
-                        $url = $workImage['url'];
-                        $alt = $workImage['alt'];
+										// vars
+										$url = $workImage['url'];
+										$alt = $workImage['alt'];
 
-                        $size = '600x400';
-                        $thumb = $workImage['sizes'][ $size ];
-                        $width = $workImage['sizes'][ $size . '-width' ];
-                        $height = $workImage['sizes'][ $size . '-height' ];
+										$size = '600x400';
+										$thumb = $workImage['sizes'][ $size ];
+										$width = $workImage['sizes'][ $size . '-width' ];
+										$height = $workImage['sizes'][ $size . '-height' ];
 
-						            ?>
-                        <div class="background-image-holder ">
-						              <img class="" src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
-                        </div>
-						          <?php endif; ?>
-                    </div>
+										?>
+										<div class="background-image-holder ">
+											<img class="rounded" src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
+										</div>
+									<?php endif; ?>
+								</div>
+								<div class="blog-tile__content">
+									<h5><?php the_title(); ?></h5>
+									<span class="blog-tile__category">
+									<?php 
+										foreach((get_the_category()) as $category){
+											echo $category->name;
+											}
+										?>
+									</span>	
+								</div>
+							</article>
 
-										<h3><?php the_title(); ?></h3>
-                    <a class="link" href="<?php the_permalink(); ?>">Read</a>
-								</a>
 
-
-					</article>
+										</div>
 
 					<?php endwhile; ?>
 

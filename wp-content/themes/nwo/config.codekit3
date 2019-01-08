@@ -241,6 +241,44 @@
 		"oAP": "\/fonts\/avenir-next\/avenir-next-thin.woff",
 		"oF": 0
 		},
+	"\/fonts\/fontawesome-webfont.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/fontawesome-webfont.eot",
+		"oF": 0
+		},
+	"\/fonts\/fontawesome-webfont.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/fonts\/fontawesome-webfont.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/fonts\/fontawesome-webfont.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/fontawesome-webfont.ttf",
+		"oF": 0
+		},
+	"\/fonts\/fontawesome-webfont.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/fontawesome-webfont.woff",
+		"oF": 0
+		},
+	"\/fonts\/fontawesome-webfont.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/fontawesome-webfont.woff2",
+		"oF": 0
+		},
 	"\/footer.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -314,6 +352,96 @@
 		"oA": 0,
 		"oAP": "\/header.php",
 		"oF": 0
+		},
+	"\/img\/1.jpg": {
+		"ft": 16384,
+		"iS": 846982,
+		"oA": 0,
+		"oAP": "\/img\/1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/2.jpg": {
+		"ft": 16384,
+		"iS": 1074172,
+		"oA": 0,
+		"oAP": "\/img\/2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/3.jpg": {
+		"ft": 16384,
+		"iS": 900991,
+		"oA": 0,
+		"oAP": "\/img\/3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/4.jpg": {
+		"ft": 16384,
+		"iS": 388152,
+		"oA": 0,
+		"oAP": "\/img\/4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/5.jpg": {
+		"ft": 16384,
+		"iS": 823813,
+		"oA": 0,
+		"oAP": "\/img\/5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/Asset2-80.jpg": {
+		"ft": 16384,
+		"iS": 365782,
+		"oA": 0,
+		"oAP": "\/img\/Asset2-80.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/Asset3-80.jpg": {
+		"ft": 16384,
+		"iS": 175118,
+		"oA": 0,
+		"oAP": "\/img\/Asset3-80.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/Asset4-80.jpg": {
+		"ft": 16384,
+		"iS": 207385,
+		"oA": 0,
+		"oAP": "\/img\/Asset4-80.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/Asset5-80.jpg": {
+		"ft": 16384,
+		"iS": 166480,
+		"oA": 0,
+		"oAP": "\/img\/Asset5-80.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/img\/header-logo.svg": {
 		"ft": 2097152,
@@ -409,6 +537,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/inc\/extras.php",
+		"oF": 0
+		},
+	"\/inc\/feature-post.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/inc\/feature-post.php",
 		"oF": 0
 		},
 	"\/inc\/jetpack.php": {
@@ -571,6 +706,16 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/js\/fontawesome-all.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/fontawesome-all.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/js\/granim.min.js": {
 		"ft": 64,
 		"ma": 0,
@@ -587,6 +732,36 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/js\/header-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/hover.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/hover-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/hover.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/hover.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/index.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/index-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -701,6 +876,16 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/js\/nearby.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/nearby-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/js\/parallax-min.js": {
 		"ft": 64,
 		"ma": 0,
@@ -778,6 +963,16 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/js\/slider.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/slider-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/js\/smooth-scroll.min.js": {
 		"ft": 64,
 		"ma": 0,
@@ -824,6 +1019,26 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/js\/theme.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/three.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/three.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/TweenMax.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/TweenMax.min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1123,6 +1338,14 @@
 		"oA": 0,
 		"oAP": "\/loop-templates\/content.php",
 		"oF": 0
+		},
+	"\/package-lock.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/package-lock-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
 		},
 	"\/package.json": {
 		"ft": 524288,
@@ -1561,6 +1784,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/theme\/sections\/blocks\/_feature-tiles.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/theme\/sections\/blocks\/_homeslider.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/theme\/sections\/blocks\/_homeslider.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -2815,6 +3051,188 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/src\/sass\/bootstrap4\/utilities\/_visibility.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/sass\/fontawesome\/_animated.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/src\/sass\/fontawesome\/_animated.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/sass\/fontawesome\/_bordered-pulled.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/src\/sass\/fontawesome\/_bordered-pulled.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/sass\/fontawesome\/_core.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/src\/sass\/fontawesome\/_core.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/sass\/fontawesome\/_fixed-width.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/src\/sass\/fontawesome\/_fixed-width.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/sass\/fontawesome\/_icons.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/src\/sass\/fontawesome\/_icons.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/sass\/fontawesome\/_larger.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/src\/sass\/fontawesome\/_larger.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/sass\/fontawesome\/_list.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/src\/sass\/fontawesome\/_list.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/sass\/fontawesome\/_mixins.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/src\/sass\/fontawesome\/_mixins.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/sass\/fontawesome\/_path.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/src\/sass\/fontawesome\/_path.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/sass\/fontawesome\/_rotated-flipped.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/src\/sass\/fontawesome\/_rotated-flipped.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/sass\/fontawesome\/_screen-reader.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/src\/sass\/fontawesome\/_screen-reader.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/sass\/fontawesome\/_stacked.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/src\/sass\/fontawesome\/_stacked.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/sass\/fontawesome\/_variables.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/src\/sass\/fontawesome\/_variables.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/sass\/fontawesome\/font-awesome.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/src\/sass\/fontawesome\/font-awesome.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
