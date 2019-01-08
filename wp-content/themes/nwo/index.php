@@ -16,24 +16,71 @@ get_header();
 $container   = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<section
+	<?php
+								$args = array(
+											'posts_per_page' => 1,
+											'meta_key' => 'meta-checkbox',
+											'meta_value' => 'yes'
+									);
+									$featured = new WP_Query($args);
 
-class="featured-post bg--dark" >
+							if ($featured->have_posts()):?>
+
+							<?php while ($featured->have_posts() ) : $featured->the_post();
+							$backgroundImage = get_field('background_image');
+							$image = $backgroundImage['background_image'];
+							$imageOverlay = $backgroundImage['image_overlay'];
+							$backgroundEffect = $backgroundImage['background_effect'];
+							$invertColours = $backgroundImage['invert_colours'];
+							
+							?>
+
+							<section id="sub-header"
+
+							class="page-header--work bg-effect--<?php echo $backgroundEffect ?> imagebg <?php if( $invertColours == 'yes' ): echo 'image--light'; endif; ?>"
+							data-overlay="<?php echo $imageOverlay ?>"
+							>
+
+							<?php
+
+							if( !empty($image) ):
+
+								// vars
+								$url = $image['url'];
+								$alt = $image['alt'];
+
+								?>
+								<div class="background-image-holder">
+									<img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
+								</div>
+							<?php endif; ?>
+
+							<div class="container ">
+								<div class="row">
+									<div class="col-md-8 offset-md-1">
+								
+										<h1 class="mb-2"><?php the_title(); ?></h1>
+										
+							<?php if(get_field('page_intro')): ?>
+											<p class="lead mb-4"><?php the_field('page_intro'); ?></p>
+										<?php endif; ?>
+										<a href="<?php the_permalink(); ?>" class="btn btn--outline">Read</a>
+
+									</div>
+								</div>
+							</div>
 
 
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-lg-6 col-md-8 text-center">
 
-      <h1>Neology</h1>
+							</section>
 
-    </div>
-  </div>
-</div>
+									
 
 
+							<?php	endwhile; ?>
 
-</section>
+			<?php endif; ?>
+
 
 <section
 

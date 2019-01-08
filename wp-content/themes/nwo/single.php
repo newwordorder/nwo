@@ -114,17 +114,81 @@ if( !empty($image) ):
 
 </section><!-- Wrapper end -->
 
-<section class="related-posts">
+<?php
+           // the query
+           $the_query = new WP_Query( array(
+             'category__in' => wp_get_post_categories( $post->ID ), 
+              'posts_per_page' => 3,
+              'post__not_in' => array( $post->ID ) 
+           ));
+        ?>
+
+			<?php if ( $the_query->have_posts() ) : ?>
+
+<section class="related-posts space--lg">
   <div class="container">
     <div class="row">
       <div class="col text-center">
-        <h2>Related posts</h2>
+        <h4>Related posts</h4>
       </div>
     </div>
+    <div class="row justify-content-center">
+    
+        <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+				<div class="col-sm-4">
+						
+
+							<article class="blog-tile">
+							<a href="<?php the_permalink(); ?>" class="blog-tile__link"></a>
+								<div class="blog-tile__thumb">
+									<?php
+									$workImage = get_field('background_image_background_image');
+
+									if( !empty($workImage) ):
+
+										// vars
+										$url = $workImage['url'];
+										$alt = $workImage['alt'];
+
+										$size = '600x400';
+										$thumb = $workImage['sizes'][ $size ];
+										$width = $workImage['sizes'][ $size . '-width' ];
+										$height = $workImage['sizes'][ $size . '-height' ];
+
+										?>
+										<div class="background-image-holder ">
+											<img class="rounded" src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
+										</div>
+									<?php endif; ?>
+								</div>
+								<div class="blog-tile__content">
+									<h5><?php the_title(); ?></h5>
+									<span class="blog-tile__category">
+									<?php 
+										foreach((get_the_category()) as $category){
+											echo $category->name;
+											}
+										?>
+									</span>	
+								</div>
+							</article>
+
+
+										</div>
+
+			<?php endwhile;
+
+          // reset post data
+          wp_reset_postdata();
+
+      ?>
   </div>
 
-
+</div>
 </section>
+
+
+    <?php endif; ?>
 
 <?php endwhile; // end of the loop. ?>
 
