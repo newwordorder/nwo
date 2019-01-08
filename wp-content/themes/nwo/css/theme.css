@@ -17497,6 +17497,131 @@ body {
       margin: auto;
       color: #9B5A97; }
 
+.carousel {
+  /* Content */
+  /* Images */
+  /*Slider styles */
+  /* Controls */
+  /* Images */ }
+  .carousel .contentContainer {
+    background-color: transparent; }
+  .carousel .imgContainer {
+    background: #ffffff; }
+  .carousel .container {
+    width: 100%;
+    min-height: 16rem;
+    margin: 0;
+    padding: 0;
+    position: relative; }
+  .carousel .container:hover .controlContainer {
+    opacity: 1; }
+  .carousel .img {
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+  .carousel .controlContainer {
+    width: 100%;
+    z-index: 4;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    top: 50%;
+    opacity: 0;
+    -webkit-transition: 300ms;
+    transition: 300ms; }
+  .carousel .button {
+    width: 48px;
+    height: 48px;
+    color: #fff;
+    position: relative;
+    cursor: pointer; }
+  .carousel .button svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 1rem;
+    height: 1rem; }
+  .carousel .imgContainer {
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background-color: transparent; }
+  .carousel .imgContainer img {
+    opacity: 0; }
+  .carousel .img {
+    -webkit-animation: animateOut;
+            animation: animateOut;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-duration: 600ms;
+            animation-duration: 600ms; }
+  .carousel .active {
+    opacity: 1;
+    -webkit-animation: animateIn;
+            animation: animateIn;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-duration: 600ms;
+            animation-duration: 600ms;
+    z-index: 2; }
+
+@-webkit-keyframes animateIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-25%, -50%);
+            transform: translate(-25%, -50%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); } }
+
+@keyframes animateIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-25%, -50%);
+            transform: translate(-25%, -50%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); } }
+
+@-webkit-keyframes animateOut {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(-75%, -50%);
+            transform: translate(-75%, -50%); } }
+
+@keyframes animateOut {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(-75%, -50%);
+            transform: translate(-75%, -50%); } }
+
 body {
   background: #2e3b42; }
 
