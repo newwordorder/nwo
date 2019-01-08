@@ -59,25 +59,16 @@ class="page-header page-header--home bg-effect--<?php echo $backgroundEffect ?> 
     </div>
   <?php endif; ?>
 <?php endif; ?>
-
+    <?php $slides = get_field('texts'); ?>
       <div class='slider'>
         <div class="slide__container">
-          <div class="slide slide--1">
-            <h2 class="slide__title">Title 1</h2>
-            <p class="slide__subtitle">Subtitle 1</p>
+        <?php while( have_rows('texts') ): the_row();
+          $text = get_sub_field('text');
+        ?>
+          <div class="slide">
+            <?php echo $text; ?>
           </div>
-          <div class="slide slide--2">
-            <h2 class="slide__title">Title 2</h2>
-            <p class="slide__subtitle">Subtitle 2</p>
-          </div>
-          <div class="slide slide--3">
-            <h2 class="slide__title">Title 3</h2>
-            <p class="slide__subtitle">Subtitle 3</p>
-          </div>
-          <div class="slide slide--4">
-            <h2 class="slide__title">Title 4</h2>
-            <p class="slide__subtitle">Subtitle 4</p>
-          </div>
+          <? endwhile; ?>
         </div>
       </div>
       <div class="ctrls">
@@ -177,19 +168,28 @@ class="page-header page-header--home bg-effect--<?php echo $backgroundEffect ?> 
 <script>
   var displacement = [
     '<?php bloginfo('template_directory'); ?>' + '/img/20.jpg',
-];
-var assets = [
-  '<?php bloginfo('template_directory'); ?>' + '/img/Asset2-80.jpg',
-  '<?php bloginfo('template_directory'); ?>' + '/img/Asset3-80.jpg',
-  '<?php bloginfo('template_directory'); ?>' + '/img/Asset4-80.jpg',
-  '<?php bloginfo('template_directory'); ?>' + '/img/Asset5-80.jpg',
+  ];
 
-]
-  console.log(displacement)
+  <?php $images = get_field('images'); 
+    $imageArray = array();
+  ?>
+    <?php while( have_rows('images') ): the_row();
+      $image = get_sub_field('image');
+      array_push($imageArray, $image['url']);
+    ?>
+    <?php  endwhile; ?>
+  var images = <?php echo json_encode($imageArray); ?>;
+  
+  var assets = [
+    '<?php bloginfo('template_directory'); ?>' + '/img/Asset2-80.jpg',
+    '<?php bloginfo('template_directory'); ?>' + '/img/Asset3-80.jpg',
+    '<?php bloginfo('template_directory'); ?>' + '/img/Asset4-80.jpg',
+    '<?php bloginfo('template_directory'); ?>' + '/img/Asset5-80.jpg',
+  ]
 var slide1 = new sliderEffect({
     parent: document.querySelector('.slider'),
     intensity: 0.2,
-    images: assets,
+    images: images,
     displacements: displacement,
     slides: document.querySelectorAll('.slide'),
     hover: false,
