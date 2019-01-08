@@ -16932,18 +16932,6 @@ hr.short {
   padding: 0;
   max-width: 200px; }
 
-@media screen and (max-width: 768px) {
-  .mobile-logo {
-    display: block; }
-  .desktop-logo,
-  .menu-logo {
-    display: none; }
-  .logo {
-    padding: 20px;
-    margin: 0;
-    color: #2e3b42;
-    max-width: 80px; } }
-
 .navicon {
   position: absolute;
   top: 50%;
@@ -17018,7 +17006,7 @@ hr.short {
   transition: 0.3s;
   position: absolute;
   left: 0;
-  content: '';
+  content: "";
   -webkit-transform-origin: 0.28571rem center;
   transform-origin: 0.28571rem center; }
 
@@ -17155,7 +17143,7 @@ hr.short {
   position: relative;
   z-index: 1; }
   .nav .nav__content .site-nav ul li a:before {
-    content: '';
+    content: "";
     position: absolute;
     z-index: -1;
     top: 55%;
@@ -17170,7 +17158,7 @@ hr.short {
   text-decoration: none;
   padding-left: 25px; }
   .nav .nav__content .site-nav ul li a:hover:before {
-    content: '';
+    content: "";
     position: absolute;
     z-index: -1;
     top: 55%;
@@ -17186,6 +17174,18 @@ hr.short {
     display: none; }
   .site-header:not(.open) .logo__desktop--black {
     display: block; }
+  .site-header:not(.open) .logo__mobile {
+    display: none; }
+  @media screen and (max-width: 769px) {
+    .site-header:not(.open) .logo {
+      padding: 20px;
+      max-width: 280px; }
+      .site-header:not(.open) .logo__desktop {
+        display: none; }
+      .site-header:not(.open) .logo__mobile--white {
+        display: none; }
+      .site-header:not(.open) .logo__mobile--black {
+        display: block; } }
 
 .site-header.open .logo {
   padding: 25px;
@@ -17194,6 +17194,18 @@ hr.short {
     display: block; }
   .site-header.open .logo__desktop--black {
     display: none; }
+  .site-header.open .logo__mobile {
+    display: none; }
+  @media screen and (max-width: 769px) {
+    .site-header.open .logo {
+      padding: 20px;
+      max-width: 280px; }
+      .site-header.open .logo__desktop {
+        display: none; }
+      .site-header.open .logo__mobile--white {
+        display: block; }
+      .site-header.open .logo__mobile--black {
+        display: none; } }
 
 @media screen and (max-width: 768px) {
   .social-nav {
