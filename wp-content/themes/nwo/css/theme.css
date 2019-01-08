@@ -16829,7 +16829,7 @@ hr.short {
     padding: 20px;
     margin: 0;
     color: #2e3b42;
-    max-width: 300px; } }
+    max-width: 80px; } }
 
 .navicon {
   position: absolute;
@@ -17328,6 +17328,10 @@ body {
     .slider {
       width: 100%;
       height: 60%; } }
+  @media screen and (max-width: 768px) {
+    .slider {
+      width: 100%;
+      height: 40%; } }
 
 .balloon-ctr {
   text-align: center; }
@@ -17424,15 +17428,28 @@ body {
               flex-direction: row;
       margin-top: -20px;
       height: auto; } }
+  @media screen and (max-width: 768px) {
+    .right-tile {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      height: 70%; } }
   .right-tile .tile {
     width: 100%;
     height: calc(50% - 40px); }
     @media screen and (max-width: 1200px) {
       .right-tile .tile {
         height: auto; } }
+    @media screen and (max-width: 768px) {
+      .right-tile .tile {
+        height: 40%; } }
     .right-tile .tile .project-thumb {
       margin: 0;
       height: 100%; }
+      @media screen and (max-width: 768px) {
+        .right-tile .tile .project-thumb {
+          padding: 0 !important; } }
     .right-tile .tile--1 {
       background-color: #555555; }
     .right-tile .tile--2 {
