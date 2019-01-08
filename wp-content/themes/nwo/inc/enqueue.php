@@ -18,7 +18,7 @@ if ( ! function_exists( 'understrap_scripts' ) ) {
 		wp_enqueue_script( 'TweenMax', get_template_directory_uri() . '/js/TweenMax.min.js', array(), true);
 		wp_enqueue_script( 'slider', get_template_directory_uri() . '/js/slider.js', array(), true);
 		wp_enqueue_script( 'fontawesome', get_template_directory_uri() . '/js/fontawesome-all.min.js', array(), true);
-		wp_enqueue_script( 'nearby', get_template_directory_uri() . '/js/nearby.js', array(), true);
+		wp_enqueue_script( 'carousel', get_template_directory_uri() . '/js/carousel.js', array(), true);
 
 		wp_enqueue_script( 'popper-scripts', get_template_directory_uri() . '/js/popper.min.js', array(), true);
 		wp_enqueue_script( 'understrap-scripts', get_template_directory_uri() . '/js/theme.min.js', array(), $the_theme->get( 'Version' ), true );

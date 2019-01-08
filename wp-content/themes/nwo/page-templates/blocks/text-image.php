@@ -47,7 +47,23 @@ $spaceBelow = get_sub_field('space_below');
             <?php endif; //end $media ?>
 
             <?php if( $media == 'gallery' ): ?>
-                
+            <div id="slider" class="carousel"></div>
+                <script>
+                <?php 
+                  $array = array();
+                  $gallery = get_sub_field('gallery');
+                  foreach ($gallery as &$value) {
+                      array_push($array, $value['url']);
+                  }
+
+                   ?>
+
+                const images = <?php echo json_encode($array); ?>;
+
+                const newSlider = slider({ images });
+                document.getElementById('slider').appendChild(newSlider);
+                sliderInit();
+                </script>
             <?php endif; //end $media ?>
 
             <?php if( $media == 'video' ): ?>

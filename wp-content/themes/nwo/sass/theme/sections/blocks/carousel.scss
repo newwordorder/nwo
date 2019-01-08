@@ -1,0 +1,120 @@
+.carousel{
+
+/* Content */
+
+.contentContainer {
+    background-color: transparent;
+  }
+  
+  /* Images */
+  
+  .imgContainer {
+    background: #ffffff;
+  }
+  
+  /*Slider styles */
+  
+  .container {
+    width: 100%;
+    min-height: 16rem;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  
+  .container:hover .controlContainer {
+    opacity: 1;
+  }
+  
+  .img {
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Controls */
+  
+  .controlContainer {
+    width: 100%;
+    z-index: 4;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    top: 50%;
+    opacity: 0;
+    transition: 300ms;
+  }
+  
+  .button {
+    width: 48px;
+    height: 48px;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .button svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  /* Images */
+  
+  .imgContainer {
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background-color: transparent;
+  }
+  
+  .imgContainer img {
+    opacity: 0;
+  }
+  
+  .img {
+    animation: animateOut;
+    animation-fill-mode: forwards;
+    animation-duration: 600ms;
+  }
+  
+  .active {
+    opacity: 1;
+    animation: animateIn;
+    animation-fill-mode: forwards;
+    animation-duration: 600ms;
+    z-index: 2;
+  }
+  
+  @keyframes animateIn {
+    0% {
+      opacity: 0;
+      transform: translate(-25%, -50%);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+  }
+  
+  @keyframes animateOut {
+    0% {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-75%, -50%);
+    }
+  }
+  
+}
