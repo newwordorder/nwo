@@ -80,3 +80,8 @@ require get_template_directory() . '/inc/acf-map.php';
  */
 require get_template_directory() . '/inc/loadmore.php';
 
+/**
+ * Featured post.
+ */
+require get_template_directory() . '/inc/feature-post.php';
+

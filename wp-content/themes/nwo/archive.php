@@ -10,44 +10,87 @@
 get_header();
 ?>
 
-<?php
-$container   = get_theme_mod( 'understrap_container_type' );
-?>
 
-<div class="wrapper" id="archive-wrapper">
+<section
 
-	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
+class="page-header page-header--blog"
+>
 
-		<div class="row">
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-6 col-md-8 text-center">
 
-			<!-- Do the left sidebar check -->
-			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
+			<?php
+						the_archive_title( '<h1>', '</h1>' );
+						the_archive_description( '<div class="taxonomy-description">', '</div>' );
+						?>
 
-			<main class="site-main" id="main">
+    </div>
+  </div>
+</div>
+
+
+
+</section>
+<div class="wrapper blog-feed" id="index-wrapper">
+
+
+	<div class="container" id="content" tabindex="-1">
+
+
+
 
 				<?php if ( have_posts() ) : ?>
 
-					<header class="page-header">
-						<?php
-						the_archive_title( '<h1 class="page-title">', '</h1>' );
-						the_archive_description( '<div class="taxonomy-description">', '</div>' );
-						?>
-					</header><!-- .page-header -->
-
 					<?php /* Start the Loop */ ?>
+
+					<div id="posts_row" class="row">
+
 					<?php while ( have_posts() ) : the_post(); ?>
+						<div class="col-sm-4">
+						
 
-						<?php
+							<article class="blog-tile">
+							<a href="<?php the_permalink(); ?>" class="blog-tile__link"></a>
+								<div class="blog-tile__thumb">
+									<?php
+									$workImage = get_field('background_image_background_image');
 
-						/*
-						 * Include the Post-Format-specific template for the content.
-						 * If you want to override this in a child theme, then include a file
-						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-						 */
-						get_template_part( 'loop-templates/content', get_post_format() );
-						?>
+									if( !empty($workImage) ):
+
+										// vars
+										$url = $workImage['url'];
+										$alt = $workImage['alt'];
+
+										$size = '600x400';
+										$thumb = $workImage['sizes'][ $size ];
+										$width = $workImage['sizes'][ $size . '-width' ];
+										$height = $workImage['sizes'][ $size . '-height' ];
+
+										?>
+										<div class="background-image-holder ">
+											<img class="rounded" src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
+										</div>
+									<?php endif; ?>
+								</div>
+								<div class="blog-tile__content">
+									<h5><?php the_title(); ?></h5>
+									<span class="blog-tile__category">
+									<?php 
+										foreach((get_the_category()) as $category){
+											echo $category->name;
+											}
+										?>
+									</span>	
+								</div>
+							</article>
+
+
+										</div>
 
 					<?php endwhile; ?>
+
+					</div>
 
 				<?php else : ?>
 
@@ -55,20 +98,22 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 				<?php endif; ?>
 
-			</main><!-- #main -->
+
+
 
 			<!-- The pagination component -->
-			<?php understrap_pagination(); ?>
-
-		</div><!-- #primary -->
-
-		<!-- Do the right sidebar check -->
-		<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>
-
-	</div> <!-- .row -->
-
+			<div class="row justify-content-center mt-4 p-4">
+			<?php global $wp_query; // you can remove this line if everything works for you
+			
+			// don't display the button if there are not enough posts
+			if (  $wp_query->max_num_pages > 1 )
+				echo '<div class="btn btn--outline loadmore m-auto">More posts</div>'; 
+			?>
+		
+</div>
 </div><!-- Container end -->
 
 </div><!-- Wrapper end -->
 
 <?php get_footer(); ?>
+

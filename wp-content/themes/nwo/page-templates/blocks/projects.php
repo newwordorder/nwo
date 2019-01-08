@@ -75,7 +75,6 @@ if( get_row_layout() == 'projects' ):
         <?php endif; ?>
       </div>
       <div class="project-thumb__title">
-        <h6><?php the_field('client'); ?></h6>
         <h4><?php the_title(); ?></h4>
         <p class="lead"><?php the_field('one_liner'); ?></span>
         </div>

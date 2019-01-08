@@ -16,28 +16,75 @@ get_header();
 $container   = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<section id="sub-header"
+	<?php
+								$args = array(
+											'posts_per_page' => 1,
+											'meta_key' => 'meta-checkbox',
+											'meta_value' => 'yes'
+									);
+									$featured = new WP_Query($args);
 
-class="page-header page-header--work bg--dark" >
+							if ($featured->have_posts()):?>
+
+							<?php while ($featured->have_posts() ) : $featured->the_post();
+							$backgroundImage = get_field('background_image');
+							$image = $backgroundImage['background_image'];
+							$imageOverlay = $backgroundImage['image_overlay'];
+							$backgroundEffect = $backgroundImage['background_effect'];
+							$invertColours = $backgroundImage['invert_colours'];
+							
+							?>
+
+							<section id="sub-header"
+
+							class="page-header--work bg-effect--<?php echo $backgroundEffect ?> imagebg <?php if( $invertColours == 'yes' ): echo 'image--light'; endif; ?>"
+							data-overlay="<?php echo $imageOverlay ?>"
+							>
+
+							<?php
+
+							if( !empty($image) ):
+
+								// vars
+								$url = $image['url'];
+								$alt = $image['alt'];
+
+								?>
+								<div class="background-image-holder">
+									<img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
+								</div>
+							<?php endif; ?>
+
+							<div class="container ">
+								<div class="row">
+									<div class="col-md-8 offset-md-1">
+								
+										<h1 class="mb-2"><?php the_title(); ?></h1>
+										
+							<?php if(get_field('page_intro')): ?>
+											<p class="lead mb-4"><?php the_field('page_intro'); ?></p>
+										<?php endif; ?>
+										<a href="<?php the_permalink(); ?>" class="btn btn--outline">Read</a>
+
+									</div>
+								</div>
+							</div>
 
 
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-lg-6 col-md-8 text-center">
 
-      <h1>Neology</h1>
+							</section>
 
-    </div>
-  </div>
-</div>
+									
 
 
+							<?php	endwhile; ?>
 
-</section>
+			<?php endif; ?>
+
 
 <section
 
-class="page-header page-header--work"
+class="page-header page-header--blog"
 >
 
 <div class="container">
@@ -96,8 +143,10 @@ class="page-header page-header--work"
 
 					<?php while ( have_posts() ) : the_post(); ?>
 						<div class="col-sm-4">
+						
 
-							<a href="<?php the_permalink(); ?>" class="blog-tile">
+							<article class="blog-tile">
+							<a href="<?php the_permalink(); ?>" class="blog-tile__link"></a>
 								<div class="blog-tile__thumb">
 									<?php
 									$workImage = get_field('background_image_background_image');
@@ -129,10 +178,10 @@ class="page-header page-header--work"
 										?>
 									</span>	
 								</div>
-							</a>
+							</article>
 
 
-					</div>
+										</div>
 
 					<?php endwhile; ?>
 
@@ -148,7 +197,7 @@ class="page-header page-header--work"
 
 
 			<!-- The pagination component -->
-			<div class="row justify-content-center">
+			<div class="row justify-content-center mt-4 p-4">
 			<?php global $wp_query; // you can remove this line if everything works for you
 			
 			// don't display the button if there are not enough posts
