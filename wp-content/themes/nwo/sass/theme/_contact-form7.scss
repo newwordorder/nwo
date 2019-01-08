@@ -38,12 +38,13 @@
   select,
   textarea {
     @extend .form-control;
+    border-radius: 0px;
   }
 
   // submit button, inherit .btn and .btn-primary classes.
   input[type="submit"] {
     @extend .btn;
-    @extend .btn-primary;
+    @extend .btn--solid;
   }
 
   .wpcf7-form {

@@ -3,6 +3,7 @@
 if( get_row_layout() == 'projects' ):
 
   $spaceBelow = get_sub_field('space_below');
+  $includeFilters = get_sub_field('include_filters');
   
   ?>
 
@@ -13,6 +14,8 @@ if( get_row_layout() == 'projects' ):
 ?>
 
 <div class="container work-tiles space-below--<?php echo $spaceBelow ?>">
+
+<?php if($includeFilters == 'true'): ?>
   <div class="row">
     <div class="col-12 justify-content-center text-center filters">
         <!-- Get a list of all categories in the database, excluding those not assigned to posts -->
@@ -36,6 +39,8 @@ if( get_row_layout() == 'projects' ):
           </fieldset>
       </div>
     </div>
+<?php endif; ?>
+
   <div class="row">
 
 <?php while ( have_rows('work_tiles') ) : the_row();?>
@@ -56,7 +61,7 @@ if( get_row_layout() == 'projects' ):
 
     <div class="mix<?php if ($class_names) { echo ' ' . $class_names;} ?> <?php echo $service_class_array; ?> <?php if( $tileSize == '66' ): echo 'col-md-8'; endif; ?><?php if( $tileSize == '33' ): echo 'col-md-4'; endif; ?><?php if( $tileSize == '50' ): echo 'col-md-6'; endif; ?><?php if( $tileSize == '100' ): echo 'col-md-12'; endif; ?>">
 
-  <div class="project-thumb  hover-element" data-aos="fade-up" data-aos-delay="300">
+  <div class="project-thumb  hover-element">
     <a href="<?php the_permalink(); ?>">
       <div class="hover-element__initial">
         <?php
