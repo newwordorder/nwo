@@ -17623,11 +17623,11 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    position: relative; }
+    position: relative;
+    max-width: 100%; }
   .carousel .container:hover .controlContainer {
     opacity: 1; }
   .carousel .img {
-    height: 100%;
     margin-bottom: 0; }
   .carousel .controlContainer {
     width: 100%;
@@ -17869,7 +17869,7 @@ section .bg-effect--ken-burns {
   .wpcf7 input[type="submit"] {
     background: #9B5A97;
     color: #fff; }
-    .btn--solid:hover, .wpcf7 input[type="submit"]:hover {
+    .btn--solid:hover, .wpcf7 input:hover[type="submit"] {
       background: #7b4778;
       color: #fff; }
   .btn--outline {
@@ -18315,11 +18315,16 @@ h6 > a {
 .people-gallery {
   padding: 0; }
 
+
+img {
+  margin-bottom: 0; }
+
 .imagebg {
   background-color: #2e3b42; }
 
 .image--light {
   background-color: #f8f9fa; }
+
 
 /*
 * Use existing Bootstrap 4 classes and
