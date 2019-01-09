@@ -88,10 +88,12 @@ if( get_row_layout() == 'projects' ):
         </div>
       </a>
     </div>
+    </div>
   <?php endforeach; ?>
   <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-<?php endif; ?>
-</div>
+
+  <?php endif; ?>
+
  
 
 <?php  endwhile;?>

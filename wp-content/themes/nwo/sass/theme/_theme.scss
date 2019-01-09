@@ -379,6 +379,7 @@ section {
 
   &__feature-image {
     margin: 0;
+    width: 100%;
   }
 
   &__content {
@@ -687,4 +688,12 @@ h6 > a {
 
 .people-gallery {
   padding: 0;
+}
+
+.imagebg {
+  background-color: $charcoal;
+}
+
+.image--light {
+  background-color: $light;
 }
