@@ -16,7 +16,6 @@
   
   .container {
     width: 100%;
-    min-height: 36rem;
     margin: 0;
     padding: 0;
     position: relative;
@@ -28,10 +27,7 @@
   
   .img {
     height: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-bottom:0;
   }
   
   /* Controls */
@@ -69,12 +65,14 @@
   /* Images */
   
   .imgContainer {
-    position: absolute;
+    position: relative;
     overflow: hidden;
     height: 100%;
     width: 100%;
     z-index: 2;
     background-color: transparent;
+    display:flex;
+    flex-direction:column;
   }
   
   .imgContainer img {
@@ -82,12 +80,14 @@
   }
   
   .img {
+      position:absolute;
     animation: animateOut;
     animation-fill-mode: forwards;
     animation-duration: 600ms;
   }
   
   .active {
+      position:relative;
     opacity: 1;
     animation: animateIn;
     animation-fill-mode: forwards;
@@ -98,22 +98,22 @@
   @keyframes animateIn {
     0% {
       opacity: 0;
-      transform: translate(-25%, -50%);
+      transform: translate(25%, 0%);
     }
     100% {
       opacity: 1;
-      transform: translate(-50%, -50%);
+      transform: translate(0%, 0%);
     }
   }
   
   @keyframes animateOut {
     0% {
       opacity: 1;
-      transform: translate(-50%, -50%);
+      transform: translate(0%, 0%);
     }
     100% {
       opacity: 0;
-      transform: translate(-75%, -50%);
+      transform: translate(-25%, 0%);
     }
   }
   
