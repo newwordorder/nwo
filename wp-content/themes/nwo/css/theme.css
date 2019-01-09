@@ -18022,7 +18022,8 @@ section .bg-effect--ken-burns {
   padding: 100px 0; }
 
 .project__feature-image {
-  margin: 0; }
+  margin: 0;
+  width: 100%; }
 
 .project__content {
   margin: 0; }
@@ -18309,6 +18310,12 @@ h6 > a {
 
 .people-gallery {
   padding: 0; }
+
+.imagebg {
+  background-color: #2e3b42; }
+
+.image--light {
+  background-color: #f8f9fa; }
 
 /*
 * Use existing Bootstrap 4 classes and

@@ -64,7 +64,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 							<?php if(get_field('page_intro')): ?>
 											<p class="lead mb-4"><?php the_field('page_intro'); ?></p>
 										<?php endif; ?>
-										<a href="<?php the_permalink(); ?>" class="btn btn--outline">Read</a>
+										<a href="<?php the_permalink(); ?>" class="btn btn--outline mt-4">Read</a>
 
 									</div>
 								</div>
