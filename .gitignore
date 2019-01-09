@@ -1,1 +1,4 @@
 **/node_modules
+**/uploads
+**/*.zip
+wp-content/themes/nwo.zip
