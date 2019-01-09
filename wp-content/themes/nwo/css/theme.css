@@ -17506,7 +17506,8 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    position: relative; }
+    position: relative;
+    max-width: 100%; }
   .carousel .container:hover .controlContainer {
     opacity: 1; }
   .carousel .img {
@@ -18195,6 +18196,9 @@ h6 > a {
 
 .people-gallery {
   padding: 0; }
+
+img {
+  margin-bottom: 0; }
 
 /*
 * Use existing Bootstrap 4 classes and

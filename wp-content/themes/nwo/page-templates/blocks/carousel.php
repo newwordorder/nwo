@@ -10,34 +10,25 @@ if( get_row_layout() == 'carousel' ):
 
 <?php if( $width == 'full' ): ?>
 
-  <?php
+  <div>
+  <div id="slider" class="carousel"></div>
+            <script>
+              <?php 
+                $array2 = array();
+                $gallery2 = get_sub_field('gallery');
+                foreach ($gallery2 as &$value) {
+                    array_push($array2, $value['url']);
+                }
 
-  if( !empty($image) ):
+                ?>
 
-    // vars
-    $url = $image['url'];
-    $alt = $image['alt'];
+              const images2 = <?php echo json_encode($array2); ?>;
 
-   ?>
-
-    <div id="slider" class="carousel"></div>
-      <script>
-        <?php 
-          $array1 = array();
-          $gallery1 = get_sub_field('gallery');
-          foreach ($gallery1 as &$value) {
-              array_push($array1, $value['url']);
-          }
-
-          ?>
-
-        const images1 = <?php echo json_encode($array1); ?>;
-
-        const newSlider1 = slider({ images:images1 });
-        document.getElementById('slider').appendChild(newSlider1);
-        sliderInit();
-        </script>
-      <?php endif; ?>
+              const newSlider2 = slider({ images:images2 });
+              document.getElementById('slider').appendChild(newSlider2);
+              sliderInit();
+            </script>
+            </div>
 
 <?php else: ?>
     <div class="container space-below--<?php echo $spaceBelow ?>">
