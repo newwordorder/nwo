@@ -9,6 +9,7 @@ $media = get_sub_field('media');
 $text = get_sub_field('text_block');
 
 $image = get_sub_field('image');
+$textMedia = get_sub_field('text');
 
 $videoEmbedCode = get_sub_field('video_embed_code');
 $videoCoverImage = get_sub_field('video_cover_image');
@@ -64,6 +65,12 @@ $spaceBelow = get_sub_field('space_below');
                 document.getElementById('slider').appendChild(newSlider);
                 sliderInit();
                 </script>
+            <?php endif; //end $media ?>
+
+            <?php if( $media == 'text' ): ?>
+
+                <?php echo $textMedia; ?>
+
             <?php endif; //end $media ?>
 
             <?php if( $media == 'video' ): ?>
