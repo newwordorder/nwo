@@ -63,12 +63,6 @@ data-overlay="<?php echo $imageOverlay ?>"
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-md-8">
-
-      <?php if ( $post->post_parent ) { ?>
-             <p><a class="back-to" href="<?php echo get_permalink( $post->post_parent ); ?>" >
-               <i class="fal fa-arrow-circle-left"></i> Back to <?php echo get_the_title( $post->post_parent ); ?>
-             </a></p>
-          <?php } ?>
       <h1><?php the_title(); ?></h1>
       <?php if(get_field('page_intro')): ?>
         <p class="lead"><?php the_field('page_intro'); ?></p>

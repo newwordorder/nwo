@@ -13,7 +13,7 @@ if( get_row_layout() == 'projects' ):
 
 ?>
 
-<div class="container work-tiles space-below--<?php echo $spaceBelow ?>">
+<div class="work-tiles space-below--<?php echo $spaceBelow ?>">
 
 <?php if($includeFilters == 'true'): ?>
   <div class="row">
@@ -41,7 +41,7 @@ if( get_row_layout() == 'projects' ):
     </div>
 <?php endif; ?>
 
-  <div class="row">
+  <div class="row no-gutters">
 
 <?php while ( have_rows('work_tiles') ) : the_row();?>
 
