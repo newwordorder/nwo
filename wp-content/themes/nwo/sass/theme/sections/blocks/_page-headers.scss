@@ -42,10 +42,6 @@
     padding: 250px 0 100px;
   }
 
-  @include media-breakpoint-down(sm) {
-    padding: 100px 0;
-  }
-
   .back-to {
     color: $white;
     text-transform: uppercase;

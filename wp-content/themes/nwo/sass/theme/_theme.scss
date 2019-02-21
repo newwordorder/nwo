@@ -172,23 +172,34 @@ section {
   text-decoration: none;
 
   &--solid {
-    background: $primary;
+    background: $dark;
     color: $white;
 
     &:hover {
-      background: darken($primary, 10%);
+      background: darken($dark, 10%);
       color: $white;
     }
   }
 
   &--outline {
     background: transparent;
-    color: $primary;
-    border: 2px solid $primary;
+    color: $dark;
+    border: 2px solid $dark;
 
     &:hover {
-      background: $primary;
+      background: $dark;
       color: $white;
+    }
+  }
+
+  &--outline-white {
+    background: transparent;
+    color: $white;
+    border: 2px solid $white;
+
+    &:hover {
+      background: $white;
+      color: $dark;
     }
   }
 
@@ -250,7 +261,7 @@ section {
 }
 
 .project-thumb {
-  margin: 0.5rem 0;
+  margin: 0;
   height: 450px;
 
   @include media-breakpoint-down(sm) {

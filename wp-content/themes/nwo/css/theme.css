@@ -8581,8 +8581,7 @@ section.height-auto .pos-vertical-center {
 
 /**! 05. Images **/
 img {
-  max-width: 100%;
-  margin-bottom: 1.85714286em; }
+  max-width: 100%; }
 
 /*p+img, img:last-child{
 	margin-bottom: 0;
@@ -16852,6 +16851,9 @@ h6,
   color: #2e3b42;
   font-family: "AvenirNextBold", sans-serif; }
 
+h1, .h1 {
+  font-size: 4rem; }
+
 .h6,
 h6 {
   font-size: 0.825em;
@@ -17334,9 +17336,6 @@ hr.short {
     padding: 100px 0; }
   .page-header--landing-page {
     padding: 250px 0 100px; }
-  @media (max-width: 767.98px) {
-    .page-header {
-      padding: 100px 0; } }
   .page-header .back-to {
     color: #fff;
     text-transform: uppercase;
@@ -17867,18 +17866,25 @@ section .bg-effect--ken-burns {
   text-decoration: none; }
   .btn--solid,
   .wpcf7 input[type="submit"] {
-    background: #9B5A97;
+    background: #343a40;
     color: #fff; }
     .btn--solid:hover, .wpcf7 input[type="submit"]:hover {
-      background: #7b4778;
+      background: #1d2124;
       color: #fff; }
   .btn--outline {
     background: transparent;
-    color: #9B5A97;
-    border: 2px solid #9B5A97; }
+    color: #343a40;
+    border: 2px solid #343a40; }
     .btn--outline:hover {
-      background: #9B5A97;
+      background: #343a40;
       color: #fff; }
+  .btn--outline-white {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff; }
+    .btn--outline-white:hover {
+      background: #fff;
+      color: #343a40; }
   .btn--link {
     background: transparent;
     color: #9B5A97; }
@@ -17915,7 +17921,7 @@ section .bg-effect--ken-burns {
       margin-top: 30px; } }
 
 .project-thumb {
-  margin: 0.5rem 0;
+  margin: 0;
   height: 450px; }
   @media (max-width: 767.98px) {
     .project-thumb {
@@ -18335,7 +18341,6 @@ h6 > a {
 * .wpcf7-submit
 */
 .wpcf7 {
-  max-width: 600px;
   margin: 0 auto !important; }
   .wpcf7 input[type="text"],
   .wpcf7 input[type="search"],
