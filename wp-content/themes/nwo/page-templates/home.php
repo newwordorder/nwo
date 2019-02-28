@@ -11,10 +11,57 @@ get_header();
 
 ?>
 
-<section id="sub-header"
+<section class="home-header">
 
-class="page-header--home p-0"
->
+  <!--<div class="home-header__left imagebg bg-effect--ken-burns">
+    <a class="home-header__link" href="#"></a>
+    <div class="background-image-holder home-header__image">
+      <img src="<?php bloginfo('template_directory'); ?>/img/strategy.jpg"/>
+    </div>
+    
+    <span class="home-header__title">Think</span>
+  </div>
+  <div class="home-header__right imagebg bg-effect--ken-burns">
+    <a class="home-header__link" href="#"></a>
+    <div class="background-image-holder home-header__image">
+      <img src="<?php bloginfo('template_directory'); ?>/img/do.jpg"/>
+    </div>
+
+    <span class="home-header__title">Do</span>
+  </div>-->
+  
+  <!--<div class="home-header__column left imagebg bg-effect--ken-burns">
+    <a class="home-header__link" href="#"></a>
+    <div class="background-image-holder home-header__image">
+      <img src="<?php bloginfo('template_directory'); ?>/img/strategy.jpg"/>
+    </div>
+    
+    <span class="home-header__title">Think</span>
+  </div>
+
+  <div class="home-header__column center imagebg bg-effect--ken-burns">
+    <a class="home-header__link" href="#"></a>
+    <div class="background-image-holder home-header__image">
+      <img src="<?php bloginfo('template_directory'); ?>/img/do.jpg"/>
+    </div>
+
+    <span class="home-header__title">Feel</span>
+  </div>
+
+  <div class="home-header__column right imagebg bg-effect--ken-burns">
+    <a class="home-header__link" href="#"></a>
+    <div class="background-image-holder home-header__image">
+      <img src="<?php bloginfo('template_directory'); ?>/img/do.jpg"/>
+    </div>
+
+    <span class="home-header__title">Do</span>
+  </div>-->
+
+
+</section>
+
+
+<section id="sub-header" class="page-header--home p-0">
 
 
     <?php $slides = get_field('texts'); ?>
@@ -42,27 +89,38 @@ class="page-header--home p-0"
         <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
 
         <?php setup_postdata($post); ?>
-            <div class="project-thumb  hover-element" >
+            <div class="project-thumb hover-element" >
               <a href="<?php the_permalink(); ?>">
                 <div class="hover-element__initial">
-                  <?php
-                  $workImage = get_field('background_image');
+                  <?php if(get_field('background_image_background_image')):
 
-                  if( !empty($workImage) ):
+                  $workImage2 = get_field('background_image_background_image');
+                    
+                  endif;
+                    if(get_field('feature_image')):
+                  $workImage2 =  get_field('feature_image');
+                  endif; 
 
-                    // vars
-                    $url = $workImage['background_image'];
-                    $alt = $workImage['alt'];
-                    ?>
+                  if( !empty($workImage2) ):
+
+                  // vars
+                  $url2 = $workImage2['url'];
+                  $alt2 = $workImage2['alt'];
+                  ?>
                     <div class="background-image-holder">
-                      <img src="<?php echo $url['url']; ?>" alt="<?php echo $alt; ?>"/>
+                      <img src="<?php echo $url2; ?>" alt="<?php echo $alt2; ?>"/>
                     </div>
                   <?php endif; ?>
                 </div>
                 <div class="project-thumb__title">
-                  <h6><?php the_field('client'); ?></h6>
+                  <?php if(get_field('client')): ?>
+                    <h6><?php the_field('client'); ?></h6>
+                  <?php endif; ?>
                   <h4><?php the_title(); ?></h4>
-                  <p class="lead"><?php the_field('one_liner'); ?></span>
+                  <?php if(get_field('one_liner')): ?>
+                    <p class="lead"><?php the_field('one_liner'); ?></p>
+                  <?php endif; ?>
+                  
                   </div>
                   <div class="hover-element__reveal" data-overlay="9">
 
@@ -84,25 +142,33 @@ class="page-header--home p-0"
           <div class="project-thumb  hover-element">
             <a href="<?php the_permalink(); ?>">
               <div class="hover-element__initial">
-                <?php
-                $workImage3 = get_field('feature_image');
+                  <?php if(get_field('background_image_background_image')):
+                    $workImage3 =  get_field('background_image_background_image');
+                  endif;
+                    if(get_field('feature_image')):
+                  $workImage3 =  get_field('feature_image');
+                  endif; 
 
-                if( !empty($workImage3) ):
+                  if( !empty($workImage3) ):
 
                   // vars
                   $url3 = $workImage3['url'];
                   $alt3 = $workImage3['alt'];
-
                   ?>
+                  
                   <div class="background-image-holder">
                     <img src="<?php echo $url3; ?>" alt="<?php echo $alt3; ?>"/>
                   </div>
                 <?php endif; ?>
               </div>
               <div class="project-thumb__title">
-                <h6><?php the_field('client'); ?></h6>
+                <?php if(get_field('client')): ?>
+                  <h6><?php the_field('client'); ?></h6>
+                <?php endif; ?>
                 <h4><?php the_title(); ?></h4>
-                <p class="lead"><?php the_field('one_liner'); ?></span>
+                <?php if(get_field('one_liner')): ?>
+                    <p class="lead"><?php the_field('one_liner'); ?></p>
+                  <?php endif; ?>
                 </div>
                 <div class="hover-element__reveal" data-overlay="9">
 
@@ -113,7 +179,7 @@ class="page-header--home p-0"
           <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
         <?php endif; ?>
       </div>
-      <div class="btn tile-btn"><a href="#">Contact</a></div>
+      
 
     </div>
 

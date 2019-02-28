@@ -1,0 +1,23 @@
+.project-thumb {
+  margin: 0;
+  height: 450px;
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 100% !important;
+  }
+
+  &__title {
+    padding: 2em;
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+
+    & * {
+      color: #fff;
+    }
+  }
+
+  &:hover .background-image-holder {
+    transform: scale(1.1);
+  }
+}

@@ -1,0 +1,124 @@
+.home-header {
+  display: flex;
+  padding: 0;
+  position: relative;
+
+  &__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__title {
+    font-size: 6rem;
+    font-family: $avenir-bold;
+  }
+
+  &__image {
+    opacity: 0 !important;
+  }
+
+  &__column {
+    width: 33.3333%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    transition: 300ms ease-in-out;
+    &:hover .home-header__image {
+      opacity: 0.5 !important;
+    }
+
+    & .home-header__title {
+      text-align: right;
+      position: absolute;
+      top: 15%;
+      left: 50%;
+      transform: translate(-100%, -50%) rotate(-90deg);
+      transform-origin: 100% 50%;
+    }
+
+    &.left {
+      background-color: $dark;
+      &:hover {
+        width: 50%;
+
+        & > .right,
+        .center {
+          width: 25%;
+        }
+      }
+    }
+    &.center {
+      background-color: $teal;
+      &:hover {
+        width: 50%;
+        & > .right,
+        .left {
+          width: 25%;
+        }
+      }
+    }
+    &.right {
+      background-color: $orange;
+      &:hover {
+        width: 50%;
+        & > .left,
+        .center {
+          width: 25%;
+        }
+      }
+    }
+  }
+
+  &__left,
+  &__right {
+    width: 50%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    transition: 300ms ease-in-out;
+  }
+
+  &__left {
+    background-color: $dark;
+    &:hover {
+      width: 60%;
+      & > .home-header__right {
+        width: 40%;
+      }
+      & .home-header__image {
+        opacity: 0.5 !important;
+      }
+    }
+
+    & .home-header__title {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 2rem;
+      color: $primary !important;
+    }
+  }
+  &__right {
+    background-color: $primary;
+    &:hover {
+      width: 60%;
+      & > .home-header__left {
+        width: 40%;
+      }
+      & .home-header__image {
+        opacity: 0.5 !important;
+      }
+    }
+
+    & .home-header__title {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 2rem;
+      color: $dark !important;
+    }
+  }
+}

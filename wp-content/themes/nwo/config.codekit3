@@ -739,6 +739,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/img\/do.jpg": {
+		"ft": 16384,
+		"iS": 4245766,
+		"oA": 0,
+		"oAP": "\/img\/do.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"\/img\/header-logo.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -798,6 +808,16 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/img\/strategy.jpg": {
+		"ft": 16384,
+		"iS": 3368706,
+		"oA": 0,
+		"oAP": "\/img\/strategy.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
 		},
 	"\/inc\/acf-map.php": {
 		"cB": 0,
@@ -2124,6 +2144,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/sass\/theme\/sections\/blocks\/_home-header.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/theme\/sections\/blocks\/_home-header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/sass\/theme\/sections\/blocks\/_homeslider.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2159,6 +2192,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/theme\/sections\/blocks\/_page-headers.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/theme\/sections\/blocks\/_projects.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/theme\/sections\/blocks\/_projects.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
