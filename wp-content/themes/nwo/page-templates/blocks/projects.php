@@ -80,8 +80,7 @@ if( get_row_layout() == 'projects' ):
         <?php endif; ?>
       </div>
       <div class="project-thumb__title">
-        <h4><?php the_title(); ?></h4>
-        <p class="lead"><?php the_field('one_liner'); ?></span>
+        <h4 class="mb-0"><?php the_title(); ?></h4>
         </div>
         <div class="hover-element__reveal" data-overlay="9">
 

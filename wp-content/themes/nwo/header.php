@@ -63,8 +63,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<a class="navicon">
 				<span class="lines"></span>
-				<span class="navicon-text navicon-text--menu">Menu</span>
-				<span class="navicon-text navicon-text--close">Close</span>
+				<!--<span class="navicon-text navicon-text--menu">Menu</span>
+				<span class="navicon-text navicon-text--close">Close</span>-->
 			</a>
 
 		</div>
