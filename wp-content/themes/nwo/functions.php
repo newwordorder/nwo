@@ -85,3 +85,10 @@ require get_template_directory() . '/inc/loadmore.php';
  */
 require get_template_directory() . '/inc/feature-post.php';
 
+/**
+ * Landing pages - remove landing_page from slug
+ */
+require get_template_directory() . '/inc/landing-pages.php';
+
+
+

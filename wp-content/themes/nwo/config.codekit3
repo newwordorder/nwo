@@ -889,6 +889,13 @@
 		"oAP": "\/inc\/jetpack.php",
 		"oF": 0
 		},
+	"\/inc\/landing-pages.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/inc\/landing-pages.php",
+		"oF": 0
+		},
 	"\/inc\/loadmore.php": {
 		"cB": 0,
 		"ft": 8192,
