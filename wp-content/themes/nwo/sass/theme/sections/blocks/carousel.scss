@@ -19,6 +19,7 @@
     margin: 0;
     padding: 0;
     position: relative;
+    max-width: 100%;
   }
   
   .container:hover .controlContainer {
@@ -26,7 +27,6 @@
   }
   
   .img {
-    height: 100%;
     margin-bottom:0;
   }
   
