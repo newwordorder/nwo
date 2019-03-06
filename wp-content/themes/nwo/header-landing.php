@@ -37,7 +37,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         </a>
     </div>
     <div class="col-6 text-right">
-      <a href="<?php echo get_home_url(); ?>" class="btn btn--outline">NWO home</a>
+      <a href="<?php echo get_home_url(); ?>" class="btn btn--outline-white">NWO home</a>
     </div>
   
   </div>

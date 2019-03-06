@@ -1,26 +1,12 @@
 .page-header {
   padding: 160px 0;
   position: relative;
-  &:after {
-    content: "";
-    height: 50px;
-    width: 1px;
-    background: $orange;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    z-index: 100;
-  }
 
   &--home {
     padding: 200px 0;
     height: 100vh;
     min-height: 400px;
     position: relative;
-
-    & .pos-vertical-center {
-      transform: translateY(-20%);
-    }
   }
 
   &--work {
@@ -42,10 +28,6 @@
     padding: 250px 0 100px;
   }
 
-  @include media-breakpoint-down(sm) {
-    padding: 100px 0;
-  }
-
   .back-to {
     color: $white;
     text-transform: uppercase;
@@ -64,24 +46,5 @@
     &:after {
       content: none;
     }
-  }
-}
-
-.page-content {
-  padding: 100px 0 0;
-  position: relative;
-
-  &:after {
-    content: "";
-    height: 50px;
-    width: 1px;
-    background: $charcoal;
-    position: absolute;
-    top: 0;
-    left: 50%;
-  }
-
-  &__people {
-    padding-bottom: 0;
   }
 }

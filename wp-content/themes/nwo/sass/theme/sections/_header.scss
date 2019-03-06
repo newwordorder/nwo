@@ -131,18 +131,31 @@
   }
 }
 
-.navicon .lines:before,
-.navicon .lines:after {
-  display: inline-block;
-  width: 100%;
-  height: 1px;
-  background: $charcoal;
-  transition: 0.3s;
-  position: absolute;
-  left: 0;
-  content: "";
-  -webkit-transform-origin: 0.28571rem center;
-  transform-origin: 0.28571rem center;
+.navicon {
+  & .lines {
+    top: 50%;
+    &:before,
+    &:after {
+      display: inline-block;
+      width: 70%;
+      height: 1px;
+      background: $charcoal;
+      transition: 0.3s;
+      position: absolute;
+      left: 0;
+      content: "";
+      -webkit-transform-origin: 0.28571rem center;
+      transform-origin: 0.28571rem center;
+    }
+  }
+  &:hover {
+    .lines {
+      &:before,
+      &:after {
+        width: 100%;
+      }
+    }
+  }
 }
 
 .navicon .lines:before {
@@ -163,6 +176,7 @@
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
   top: 0;
+  width: 100%;
 }
 
 .site-header.open .navicon .lines:before {
@@ -171,6 +185,7 @@
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
   top: 0;
+  width: 100%;
 }
 
 .nav {
