@@ -22,9 +22,9 @@ if( get_row_layout() == 'carousel' ):
 
                 ?>
 
-              const images2 = <?php echo json_encode($array2); ?>;
+              var images2 = <?php echo json_encode($array2); ?>;
 
-              const newSlider2 = slider({ images:images2 });
+              var newSlider2 = slider({ images:images2 });
               document.getElementById('slider').appendChild(newSlider2);
               sliderInit();
             </script>
@@ -37,7 +37,8 @@ if( get_row_layout() == 'carousel' ):
           <div id="slider" class="carousel"></div>
             <script>
               <?php 
-                $array2 = array();
+                $
+                $array = array();
                 $gallery2 = get_sub_field('gallery');
                 foreach ($gallery2 as &$value) {
                     array_push($array2, $value['url']);
@@ -45,9 +46,9 @@ if( get_row_layout() == 'carousel' ):
 
                 ?>
 
-              const images2 = <?php echo json_encode($array2); ?>;
+              var images2 = <?php echo json_encode($array2); ?>;
 
-              const newSlider2 = slider({ images:images2 });
+              var newSlider2 = slider({ images:images2 });
               document.getElementById('slider').appendChild(newSlider2);
               sliderInit();
             </script>
