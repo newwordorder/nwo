@@ -112,32 +112,22 @@ $fallbackImage = get_field('fallback_image');
             </div>
         </div>
     </div>
-
-
-
 </header>
 <main class="page-content">
     <section class="space--lg">
         <div class="container">
             <div class="row justify-content-between">
-
                 <div class="col-md-8">
-
                     <?php the_field('biography'); ?>
                 </div>
                 <div class="col-md-3">
-
                     <?php if (have_rows('questions')) : ?>
                     <?php while (have_rows('questions')) : the_row(); ?>
                     <h6><?php the_sub_field('question'); ?></h6>
                     <p><?php the_sub_field('answer'); ?></p>
                     <?php endwhile; ?>
                     <?php endif; ?>
-
-
                 </div>
-
-
             </div>
         </div>
     </section>
@@ -155,7 +145,6 @@ if ($images) : ?>
                 <div class="background-image-holder">
                     <img src="<?php echo $image['sizes']['600x600']; ?>" alt="<?php echo $image['alt']; ?>" />
                 </div>
-
             </div>
         </div>
         <?php endforeach; ?>
