@@ -69,7 +69,7 @@ data-overlay="<?php echo $imageOverlay ?>"
                <i class="fal fa-arrow-circle-left"></i> Back to <?php echo get_the_title( $post->post_parent ); ?>
              </a></p>
           <?php } ?>
-      <h1><?php the_title(); ?></h1>
+      <h1 class="page-title"><?php the_title(); ?></h1>
       <?php if(get_field('page_intro')): ?>
         <p class="lead"><?php the_field('page_intro'); ?></p>
       <?php endif; ?>
