@@ -28,7 +28,7 @@ $image = get_field('feature_image');
     <div class="col-md-8">
 
       <h6><?php the_field('client'); ?></h6>
-      <h1><?php the_title(); ?></h1>
+      <h1 class="page-title"><?php the_title(); ?></h1>
       <p class="lead"><?php the_field('one_liner'); ?></p>
 
     </div>

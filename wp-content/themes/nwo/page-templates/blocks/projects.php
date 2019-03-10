@@ -82,9 +82,7 @@ if( get_row_layout() == 'projects' ):
       <div class="project-thumb__title">
         <h4 class="mb-0"><?php the_title(); ?></h4>
         </div>
-        <div class="hover-element__reveal" data-overlay="9">
-
-        </div>
+        <div class="hover-element__reveal" data-overlay="9"></div>
       </a>
     </div>
     </div>
@@ -104,4 +102,10 @@ if( get_row_layout() == 'projects' ):
 
 
 <?php endif; ?>
+
+<script>
+    
+  var mixer = mixitup('.work-tiles');
+    
+</script>
 <?php endif; ?>

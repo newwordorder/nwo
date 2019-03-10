@@ -16851,7 +16851,7 @@ h6,
   color: #2e3b42;
   font-family: "AvenirNextBold", sans-serif; }
 
-h1, .h1 {
+.page-title {
   font-size: 4rem; }
 
 .h6,
@@ -16868,11 +16868,6 @@ p {
 
 .lead {
   color: #2e3b42; }
-
-.page-title {
-  font-size: 3.4em;
-  line-height: 1em;
-  margin-bottom: 0; }
 
 p:last-of-type {
   margin-bottom: 0; }
@@ -16951,7 +16946,6 @@ hr.short {
               transform: translateY(-50%);
       cursor: pointer;
       padding: 17px;
-      padding-bottom: 0;
       width: 60px;
       height: 40px;
       margin-top: 0; } }
@@ -17217,13 +17211,15 @@ hr.short {
     padding-left: 0; } }
 
 .navbar__landing-page {
-  position: absolute;
+  position: relative;
   width: 100%;
-  padding: 2rem 0;
-  z-index: 1020; }
+  padding: 1rem 0;
+  height: 80px;
+  z-index: 1020;
+  background-color: #fff; }
 
 .logo__landing-page {
-  width: 40px; }
+  width: 240px; }
 
 #footer {
   background: #2e3b42;
@@ -17329,7 +17325,7 @@ hr.short {
     background-color: #f8f9fa;
     padding: 100px 0; }
   .page-header--landing-page {
-    padding: 250px 0 100px; }
+    padding: 100px 0; }
   .page-header .back-to {
     color: #fff;
     text-transform: uppercase;

@@ -27,7 +27,7 @@ data-overlay="<?php echo $imageOverlay ?>"
   <div class="row justify-content-center">
     <div class="col-lg-6 col-md-8 text-center">
 
-      <h1 class=""><?php the_title(); ?></h1>
+      <h1 class="page-title"><?php the_title(); ?></h1>
       <p class="lead"><?php the_field('page_intro'); ?></p>
 
     </div>
@@ -40,11 +40,7 @@ data-overlay="<?php echo $imageOverlay ?>"
 
 <?php get_template_part( 'page-templates/blocks' ); ?>
 
-<script>
-    
-  var mixer = mixitup('.work-tiles');
-    
-</script>
+
 
     
 
