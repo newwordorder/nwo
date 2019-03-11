@@ -24,8 +24,7 @@
   /* Safari, Android, iOS */
 }
 
-$avenir-bold: "AvenirNextBold", sans-serif;
-$avenir-regular: "AvenirNextRegular", sans-serif;
+$adelle: adelle-sans, sans-serif;
 
 html {
   font-size: 1rem;
@@ -40,6 +39,7 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: adelle-sans, sans-serif;
 }
 
 h1,
@@ -56,7 +56,8 @@ h6,
 .h6 {
   margin-bottom: 1rem;
   color: $heading-color;
-  font-family: $avenir-bold;
+  font-family: $adelle;
+  font-weight: 700;
 }
 
 .page-title {
@@ -67,13 +68,13 @@ h6,
 h6 {
   font-size: 0.825em;
   letter-spacing: 0.1em;
-  font-family: $avenir-bold;
+  font-family: $adelle;
   text-transform: uppercase;
 }
 
 p {
   color: $body-color;
-  font-family: $avenir-regular;
+  font-family: $adelle;
   margin-bottom: 20px;
 }
 
@@ -87,7 +88,7 @@ p:last-of-type {
 
 ul,
 ol {
-  font-family: $avenir-regular;
+  font-family: $adelle;
 }
 
 hr {

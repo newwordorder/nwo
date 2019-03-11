@@ -5,7 +5,7 @@
 @import "sections/sections";
 
 body {
-  background: $charcoal;
+  background: $navy;
 }
 
 * {
@@ -40,7 +40,7 @@ section {
     }
 
     &--dark {
-      background-color: $charcoal;
+      background-color: $navy;
 
       * {
         color: #fff;
@@ -163,30 +163,31 @@ section {
 .btn {
   font-size: 0.825em;
   letter-spacing: 0.1em;
-  font-family: $avenir-bold;
+  font-family: $adelle;
   text-transform: uppercase;
   color: $primary;
   padding: 0.8em 1.6em;
   border-radius: 0;
   text-decoration: none;
+  font-weight: 700;
 
   &--solid {
-    background: $dark;
+    background: $navy;
     color: $white;
 
     &:hover {
-      background: darken($dark, 10%);
+      background: darken($navy, 10%);
       color: $white;
     }
   }
 
   &--outline {
     background: transparent;
-    color: $dark;
-    border: 2px solid $dark;
+    color: $navy;
+    border: 2px solid $navy;
 
     &:hover {
-      background: $dark;
+      background: $navy;
       color: $white;
     }
   }
@@ -198,7 +199,7 @@ section {
 
     &:hover {
       background: $white;
-      color: $dark;
+      color: $navy;
     }
   }
 
@@ -229,7 +230,7 @@ section {
   color: $primary;
   font-size: 0.825em;
   font-weight: 700;
-  font-family: $avenir-bold;
+  font-family: $adelle;
   text-transform: uppercase;
 
   &:hover {
@@ -490,7 +491,7 @@ h6 > a {
   margin: 10px;
   font-size: 0.825em;
   letter-spacing: 0.1em;
-  font-family: $avenir-bold;
+  font-family: $adelle;
   text-transform: uppercase;
 
   &::after {
@@ -585,8 +586,8 @@ h6 > a {
     -webkit-transition: 0.2s;
     transition: 0.2s;
     letter-spacing: 0.1em;
-    font-family: $avenir-bold;
-    color: $charcoal;
+    font-family: $adelle;
+    color: $navy;
     text-transform: uppercase;
   }
 }
@@ -604,7 +605,7 @@ h6 > a {
     color: $primary;
     font-size: 0.825em;
     font-weight: 700;
-    font-family: $avenir-bold;
+    font-family: $adelle;
     text-transform: uppercase;
     margin: 0 0.5rem;
 
@@ -680,7 +681,7 @@ img {
   margin-bottom: 0;
 }
 .imagebg {
-  background-color: $charcoal;
+  background-color: $navy;
 }
 
 .image--light {

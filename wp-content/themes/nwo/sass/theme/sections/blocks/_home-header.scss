@@ -13,7 +13,7 @@
 
   &__title {
     font-size: 6rem;
-    font-family: $avenir-bold;
+    font-family: $adelle;
   }
 
   &__image {
@@ -40,7 +40,7 @@
     }
 
     &.left {
-      background-color: $dark;
+      background-color: $navy;
       &:hover {
         width: 50%;
 
@@ -82,7 +82,7 @@
   }
 
   &__left {
-    background-color: $dark;
+    background-color: $navy;
     &:hover {
       width: 60%;
       & > .home-header__right {
@@ -118,7 +118,7 @@
       top: 50%;
       transform: translateY(-50%);
       left: 2rem;
-      color: $dark !important;
+      color: $navy !important;
     }
   }
 }
