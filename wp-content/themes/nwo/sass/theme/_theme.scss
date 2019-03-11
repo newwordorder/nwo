@@ -688,12 +688,31 @@ img {
   background-color: $light;
 }
 
-.homepage-splash {
+.homesplash {
   width: 75%;
   height: 100%;
   position: relative;
-  display: inline-block;
-  background-color: $dark;
+  display: inline-flex;
+  background-color: $heading-color;
+  transition: 300ms ease-in-out;
+
+  #logo--navy {
+    transition: 300ms;
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+
+  #logo--green {
+    transition: 300ms;
+
+    display: block;
+    &.hidden {
+      display: none;
+    }
+  }
+
   @media screen and (max-width: 1200px) {
     width: 100%;
     height: 60%;
@@ -701,5 +720,70 @@ img {
   @media screen and (max-width: 768px) {
     width: 100%;
     height: 40%;
+  }
+  &.brand--active {
+    background-color: $green;
+    .homesplash__text {
+      &--1 {
+        color: $heading-color;
+      }
+    }
+  }
+
+  &.campaign--active {
+    background-color: $primary;
+    .homesplash__text {
+      &--1 {
+        color: $heading-color;
+      }
+    }
+  }
+  &.change--active {
+    background-color: $secondary;
+    .homesplash__text {
+      &--1 {
+        color: $heading-color;
+      }
+    }
+  }
+
+  .container {
+    min-height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__text {
+    &--1 {
+      display: inline;
+      font-size: 5.625rem;
+      color: $success;
+      line-height: 0.75;
+      cursor: pointer;
+    }
+    &--2 {
+      font-size: 1.875rem;
+      color: $heading-color;
+      display: block;
+      opacity: 0;
+      transition: 300ms;
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
+
+  .homesplash__side {
+    transform: rotate(-90deg) translateX(60%) translateY(340%);
+    right: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    .homesplash__text--2 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
   }
 }

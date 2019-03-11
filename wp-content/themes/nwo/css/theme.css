@@ -17534,19 +17534,86 @@ img {
 .image--light {
   background-color: #f8f9fa; }
 
-.homepage-splash {
+.homesplash {
   width: 75%;
   height: 100%;
   position: relative;
-  display: inline-block; }
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: #283c64;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out; }
+  .homesplash #logo--navy {
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    display: none; }
+    .homesplash #logo--navy.active {
+      display: block; }
+  .homesplash #logo--green {
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    display: block; }
+    .homesplash #logo--green.hidden {
+      display: none; }
   @media screen and (max-width: 1200px) {
-    .homepage-splash {
+    .homesplash {
       width: 100%;
       height: 60%; } }
   @media screen and (max-width: 768px) {
-    .homepage-splash {
+    .homesplash {
       width: 100%;
       height: 40%; } }
+  .homesplash.brand--active {
+    background-color: #dcfa50; }
+    .homesplash.brand--active .homesplash__text--1 {
+      color: #283c64; }
+  .homesplash.campaign--active {
+    background-color: #82dcd2; }
+    .homesplash.campaign--active .homesplash__text--1 {
+      color: #283c64; }
+  .homesplash.change--active {
+    background-color: #ff3c58; }
+    .homesplash.change--active .homesplash__text--1 {
+      color: #283c64; }
+  .homesplash .container {
+    min-height: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .homesplash__text--1 {
+    display: inline;
+    font-size: 5.625rem;
+    color: #dcfa50;
+    line-height: 0.75;
+    cursor: pointer; }
+  .homesplash__text--2 {
+    font-size: 1.875rem;
+    color: #283c64;
+    display: block;
+    opacity: 0;
+    -webkit-transition: 300ms;
+    transition: 300ms; }
+    .homesplash__text--2.active {
+      opacity: 1; }
+  .homesplash .homesplash__side {
+    -webkit-transform: rotate(-90deg) translateX(60%) translateY(340%);
+            transform: rotate(-90deg) translateX(60%) translateY(340%);
+    right: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+    .homesplash .homesplash__side .homesplash__text--2 {
+      position: absolute;
+      width: 100%;
+      height: 100%; }
 
 /*
 * Use existing Bootstrap 4 classes and

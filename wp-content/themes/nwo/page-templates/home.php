@@ -60,12 +60,32 @@ get_header();
 
 <section id="sub-header" class="page-header--home p-0">
     <?php $slides = get_field('texts'); ?>
-    <div class="homepage-splash">
+    <div class="homesplash align-items-center" id="container">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-12">
                     <div class="logo">
-                        <img src="<?php bloginfo('template_directory'); ?>/img/logo-stacked.svg" />
+                        <img id="logo--green" src="<?php bloginfo('template_directory'); ?>/img/logo-stacked.svg" />
+                        <img id="logo--navy" src="<?php bloginfo('template_directory'); ?>/img/logo-stacked-navy.svg" />
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="homesplash__box">
+                        <div class="homesplash__text--1" id="brand">brand</div>
+                    </div>
+                    <div class="homesplash__box">
+                        <div class="homesplash__text--1" id="campaign">campaign</div>
+                    </div>
+                    <div class="homesplash__box">
+                        <div class="homesplash__text--1" id="change">change</div>
+                    </div>
+                    <div class="homesplash__side">
+                        <div class="homesplash__text--2" id="brand--text">execution and revolution</div>
+                        <div class="homesplash__text--2" id="campaign--text">to tell or storytell</div>
+                        <div class="homesplash__text--2" id="change--text">attitudes, behaviours and habits</div>
                     </div>
                 </div>
             </div>
@@ -155,8 +175,6 @@ get_header();
 
 <?php get_template_part('page-templates/blocks'); ?>
 
-<script>
-
-</script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/home.js"></script>
 
 <?php get_footer();
