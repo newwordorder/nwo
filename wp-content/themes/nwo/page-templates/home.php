@@ -13,7 +13,7 @@ get_header();
 
 <section class="home-header">
 
-  <!--<div class="home-header__left imagebg bg-effect--ken-burns">
+    <!--<div class="home-header__left imagebg bg-effect--ken-burns">
     <a class="home-header__link" href="#"></a>
     <div class="background-image-holder home-header__image">
       <img src="<?php bloginfo('template_directory'); ?>/img/strategy.jpg"/>
@@ -29,8 +29,8 @@ get_header();
 
     <span class="home-header__title">Do</span>
   </div>-->
-  
-  <!--<div class="home-header__column left imagebg bg-effect--ken-burns">
+
+    <!--<div class="home-header__column left imagebg bg-effect--ken-burns">
     <a class="home-header__link" href="#"></a>
     <div class="background-image-holder home-header__image">
       <img src="<?php bloginfo('template_directory'); ?>/img/strategy.jpg"/>
@@ -65,121 +65,123 @@ get_header();
 
 
     <?php $slides = get_field('texts'); ?>
-      <div class='slider'>
+    <div class='slider'>
         <div class="slide__container">
-        <?php while( have_rows('texts') ): the_row();
-          $text = get_sub_field('text');
-        ?>
-          <div class="slide">
-            <?php echo $text; ?>
-          </div>
-          <? endwhile; ?>
+            <?php while (have_rows('texts')) : the_row();
+              $text = get_sub_field('text');
+              ?>
+            <div class="slide">
+                <?php echo $text; ?>
+            </div>
+            <? endwhile; ?>
         </div>
-      </div>
-      <div class="ctrls">
+    </div>
+    <div class="ctrls">
         <div class="previous control"><i class="fal fa-long-arrow-left"></i></div>
         <div class="next control"><i class="fal fa-long-arrow-right"></i>
         </div>
-      </div>
-      <div class="line"></div>
+    </div>
+    <div class="line"></div>
     <div class="right-tile">
-      <div class="tile tile--1">
-      <?php $posts = get_field('featured_post'); if( $posts ): ?>
+        <div class="tile tile--1">
+            <?php $posts = get_field('featured_post');
+            if ($posts) : ?>
 
-        <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
+            <?php foreach ($posts as $post) : ?>
 
-        <?php setup_postdata($post); ?>
-            <div class="project-thumb hover-element" >
-              <a href="<?php the_permalink(); ?>">
-                <div class="hover-element__initial">
-                  <?php if(get_field('background_image_background_image')):
+            <?php setup_postdata($post); ?>
+            <div class="project-thumb hover-element">
+                <a href="<?php the_permalink(); ?>">
+                    <div class="hover-element__initial">
+                        <?php if (get_field('background_image_background_image')) :
 
-                  $workImage2 = get_field('background_image_background_image');
-                    
-                  endif;
-                    if(get_field('feature_image')):
-                  $workImage2 =  get_field('feature_image');
-                  endif; 
+                          $workImage2 = get_field('background_image_background_image');
 
-                  if( !empty($workImage2) ):
+                        endif;
+                        if (get_field('feature_image')) :
+                          $workImage2 =  get_field('feature_image');
+                        endif;
 
-                  // vars
-                  $url2 = $workImage2['url'];
-                  $alt2 = $workImage2['alt'];
-                  ?>
-                    <div class="background-image-holder">
-                      <img src="<?php echo $url2; ?>" alt="<?php echo $alt2; ?>"/>
+                        if (!empty($workImage2)) :
+
+                          // vars
+                          $url2 = $workImage2['url'];
+                          $alt2 = $workImage2['alt'];
+                          ?>
+                        <div class="background-image-holder">
+                            <img src="<?php echo $url2; ?>" alt="<?php echo $alt2; ?>" />
+                        </div>
+                        <?php endif; ?>
                     </div>
-                  <?php endif; ?>
-                </div>
-                <div class="project-thumb__title">
-                  <?php if(get_field('client')): ?>
-                    <h6><?php the_field('client'); ?></h6>
-                  <?php endif; ?>
-                  <h4><?php the_title(); ?></h4>
-                  <?php if(get_field('one_liner')): ?>
-                    <p class="lead"><?php the_field('one_liner'); ?></p>
-                  <?php endif; ?>
-                  
-                  </div>
-                  <div class="hover-element__reveal" data-overlay="9">
+                    <div class="project-thumb__title">
+                        <?php if (get_field('client')) : ?>
+                        <h6><?php the_field('client'); ?></h6>
+                        <?php endif; ?>
+                        <h4><?php the_title(); ?></h4>
+                        <?php if (get_field('one_liner')) : ?>
+                        <p class="lead"><?php the_field('one_liner'); ?></p>
+                        <?php endif; ?>
 
-                  </div>
+                    </div>
+                    <div class="hover-element__reveal" data-overlay="9">
+
+                    </div>
                 </a>
-                </div>
+            </div>
             <?php endforeach; ?>
-            <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-          <?php endif; ?>
-      </div>
-      <div class="tile tile--2">
-      <?php $posts = get_field('featured_project'); if( $posts ): ?>
+            <?php wp_reset_postdata(); ?>
+            <?php endif; ?>
+        </div>
+        <div class="tile tile--2">
+            <?php $posts = get_field('featured_project');
+            if ($posts) : ?>
 
-        <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
+            <?php foreach ($posts as $post) : ?>
 
-        <?php setup_postdata($post); ?>
+            <?php setup_postdata($post); ?>
 
 
-          <div class="project-thumb  hover-element">
-            <a href="<?php the_permalink(); ?>">
-              <div class="hover-element__initial">
-                  <?php if(get_field('background_image_background_image')):
-                    $workImage3 =  get_field('background_image_background_image');
-                  endif;
-                    if(get_field('feature_image')):
-                  $workImage3 =  get_field('feature_image');
-                  endif; 
+            <div class="project-thumb  hover-element">
+                <a href="<?php the_permalink(); ?>">
+                    <div class="hover-element__initial">
+                        <?php if (get_field('background_image_background_image')) :
+                          $workImage3 =  get_field('background_image_background_image');
+                        endif;
+                        if (get_field('feature_image')) :
+                          $workImage3 =  get_field('feature_image');
+                        endif;
 
-                  if( !empty($workImage3) ):
+                        if (!empty($workImage3)) :
 
-                  // vars
-                  $url3 = $workImage3['url'];
-                  $alt3 = $workImage3['alt'];
-                  ?>
-                  
-                  <div class="background-image-holder">
-                    <img src="<?php echo $url3; ?>" alt="<?php echo $alt3; ?>"/>
-                  </div>
-                <?php endif; ?>
-              </div>
-              <div class="project-thumb__title">
-                <?php if(get_field('client')): ?>
-                  <h6><?php the_field('client'); ?></h6>
-                <?php endif; ?>
-                <h4><?php the_title(); ?></h4>
-                <?php if(get_field('one_liner')): ?>
-                    <p class="lead"><?php the_field('one_liner'); ?></p>
-                  <?php endif; ?>
-                </div>
-                <div class="hover-element__reveal" data-overlay="9">
+                          // vars
+                          $url3 = $workImage3['url'];
+                          $alt3 = $workImage3['alt'];
+                          ?>
 
-                </div>
-              </a>
-              </div>
-          <?php endforeach; ?>
-          <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-        <?php endif; ?>
-      </div>
-      
+                        <div class="background-image-holder">
+                            <img src="<?php echo $url3; ?>" alt="<?php echo $alt3; ?>" />
+                        </div>
+                        <?php endif; ?>
+                    </div>
+                    <div class="project-thumb__title">
+                        <?php if (get_field('client')) : ?>
+                        <h6><?php the_field('client'); ?></h6>
+                        <?php endif; ?>
+                        <h4><?php the_title(); ?></h4>
+                        <?php if (get_field('one_liner')) : ?>
+                        <p class="lead"><?php the_field('one_liner'); ?></p>
+                        <?php endif; ?>
+                    </div>
+                    <div class="hover-element__reveal" data-overlay="9">
+
+                    </div>
+                </a>
+            </div>
+            <?php endforeach; ?>
+            <?php wp_reset_postdata(); ?>
+            <?php endif; ?>
+        </div>
+
 
     </div>
 
@@ -187,41 +189,10 @@ get_header();
 
 </section>
 
-<?php get_template_part( 'page-templates/blocks' ); ?>
+<?php get_template_part('page-templates/blocks'); ?>
 
 <script>
-  var displacement = [
-    '<?php bloginfo('template_directory'); ?>' + '/img/20.jpg',
-  ];
 
-  <?php $images = get_field('images'); 
-    $imageArray = array();
-  ?>
-    <?php while( have_rows('images') ): the_row();
-      $image = get_sub_field('image');
-      array_push($imageArray, $image['url']);
-    ?>
-    <?php  endwhile; ?>
-  var images = <?php echo json_encode($imageArray); ?>;
-  
-  var assets = [
-    '<?php bloginfo('template_directory'); ?>' + '/img/Asset2-80.jpg',
-    '<?php bloginfo('template_directory'); ?>' + '/img/Asset3-80.jpg',
-    '<?php bloginfo('template_directory'); ?>' + '/img/Asset4-80.jpg',
-    '<?php bloginfo('template_directory'); ?>' + '/img/Asset5-80.jpg',
-  ]
-var slide1 = new sliderEffect({
-    parent: document.querySelector('.slider'),
-    intensity: 0.2,
-    images: images,
-    displacements: displacement,
-    slides: document.querySelectorAll('.slide'),
-    hover: false,
-    line: document.querySelector('.line')
-});
-
-document.querySelector('.next').addEventListener('click', slide1.next);
-document.querySelector('.previous').addEventListener('click', slide1.previous);
 </script>
 
 <?php get_footer();
