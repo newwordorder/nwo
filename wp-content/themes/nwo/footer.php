@@ -9,27 +9,27 @@
 
 ?>
 <footer id="footer">
-		<div class="container text-center">
+    <div class="container text-center">
 
-				<div class="row justify-content-center">
+        <div class="row justify-content-center">
 
-						<div class="col-sm-8">
-								<h1>Brand. Campaign. Change.</h1>
-						</div>
-				</div>
+            <div class="col-sm-8">
+                <h1>Brand. Campaign. Change.</h1>
+            </div>
+        </div>
 
-				<div class="row">
-						<div class="col-sm-12">
-								<p>© Copyright New Word Order | <a href="#">Privacy Policy</a></p>
-						</div>
-						<div class="col-sm-3">
+        <div class="row">
+            <div class="col-sm-12">
+                <p>© Copyright New Word Order | <a href="#">Privacy Policy</a></p>
+            </div>
+            <div class="col-sm-3">
 
-						</div>
-						<div class="col-sm-3">
+            </div>
+            <div class="col-sm-3">
 
-						</div>
+            </div>
 
-				</div>
+        </div>
 
 </footer>
 
@@ -57,15 +57,11 @@
 
 
 <script>
-
-	AOS.init({
-		duration: 1000, // values from 0 to 3000, with step 50ms
-	});
-
-
-
+    AOS.init({
+        duration: 1000, // values from 0 to 3000, with step 50ms
+    });
 </script>
 
 </body>
 
-</html>
+</html> 
