@@ -93,13 +93,10 @@ get_header();
             <div class="project-thumb hover-element">
                 <a href="<?php the_permalink(); ?>">
                     <div class="hover-element__initial">
-                        <?php if (get_field('background_image_background_image')) :
+                        <?php if (get_field('tile_image')) :
 
-                          $workImage2 = get_field('background_image_background_image');
+                          $workImage2 = get_field('tile_image');
 
-                        endif;
-                        if (get_field('feature_image')) :
-                          $workImage2 =  get_field('feature_image');
                         endif;
 
                         if (!empty($workImage2)) :
@@ -111,21 +108,6 @@ get_header();
                         <div class="background-image-holder">
                             <img src="<?php echo $url2; ?>" alt="<?php echo $alt2; ?>" />
                         </div>
-                        <?php endif; ?>
-                    </div>
-                    <div class="project-thumb__title">
-                        <?php if (get_field('client')) : ?>
-                        <h6><?php the_field('client'); ?></h6>
-                        <?php endif; ?>
-                        <h4><?php the_title(); ?></h4>
-                        <?php if (get_field('one_liner')) : ?>
-                        <p class="lead"><?php the_field('one_liner'); ?></p>
-                        <?php endif; ?>
-
-                    </div>
-                    <div class="hover-element__reveal" data-overlay="9">
-
-                    </div>
                 </a>
             </div>
             <?php endforeach; ?>
@@ -144,11 +126,8 @@ get_header();
             <div class="project-thumb  hover-element">
                 <a href="<?php the_permalink(); ?>">
                     <div class="hover-element__initial">
-                        <?php if (get_field('background_image_background_image')) :
-                          $workImage3 =  get_field('background_image_background_image');
-                        endif;
-                        if (get_field('feature_image')) :
-                          $workImage3 =  get_field('feature_image');
+                        <?php if (get_field('tile_image')) :
+                          $workImage3 =  get_field('tile_image');
                         endif;
 
                         if (!empty($workImage3)) :
