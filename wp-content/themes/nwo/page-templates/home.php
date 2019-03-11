@@ -92,14 +92,11 @@ get_header();
             <div class="project-thumb hover-element" >
               <a href="<?php the_permalink(); ?>">
                 <div class="hover-element__initial">
-                  <?php if(get_field('background_image_background_image')):
+                  <?php if(get_field('tile_image')):
 
-                  $workImage2 = get_field('background_image_background_image');
+                  $workImage2 = get_field('tile_image');
                     
                   endif;
-                    if(get_field('feature_image')):
-                  $workImage2 =  get_field('feature_image');
-                  endif; 
 
                   if( !empty($workImage2) ):
 
@@ -142,12 +139,9 @@ get_header();
           <div class="project-thumb  hover-element">
             <a href="<?php the_permalink(); ?>">
               <div class="hover-element__initial">
-                  <?php if(get_field('background_image_background_image')):
-                    $workImage3 =  get_field('background_image_background_image');
+                  <?php if(get_field('tile_image')):
+                    $workImage3 =  get_field('tile_image');
                   endif;
-                    if(get_field('feature_image')):
-                  $workImage3 =  get_field('feature_image');
-                  endif; 
 
                   if( !empty($workImage3) ):
 

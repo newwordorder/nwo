@@ -65,7 +65,7 @@ if( get_row_layout() == 'projects' ):
     <a href="<?php the_permalink(); ?>">
       <div class="hover-element__initial">
         <?php
-        $workImage = get_field('feature_image');
+        $workImage = get_field('tile_image');
 
         if( !empty($workImage) ):
 
