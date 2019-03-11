@@ -5,102 +5,85 @@
 *
 * @package understrap
 */
-
 get_header();
-
-
 ?>
+<!--
+  <section class="home-header">
 
-<section class="home-header">
-
-    <!--<div class="home-header__left imagebg bg-effect--ken-burns">
-    <a class="home-header__link" href="#"></a>
-    <div class="background-image-holder home-header__image">
-      <img src="<?php bloginfo('template_directory'); ?>/img/strategy.jpg"/>
+      <!--<div class="home-header__left imagebg bg-effect--ken-burns">
+      <a class="home-header__link" href="#"></a>
+      <div class="background-image-holder home-header__image">
+        <img src="<?php bloginfo('template_directory'); ?>/img/strategy.jpg"/>
+      </div>
+      
+      <span class="home-header__title">Think</span>
     </div>
-    
-    <span class="home-header__title">Think</span>
-  </div>
-  <div class="home-header__right imagebg bg-effect--ken-burns">
-    <a class="home-header__link" href="#"></a>
-    <div class="background-image-holder home-header__image">
-      <img src="<?php bloginfo('template_directory'); ?>/img/do.jpg"/>
-    </div>
+    <div class="home-header__right imagebg bg-effect--ken-burns">
+      <a class="home-header__link" href="#"></a>
+      <div class="background-image-holder home-header__image">
+        <img src="<?php bloginfo('template_directory'); ?>/img/do.jpg"/>
+      </div>
 
-    <span class="home-header__title">Do</span>
-  </div>-->
+      <span class="home-header__title">Do</span>
+    </div>-->
 
-    <!--<div class="home-header__column left imagebg bg-effect--ken-burns">
-    <a class="home-header__link" href="#"></a>
-    <div class="background-image-holder home-header__image">
-      <img src="<?php bloginfo('template_directory'); ?>/img/strategy.jpg"/>
-    </div>
-    
-    <span class="home-header__title">Think</span>
-  </div>
-
-  <div class="home-header__column center imagebg bg-effect--ken-burns">
-    <a class="home-header__link" href="#"></a>
-    <div class="background-image-holder home-header__image">
-      <img src="<?php bloginfo('template_directory'); ?>/img/do.jpg"/>
+<!--<div class="home-header__column left imagebg bg-effect--ken-burns">
+      <a class="home-header__link" href="#"></a>
+      <div class="background-image-holder home-header__image">
+        <img src="<?php bloginfo('template_directory'); ?>/img/strategy.jpg"/>
+      </div>
+      
+      <span class="home-header__title">Think</span>
     </div>
 
-    <span class="home-header__title">Feel</span>
-  </div>
+    <div class="home-header__column center imagebg bg-effect--ken-burns">
+      <a class="home-header__link" href="#"></a>
+      <div class="background-image-holder home-header__image">
+        <img src="<?php bloginfo('template_directory'); ?>/img/do.jpg"/>
+      </div>
 
-  <div class="home-header__column right imagebg bg-effect--ken-burns">
-    <a class="home-header__link" href="#"></a>
-    <div class="background-image-holder home-header__image">
-      <img src="<?php bloginfo('template_directory'); ?>/img/do.jpg"/>
+      <span class="home-header__title">Feel</span>
     </div>
 
-    <span class="home-header__title">Do</span>
-  </div>-->
+    <div class="home-header__column right imagebg bg-effect--ken-burns">
+      <a class="home-header__link" href="#"></a>
+      <div class="background-image-holder home-header__image">
+        <img src="<?php bloginfo('template_directory'); ?>/img/do.jpg"/>
+      </div>
+
+      <span class="home-header__title">Do</span>
+    </div>
 
 
-</section>
-
+  </section> 
+-->
 
 <section id="sub-header" class="page-header--home p-0">
-
-
     <?php $slides = get_field('texts'); ?>
-    <div class='slider'>
-        <div class="slide__container">
-            <?php while (have_rows('texts')) : the_row();
-              $text = get_sub_field('text');
-              ?>
-            <div class="slide">
-                <?php echo $text; ?>
+    <div class="homepage-splash">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="logo">
+                        <img src="<?php bloginfo('template_directory'); ?>/img/logo-stacked.svg" />
+                    </div>
+                </div>
             </div>
-            <? endwhile; ?>
         </div>
     </div>
-    <div class="ctrls">
-        <div class="previous control"><i class="fal fa-long-arrow-left"></i></div>
-        <div class="next control"><i class="fal fa-long-arrow-right"></i>
-        </div>
-    </div>
-    <div class="line"></div>
     <div class="right-tile">
         <div class="tile tile--1">
             <?php $posts = get_field('featured_post');
             if ($posts) : ?>
-
             <?php foreach ($posts as $post) : ?>
-
             <?php setup_postdata($post); ?>
             <div class="project-thumb hover-element">
                 <a href="<?php the_permalink(); ?>">
                     <div class="hover-element__initial">
                         <?php if (get_field('tile_image')) :
-
                           $workImage2 = get_field('tile_image');
-
                         endif;
-
                         if (!empty($workImage2)) :
-
                           // vars
                           $url2 = $workImage2['url'];
                           $alt2 = $workImage2['alt'];
@@ -108,6 +91,8 @@ get_header();
                         <div class="background-image-holder">
                             <img src="<?php echo $url2; ?>" alt="<?php echo $alt2; ?>" />
                         </div>
+                        <?php endif; ?>
+                    </div>
                 </a>
             </div>
             <?php endforeach; ?>
