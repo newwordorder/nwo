@@ -33,11 +33,11 @@ $container = get_theme_mod( 'understrap_container_type' );
     <div class="row align-items-center">
       <div class="col-6">
         <a href="<?php echo get_home_url(); ?>" id="site-logo" class="header__logo">
-          <img class="logo__landing-page" src="<?php bloginfo('template_directory'); ?>/img/logo--white.svg" alt="New Word Order">
+          <img class="logo__landing-page" src="<?php bloginfo('template_directory'); ?>/img/nwo-horizontal.svg" alt="New Word Order">
         </a>
     </div>
     <div class="col-6 text-right">
-      <a href="<?php echo get_home_url(); ?>" class="btn btn--outline-white">NWO home</a>
+      <a href="<?php echo get_home_url(); ?>" class="btn btn--outline">NWO home</a>
     </div>
   
   </div>

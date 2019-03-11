@@ -12,14 +12,14 @@ $backgroundImage = get_field('background_image');
 $image = get_field('feature_image');
 ?>
 <header id="sub-header" class="project__header">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <h6><?php the_field('client'); ?></h6>
-                <h1><?php the_title(); ?></h1>
-                <p class="lead"><?php the_field('one_liner'); ?></p>
-            </div>
-        </div>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+
+      <h6><?php the_field('client'); ?></h6>
+      <h1 class="page-title"><?php the_title(); ?></h1>
+      <p class="lead"><?php the_field('one_liner'); ?></p>
+
     </div>
 </header>
 <?php if (!empty($image)) :

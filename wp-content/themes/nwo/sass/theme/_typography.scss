@@ -59,8 +59,7 @@ h6,
   font-family: $avenir-bold;
 }
 
-h1,
-.h1 {
+.page-title {
   font-size: 4rem;
 }
 
@@ -80,12 +79,6 @@ p {
 
 .lead {
   color: $heading-color;
-}
-
-.page-title {
-  font-size: 3.4em;
-  line-height: 1em;
-  margin-bottom: 0;
 }
 
 p:last-of-type {

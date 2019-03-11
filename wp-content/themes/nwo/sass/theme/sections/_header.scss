@@ -66,7 +66,6 @@
     transform: translateY(-50%);
     cursor: pointer;
     padding: 17px;
-    padding-bottom: 0;
     width: 60px;
     height: 40px;
     margin-top: 0;
@@ -428,12 +427,14 @@
 }
 
 .navbar__landing-page {
-  position: absolute;
+  position: relative;
   width: 100%;
-  padding: 2rem 0;
+  padding: 1rem 0;
+  height: 80px;
   z-index: 1020;
+  background-color: #fff;
 }
 
 .logo__landing-page {
-  width: 40px;
+  width: 240px;
 }
