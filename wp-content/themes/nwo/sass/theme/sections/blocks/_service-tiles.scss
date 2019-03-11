@@ -1,6 +1,4 @@
 .service-tile {
-
-  
   margin: 0.5rem 0;
   display: flex;
   align-items: stretch;
@@ -34,10 +32,11 @@
     transition: 0.2s;
     font-size: 0.825em;
     letter-spacing: 0.1em;
-    font-family: $avenir-bold;
+    font-family: $adelle;
     text-transform: uppercase;
     color: $primary;
     border-radius: 0;
+    font-weight: 700;
 
     & svg {
       font-size: 1.25em;
@@ -56,5 +55,4 @@
       }
     }
   }
-
 }
