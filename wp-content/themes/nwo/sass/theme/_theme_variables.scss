@@ -22,6 +22,7 @@ $warning: $yellow !default;
 $danger: $red !default;
 
 $heading-color: $navy !default;
+$body-color: desaturate($navy, 20%) !default;
 
 // Links
 //

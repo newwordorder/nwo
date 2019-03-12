@@ -61,7 +61,7 @@ get_header();
 <section id="sub-header" class="page-header--home p-0">
     <?php $slides = get_field('texts'); ?>
     <div class="homesplash align-items-center" id="container">
-        <div class="container">
+        <div class="home_container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="logo">
@@ -120,6 +120,12 @@ get_header();
                             <img src="<?php echo $url2; ?>" alt="<?php echo $alt2; ?>" />
                         </div>
                         <?php endif; ?>
+                    </div>
+                    <div class="project-thumb__title">
+                        <h4><?php the_title(); ?></h4>
+                    </div>
+                    <div class="hover-element__reveal" data-overlay="9">
+
                     </div>
                 </a>
             </div>

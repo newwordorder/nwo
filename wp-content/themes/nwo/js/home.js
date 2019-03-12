@@ -8,6 +8,12 @@ const line1 = document.getElementById("line--1");
 const line2 = document.getElementById("line--2");
 const line3 = document.getElementById("line--3");
 
+const height = () => {
+  const fontHeight = document.querySelector(".homesplash__text--1");
+  const compStyles = window.getComputedStyle(fontHeight);
+  return compStyles.getPropertyValue("font-size");
+};
+
 const delay = time =>
   new Promise(resolve => {
     setTimeout(resolve, time);
@@ -44,7 +50,7 @@ const addListener = ({ element, method, target, enter }) => {
 
 const lineSetup = () => {
   TweenMax.to(horizontalLine, 0.3, {
-    width: "6.875rem"
+    width: height()
   });
 };
 
@@ -65,40 +71,48 @@ const lineHover = attribute => {
   if (attribute === "brand") {
     TweenMax.to(line1, 0.3, {
       top: "0rem",
-      height: "6.875rem"
+      height: height()
     });
   } else if (attribute === "campaign") {
+    let b = height();
+    console.log(b);
     TweenMax.to(line1, 0.3, {
-      top: "6.875rem",
-      height: "6.875rem"
+      top: `${b}`,
+      height: height()
     });
   } else if (attribute === "change") {
+    let c = height();
+    console.log(parseInt(c.replace(/px/, "")) * 2 + "px");
+    let d = parseInt(c.replace(/px/, "")) * 2 + "px";
     TweenMax.to(line1, 0.3, {
-      top: "13.75rem",
-      height: "6.875rem"
+      top: `${d}`,
+      height: height()
     });
   }
 };
 
 const lineEnd = attribute => {
   if (attribute === "brand") {
+    let a = height() * 1;
     TweenMax.to(line1, 0.3, {
       height: "0px",
-      top: "6.875rem",
+      top: `${a}`,
       onComplete: reset,
       onCompleteParams: [attribute]
     });
   } else if (attribute === "campaign") {
+    let a = height() * 2;
     TweenMax.to(line1, 0.3, {
       height: "0px",
-      top: "13.75rem",
+      top: `${a}`,
       onComplete: reset,
       onCompleteParams: [attribute]
     });
   } else if (attribute === "change") {
+    let a = height() * 3;
     TweenMax.to(line1, 0.3, {
       height: "0px",
-      top: "20.625rem",
+      top: `${a}`,
       onComplete: reset,
       onCompleteParams: [attribute]
     });
@@ -106,43 +120,45 @@ const lineEnd = attribute => {
 };
 
 const Run = () => {
-  addListener({
-    element: brandTrigger,
-    method: hoverState,
-    target: "brand",
-    enter: true
-  });
-  addListener({
-    element: brandTrigger,
-    method: endHover,
-    target: "brand",
-    enter: false
-  });
-  addListener({
-    element: campaignTrigger,
-    method: hoverState,
-    target: "campaign",
-    enter: true
-  });
-  addListener({
-    element: campaignTrigger,
-    method: endHover,
-    target: "campaign",
-    enter: false
-  });
-  addListener({
-    element: changeTrigger,
-    method: hoverState,
-    target: "change",
-    enter: true
-  });
-  addListener({
-    element: changeTrigger,
-    method: endHover,
-    target: "change",
-    enter: false
-  });
-  lineSetup();
+  if (window.innerWidth >= 768) {
+    addListener({
+      element: brandTrigger,
+      method: hoverState,
+      target: "brand",
+      enter: true
+    });
+    addListener({
+      element: brandTrigger,
+      method: endHover,
+      target: "brand",
+      enter: false
+    });
+    addListener({
+      element: campaignTrigger,
+      method: hoverState,
+      target: "campaign",
+      enter: true
+    });
+    addListener({
+      element: campaignTrigger,
+      method: endHover,
+      target: "campaign",
+      enter: false
+    });
+    addListener({
+      element: changeTrigger,
+      method: hoverState,
+      target: "change",
+      enter: true
+    });
+    addListener({
+      element: changeTrigger,
+      method: endHover,
+      target: "change",
+      enter: false
+    });
+    lineSetup();
+  }
 };
 
 Run();
