@@ -1,21 +1,24 @@
-const container = document.getElementById("container");
-const logo = document.getElementById("logo");
-const brandTrigger = document.getElementById("brand");
-const campaignTrigger = document.getElementById("campaign");
-const changeTrigger = document.getElementById("change");
-const horizontalLine = document.getElementById("line--horizontal");
-const line1 = document.getElementById("line--1");
-const line2 = document.getElementById("line--2");
-const line3 = document.getElementById("line--3");
+"use strict";
 
-const delay = time =>
-  new Promise(resolve => {
+var container = document.getElementById("container");
+var logo = document.getElementById("logo");
+var brandTrigger = document.getElementById("brand");
+var campaignTrigger = document.getElementById("campaign");
+var changeTrigger = document.getElementById("change");
+var horizontalLine = document.getElementById("line--horizontal");
+var line1 = document.getElementById("line--1");
+var line2 = document.getElementById("line--2");
+var line3 = document.getElementById("line--3");
+
+var delay = function delay(time) {
+  return new Promise(function(resolve) {
     setTimeout(resolve, time);
   });
+};
 
-const hoverState = attribute => {
-  container.classList.add(`${attribute}--active`);
-  document.getElementById(`${attribute}--text`).classList.add("active");
+var hoverState = function hoverState(attribute) {
+  container.classList.add(attribute + "--active");
+  document.getElementById(attribute + "--text").classList.add("active");
   document.getElementById("logo--green").classList.add("hidden");
   document.getElementById("logo--navy").classList.add("active");
 
@@ -23,45 +26,50 @@ const hoverState = attribute => {
   lineHide();
 };
 
-const endHover = attribute => {
-  container.classList.remove(`${attribute}--active`);
-  document.getElementById(`${attribute}--text`).classList.remove("active");
+var endHover = function endHover(attribute) {
+  container.classList.remove(attribute + "--active");
+  document.getElementById(attribute + "--text").classList.remove("active");
   document.getElementById("logo--green").classList.remove("hidden");
   document.getElementById("logo--navy").classList.remove("active");
   lineSetup();
   lineEnd(attribute);
 };
 
-const addListener = ({ element, method, target, enter }) => {
+var addListener = function addListener(_ref) {
+  var element = _ref.element,
+    method = _ref.method,
+    target = _ref.target,
+    enter = _ref.enter;
+
   return enter
-    ? element.addEventListener("mouseenter", () => {
+    ? element.addEventListener("mouseenter", function() {
         method(target);
       })
-    : element.addEventListener("mouseleave", () => {
+    : element.addEventListener("mouseleave", function() {
         method(target);
       });
 };
 
-const lineSetup = () => {
+var lineSetup = function lineSetup() {
   TweenMax.to(horizontalLine, 0.3, {
     width: "6.875rem"
   });
 };
 
-const lineHide = () => {
+var lineHide = function lineHide() {
   TweenMax.to(horizontalLine, 0.3, {
     width: "0rem"
   });
 };
 
-const reset = attribute => {
+var reset = function reset(attribute) {
   TweenMax.set(line1, {
     height: "0px",
     top: "0px"
   });
 };
 
-const lineHover = attribute => {
+var lineHover = function lineHover(attribute) {
   if (attribute === "brand") {
     TweenMax.to(line1, 0.3, {
       top: "0rem",
@@ -80,7 +88,7 @@ const lineHover = attribute => {
   }
 };
 
-const lineEnd = attribute => {
+var lineEnd = function lineEnd(attribute) {
   if (attribute === "brand") {
     TweenMax.to(line1, 0.3, {
       height: "0px",
@@ -105,7 +113,7 @@ const lineEnd = attribute => {
   }
 };
 
-const Run = () => {
+var Run = function Run() {
   addListener({
     element: brandTrigger,
     method: hoverState,

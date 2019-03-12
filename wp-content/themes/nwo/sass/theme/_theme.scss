@@ -757,9 +757,10 @@ img {
   &__text {
     &--1 {
       display: inline;
-      font-size: 5.625rem;
+      position: relative;
+      font-size: 6.875rem;
       color: $success;
-      line-height: 0.75;
+      line-height: 1;
       cursor: pointer;
     }
     &--2 {
@@ -775,7 +776,7 @@ img {
   }
 
   .homesplash__side {
-    transform: rotate(-90deg) translateX(60%) translateY(340%);
+    transform: rotate(-90deg) translateX(60%) translateY(300%);
     right: 0;
     position: absolute;
     width: 100%;
@@ -786,4 +787,40 @@ img {
       height: 100%;
     }
   }
+}
+
+#line--horizontal {
+  background-color: rgb(220, 250, 80);
+  height: 8px;
+  transform: matrix(1, 0, 0, 1, 15, -15);
+  position: absolute;
+}
+
+#line {
+  position: absolute;
+  width: 8px;
+  left: 0%;
+  height: calc(6.875rem * 3);
+}
+
+#line--1 {
+  width: 8px;
+  height: 0px;
+  background-color: $navy;
+  position: absolute;
+  top: 0%;
+}
+#line--2 {
+  width: 8px;
+  height: 0px;
+  background-color: $navy;
+  position: absolute;
+  top: 6.875rem;
+}
+#line--3 {
+  width: 8px;
+  height: 0px;
+  background-color: $navy;
+  position: absolute;
+  top: calc(6.875rem * 2);
 }

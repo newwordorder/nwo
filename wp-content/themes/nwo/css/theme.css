@@ -17590,9 +17590,10 @@ img {
             justify-content: space-between; }
   .homesplash__text--1 {
     display: inline;
-    font-size: 5.625rem;
+    position: relative;
+    font-size: 6.875rem;
     color: #dcfa50;
-    line-height: 0.75;
+    line-height: 1;
     cursor: pointer; }
   .homesplash__text--2 {
     font-size: 1.875rem;
@@ -17604,8 +17605,8 @@ img {
     .homesplash__text--2.active {
       opacity: 1; }
   .homesplash .homesplash__side {
-    -webkit-transform: rotate(-90deg) translateX(60%) translateY(340%);
-            transform: rotate(-90deg) translateX(60%) translateY(340%);
+    -webkit-transform: rotate(-90deg) translateX(60%) translateY(300%);
+            transform: rotate(-90deg) translateX(60%) translateY(300%);
     right: 0;
     position: absolute;
     width: 100%;
@@ -17614,6 +17615,40 @@ img {
       position: absolute;
       width: 100%;
       height: 100%; }
+
+#line--horizontal {
+  background-color: #dcfa50;
+  height: 8px;
+  -webkit-transform: matrix(1, 0, 0, 1, 15, -15);
+          transform: matrix(1, 0, 0, 1, 15, -15);
+  position: absolute; }
+
+#line {
+  position: absolute;
+  width: 8px;
+  left: 0%;
+  height: calc(6.875rem * 3); }
+
+#line--1 {
+  width: 8px;
+  height: 0px;
+  background-color: #283c64;
+  position: absolute;
+  top: 0%; }
+
+#line--2 {
+  width: 8px;
+  height: 0px;
+  background-color: #283c64;
+  position: absolute;
+  top: 6.875rem; }
+
+#line--3 {
+  width: 8px;
+  height: 0px;
+  background-color: #283c64;
+  position: absolute;
+  top: calc(6.875rem * 2); }
 
 /*
 * Use existing Bootstrap 4 classes and

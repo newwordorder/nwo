@@ -72,7 +72,14 @@ get_header();
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">
+                <div id="line--horizontal"></div>
+                <div id="line">
+                    <span id="line--1"></span>
+                    <span id="line--2"></span>
+                    <span id="line--3"></span>
+                </div>
+
+                <div class="col-md-12 ">
                     <div class="homesplash__box">
                         <div class="homesplash__text--1" id="brand">brand</div>
                     </div>
@@ -89,6 +96,7 @@ get_header();
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
     <div class="right-tile">
@@ -175,6 +183,6 @@ get_header();
 
 <?php get_template_part('page-templates/blocks'); ?>
 
-<script src="<?php echo get_template_directory_uri(); ?>/js/home.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/home-transpiled.js"></script>
 
 <?php get_footer();
