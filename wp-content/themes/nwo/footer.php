@@ -47,9 +47,6 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/flickity.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/fontawesome-all.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/parallax.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/typed.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/smooth-scroll.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/ytplayer.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/aos.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/map.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/scripts.js"></script>
