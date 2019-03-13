@@ -1,6 +1,6 @@
-<?php // IMAGE BLOCK
+<?php  // IMAGE BLOCK
 
-if( get_row_layout() == 'image' ):
+if (get_row_layout() == 'image') :
 
   $image = get_sub_field('image');
   $width = get_sub_field('width');
@@ -8,46 +8,47 @@ if( get_row_layout() == 'image' ):
 
   ?>
 
-<?php if( $width == 'full' ): ?>
+<?php if ($width == 'full') : ?>
 
-  <?php
+<?php
 
-  if( !empty($image) ):
+if (!empty($image)) :
 
-    // vars
-    $url = $image['url'];
-    $alt = $image['alt'];
+  // vars
+  $url = $image['url'];
+  $alt = $image['alt'];
 
-   ?>
+  ?>
+<div class="img-box">
+    <img class="" src="<?php echo $url; ?>" alt="<?php echo $alt; ?>" />
+</div>
+<?php endif; ?>
 
-  <img class="" src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
-  <?php endif; ?>
-
-<?php else: ?>
+<?php else : ?>
 
 
 <div class="container space-below--<?php echo $spaceBelow ?>">
-  <div class="row justify-content-center">
-    <div class="col-md-<?php echo $width; ?>">
+    <div class="row justify-content-center">
+        <div class="col-md-<?php echo $width; ?>">
 
-      <?php
+            <?php
 
-      if( !empty($image) ):
+            if (!empty($image)) :
 
-        // vars
-        $url = $image['url'];
-        $alt = $image['alt'];
+              // vars
+              $url = $image['url'];
+              $alt = $image['alt'];
 
-       ?>
-      <img class="" src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
-      <?php endif; ?>
+              ?>
+            <img class="" src="<?php echo $url; ?>" alt="<?php echo $alt; ?>" />
+            <?php endif; ?>
 
+        </div>
     </div>
-  </div>
 </div>
 
-<?php endif; // type ?>
+<?php endif; ?>
 
 <?php endif;
 
-?>
+?> 
