@@ -20,7 +20,7 @@
 
         <div class="row">
             <div class="col-sm-12">
-                <p>© Copyright New Word Order | <a href="#">Privacy Policy</a></p>
+                <p>© Copyright New Word Order | <a href="<?php echo get_home_url(); ?>/privacy-policy">Privacy Policy</a></p>
             </div>
             <div class="col-sm-3">
 
