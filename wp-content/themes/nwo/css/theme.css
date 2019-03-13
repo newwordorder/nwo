@@ -15989,7 +15989,8 @@ h6,
   font-weight: 700; }
 
 .page-title {
-  font-size: 4rem; }
+  font-size: 4rem;
+  font-weight: 400; }
 
 .h6,
 h6 {
@@ -17309,17 +17310,17 @@ h3 > a,
 h4 > a,
 h5 > a,
 h6 > a {
-  display: inline-block;
+  display: inline;
   text-decoration: none;
   position: relative;
   color: #82dcd2; }
-  p > a::after,
-  h1 > a::after,
-  h2 > a::after,
-  h3 > a::after,
-  h4 > a::after,
-  h5 > a::after,
-  h6 > a::after {
+  p > a::before,
+  h1 > a::before,
+  h2 > a::before,
+  h3 > a::before,
+  h4 > a::before,
+  h5 > a::before,
+  h6 > a::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -17343,13 +17344,13 @@ h6 > a {
   h5 > a:hover,
   h6 > a:hover {
     color: #5ad1c4; }
-  p > a:hover::after,
-  h1 > a:hover::after,
-  h2 > a:hover::after,
-  h3 > a:hover::after,
-  h4 > a:hover::after,
-  h5 > a:hover::after,
-  h6 > a:hover::after {
+  p > a:hover::before,
+  h1 > a:hover::before,
+  h2 > a:hover::before,
+  h3 > a:hover::before,
+  h4 > a:hover::before,
+  h5 > a:hover::before,
+  h6 > a:hover::before {
     -webkit-transform: scaleX(1);
             transform: scaleX(1);
     -webkit-transform-origin: bottom left;
@@ -17523,8 +17524,15 @@ h6 > a {
     left: 0;
     bottom: 0;
     right: 0; }
+  .people-tile .imagebg {
+    background-color: transparent; }
+  .people-tile .people-img-2 {
+    z-index: 2;
+    opacity: 0 !important; }
   .people-tile:hover {
     background: #fff; }
+    .people-tile:hover .people-img-2 {
+      opacity: 1 !important; }
 
 .people-gallery {
   padding: 0; }
@@ -17611,8 +17619,7 @@ img {
     position: relative;
     font-size: 6.875rem;
     color: #dcfa50;
-    line-height: 1;
-    cursor: pointer; }
+    line-height: 1; }
     @media screen and (max-width: 1200px) {
       .homesplash__text--1 {
         font-size: 4rem; } }
@@ -17630,7 +17637,7 @@ img {
             transform: rotate(-90deg);
     -webkit-transform-origin: top left;
             transform-origin: top left;
-    right: calc(-100% + 5rem);
+    right: calc(-100% + 3.125rem);
     position: absolute;
     width: 100%;
     height: 100%; }
@@ -17672,6 +17679,19 @@ img {
   background-color: #283c64;
   position: absolute;
   top: calc(6.875rem * 2); }
+
+.img-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 /*
 * Use existing Bootstrap 4 classes and
