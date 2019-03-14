@@ -15986,16 +15986,21 @@ h6,
   margin-bottom: 1rem;
   color: #283c64;
   font-family: adelle-sans, sans-serif;
-  font-weight: 700; }
+  font-weight: 300; }
 
 .page-title {
   font-size: 4rem;
-  font-weight: 400; }
+  font-weight: 300; }
+
+.h4,
+h4 {
+  font-size: 2.25rem; }
 
 .h6,
 h6 {
-  font-size: 0.825em;
-  letter-spacing: 0.1em;
+  font-size: 1.375em;
+  letter-spacing: 0em;
+  font-weight: 700;
   font-family: adelle-sans, sans-serif;
   text-transform: uppercase; }
 
@@ -17618,6 +17623,7 @@ img {
     display: inline;
     position: relative;
     font-size: 6.875rem;
+    font-weight: 300;
     color: #dcfa50;
     line-height: 1; }
     @media screen and (max-width: 1200px) {
@@ -17692,6 +17698,20 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+
+.work-tiles .hidden-tile {
+  opacity: 0;
+  -webkit-transition: 300ms;
+  transition: 300ms; }
+
+.project-client {
+  color: #82dcd2; }
+
+.project-hr {
+  background-color: #82dcd2;
+  width: 5.875rem;
+  height: 8px;
+  border: none; }
 
 /*
 * Use existing Bootstrap 4 classes and
