@@ -785,6 +785,7 @@ img {
       display: inline;
       position: relative;
       font-size: 6.875rem;
+      font-weight: 300;
       color: $success;
       line-height: 1;
       @media screen and (max-width: 1200px) {
@@ -859,4 +860,22 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.work-tiles {
+  .hidden-tile {
+    opacity: 0;
+    transition: 300ms;
+  }
+}
+
+.project-client {
+  color: $primary;
+}
+
+.project-hr {
+  background-color: $primary;
+  width: 5.875rem;
+  height: 8px;
+  border: none;
 }

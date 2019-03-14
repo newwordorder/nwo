@@ -2,16 +2,13 @@
 
 if (get_row_layout() == 'projects') :
 
-  $spaceBelow = get_sub_field('space_below');
-  $includeFilters = get_sub_field('include_filters');
+    $spaceBelow = get_sub_field('space_below');
+    $includeFilters = get_sub_field('include_filters');
 
-  ?>
+    ?>
 
 <?php if (have_rows('work_tiles')) :
-
-
-
-  ?>
+    ?>
 
 <div class="work-tiles space-below--<?php echo $spaceBelow ?>">
 
@@ -22,9 +19,9 @@ if (get_row_layout() == 'projects') :
 
             <?php
             $categories = get_terms(array(
-              'posttype' => 'projects',
-              'taxonomy' => 'category',
-              'hide_empty' => true,
+                'posttype' => 'projects',
+                'taxonomy' => 'category',
+                'hide_empty' => true,
             ));
             ?>
             <fieldset data-filter-group>
@@ -61,14 +58,19 @@ if (get_row_layout() == 'projects') :
 
 
 
-        <div class="mix<?php if ($class_names) {
-                          echo ' ' . $class_names;
-                        } ?> <?php echo $service_class_array; ?> <?php if ($tileSize == '66') : echo 'col-md-8';
-                                                                                                                  endif; ?><?php if ($tileSize == '33') : echo 'col-md-4';
-                                                                                                                                                                            endif; ?><?php if ($tileSize == '50') : echo 'col-md-6';
-                                                                                                                                                                                                                                    endif; ?><?php if ($tileSize == '100') : echo 'col-md-12';
-                                                                                                                                                                                                                                                                                              endif; ?>">
-
+        <div class="mix
+        <?php if ($class_names) {
+            echo ' ' . $class_names;
+        } ?>
+        <?php echo $service_class_array; ?>
+        <?php if ($tileSize == '66') : echo 'col-md-8';
+        endif; ?>
+        <?php if ($tileSize == '33') : echo 'col-md-4';
+        endif; ?>
+        <?php if ($tileSize == '50') : echo 'col-md-6';
+        endif; ?>
+        <?php if ($tileSize == '100') : echo 'col-md-12';
+        endif; ?>">
             <div class="project-thumb  hover-element">
                 <a href="<?php the_permalink(); ?>">
                     <div class="hover-element__initial">
@@ -77,11 +79,11 @@ if (get_row_layout() == 'projects') :
 
                         if (!empty($workImage)) :
 
-                          // vars
-                          $url = $workImage['url'];
-                          $alt = $workImage['alt'];
+                            // vars
+                            $url = $workImage['url'];
+                            $alt = $workImage['alt'];
 
-                          ?>
+                            ?>
                         <div class="background-image-holder">
                             <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>" />
                         </div>
@@ -111,10 +113,13 @@ if (get_row_layout() == 'projects') :
 
 <?php else : ?>
 
-
 <?php endif; ?>
 
 <script>
-    var mixer = mixitup('.work-tiles');
+    var mixer = mixitup('.work-tiles', {
+        animation: {
+            enable: false
+        }
+    });
 </script>
 <?php endif; ?> 
