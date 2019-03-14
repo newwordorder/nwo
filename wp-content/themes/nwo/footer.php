@@ -10,6 +10,12 @@
 ?>
 <footer id="footer">
     <div class="container text-center">
+        <div class="row justify-content-center">
+
+            <div class="col-sm-8 text-center">
+                <img class="logo logo__footer" src="<?php bloginfo('template_directory'); ?>/img/logo-stacked--white.svg" alt="New Word Order">
+            </div>
+        </div>
 
         <div class="row justify-content-center">
 

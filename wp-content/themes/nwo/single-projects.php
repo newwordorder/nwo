@@ -31,9 +31,9 @@ $image = get_field('feature_image');
 <main class="project__content">
     <?php get_template_part('page-templates/blocks'); ?>
     <section class="pb-0">
-        <div class="row d-flex align-items-center pb-3">
-            <div class="col-md-12">
-                <h6 style="text-align:center">More work</h6>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <a href="<?php echo get_home_url(); ?>/our-work" class="btn btn--solid">More work</a>
             </div>
         </div>
         <div class="row">

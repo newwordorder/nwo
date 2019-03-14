@@ -122,7 +122,10 @@ get_header();
                         <?php endif; ?>
                     </div>
                     <div class="project-thumb__title">
-                        <h4><?php the_title(); ?></h4>
+                        <?php if (get_field('client')) : ?>
+                          <h6><?php the_field('client'); ?></h6>
+                        <?php endif; ?>
+                        <h3><?php the_title(); ?></h3>
                     </div>
                     <div class="hover-element__reveal" data-overlay="9">
 
@@ -163,12 +166,10 @@ get_header();
                     </div>
                     <div class="project-thumb__title">
                         <?php if (get_field('client')) : ?>
-                        <h6><?php the_field('client'); ?></h6>
+                          <h6><?php the_field('client'); ?></h6>
                         <?php endif; ?>
-                        <h4><?php the_title(); ?></h4>
-                        <?php if (get_field('one_liner')) : ?>
-                        <p class="lead"><?php the_field('one_liner'); ?></p>
-                        <?php endif; ?>
+                        <h3><?php the_title(); ?></h3>
+                        
                     </div>
                     <div class="hover-element__reveal" data-overlay="9">
 

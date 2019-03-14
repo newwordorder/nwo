@@ -93,7 +93,7 @@ if (get_row_layout() == 'projects') :
                         <?php if (get_field('client')) : ?>
                         <h6><?php the_field('client'); ?></h6>
                         <?php endif; ?>
-                        <h4 class="mb-0"><?php the_title(); ?></h4>
+                        <h3 class="mb-0"><?php the_title(); ?></h3>
                     </div>
                     <div class="hover-element__reveal" data-overlay="9"></div>
                 </a>
