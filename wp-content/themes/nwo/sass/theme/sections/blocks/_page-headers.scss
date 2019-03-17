@@ -48,3 +48,24 @@
     }
   }
 }
+
+.bg-color {
+  &--none {
+    background-color: transparent;
+  }
+  &--blue {
+    background-color: $teal;
+  }
+  &--green {
+    background-color: $green;
+  }
+  &--red {
+    background-color: $red;
+  }
+  &--purple {
+    background-color: $purple;
+  }
+  &--navy {
+    background-color: $navy;
+  }
+}

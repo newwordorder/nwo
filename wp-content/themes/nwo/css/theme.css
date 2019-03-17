@@ -16010,10 +16010,6 @@ h6,
   font-size: 4rem;
   font-weight: 300; }
 
-.h4,
-h4 {
-  font-size: 2.25rem; }
-
 .h6,
 h6 {
   font-size: 1em;
@@ -16454,7 +16450,7 @@ hr.short {
   .feature-column__image, .feature-column__icon {
     margin-bottom: 1.5rem; }
   .feature-column__icon {
-    width: 70px; }
+    width: 126px; }
 
 .feature-tile {
   position: relative; }
@@ -16515,6 +16511,24 @@ hr.short {
     .page-header--light:after {
       content: none; }
 
+.bg-color--none {
+  background-color: transparent; }
+
+.bg-color--blue {
+  background-color: #82dcd2; }
+
+.bg-color--green {
+  background-color: #dcfa50; }
+
+.bg-color--red {
+  background-color: #ff3c58; }
+
+.bg-color--purple {
+  background-color: #a050be; }
+
+.bg-color--navy {
+  background-color: #283c64; }
+
 .service-tile {
   margin: 0.5rem 0;
   display: -webkit-box;
@@ -16547,7 +16561,6 @@ hr.short {
     -webkit-transition: 0.2s;
     transition: 0.2s;
     font-size: 0.825em;
-    letter-spacing: 0.1em;
     font-family: adelle-sans, sans-serif;
     text-transform: uppercase;
     color: #82dcd2;
@@ -17122,7 +17135,6 @@ section.space--xlg {
 .btn,
 .wpcf7 input[type="submit"] {
   font-size: 0.825em;
-  letter-spacing: 0.1em;
   font-family: adelle-sans, sans-serif;
   text-transform: uppercase;
   color: #82dcd2;
@@ -17406,7 +17418,7 @@ h6 > a {
   color: #a050be;
   margin: 10px;
   font-size: 0.825em;
-  letter-spacing: 0.1em;
+  font-weight: 700;
   font-family: adelle-sans, sans-serif;
   text-transform: uppercase; }
   .filter-button::after {
@@ -17495,7 +17507,6 @@ h6 > a {
     margin-top: auto;
     -webkit-transition: 0.2s;
     transition: 0.2s;
-    letter-spacing: 0.1em;
     font-family: adelle-sans, sans-serif;
     color: #283c64;
     text-transform: uppercase; }
@@ -17579,9 +17590,6 @@ h6 > a {
 
 img {
   margin-bottom: 0; }
-
-.imagebg {
-  background-color: #283c64; }
 
 .image--light {
   background-color: #f8f9fa; }

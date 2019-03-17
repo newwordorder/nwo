@@ -9,16 +9,17 @@
 
 ?>
 <footer id="footer">
+
     <div class="container text-center">
         <div class="row justify-content-center">
-
             <div class="col-sm-8 text-center">
-                <img class="logo logo__footer" src="<?php bloginfo('template_directory'); ?>/img/logo-stacked--white.svg" alt="New Word Order">
+                <a href="<?php echo get_home_url(); ?>">
+                    <img class="logo logo__footer" src="<?php bloginfo('template_directory'); ?>/img/logo-stacked--white.svg" alt="New Word Order">
+                </a>
             </div>
         </div>
 
         <div class="row justify-content-center">
-
             <div class="col-sm-8">
                 <h1>brand. campaign. change.</h1>
             </div>
@@ -28,14 +29,8 @@
             <div class="col-sm-12">
                 <p>© Copyright New Word Order | <a href="<?php echo get_home_url(); ?>/privacy-policy">Privacy Policy</a></p>
             </div>
-            <div class="col-sm-3">
-
-            </div>
-            <div class="col-sm-3">
-
-            </div>
-
         </div>
+    </div>
 
 </footer>
 
