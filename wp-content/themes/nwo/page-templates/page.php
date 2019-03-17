@@ -14,6 +14,7 @@ $image = get_field('background_image');
 $imageOverlay = get_field('image_overlay');
 
 $backgroundImage = get_field('background_image');
+$backgroundColor = get_field('background_colour');
 
 $image = $backgroundImage['background_image'];
 $imageOverlay = $backgroundImage['image_overlay'];
@@ -26,7 +27,7 @@ $fallbackImage = get_field('fallback_image');
 
 <header id="sub-header"
 
-class="page-header page-header--page bg-effect--<?php echo $backgroundEffect ?> imagebg videobg <?php if( $invertColours == 'yes' ): echo 'image--light'; endif; ?>"
+class="page-header page-header--page bg-effect--<?php echo $backgroundEffect ?>  imagebg videobg <?php if( $invertColours == 'yes' ): echo 'image--light'; endif; ?> bg-color--<?php echo $backgroundColor ?>"
 data-overlay="<?php echo $imageOverlay ?>"
 >
 

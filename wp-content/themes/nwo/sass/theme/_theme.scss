@@ -162,7 +162,6 @@ section {
 
 .btn {
   font-size: 0.825em;
-  letter-spacing: 0.1em;
   font-family: $adelle;
   text-transform: uppercase;
   color: $primary;
@@ -490,7 +489,7 @@ h6 > a {
   color: $purple;
   margin: 10px;
   font-size: 0.825em;
-  letter-spacing: 0.1em;
+  font-weight: 700;
   font-family: $adelle;
   text-transform: uppercase;
 
@@ -585,7 +584,6 @@ h6 > a {
     margin-top: auto;
     -webkit-transition: 0.2s;
     transition: 0.2s;
-    letter-spacing: 0.1em;
     font-family: $adelle;
     color: $navy;
     text-transform: uppercase;
@@ -689,9 +687,6 @@ h6 > a {
 
 img {
   margin-bottom: 0;
-}
-.imagebg {
-  background-color: $navy;
 }
 
 .image--light {
@@ -878,4 +873,5 @@ img {
   width: 5.875rem;
   height: 8px;
   border: none;
+  margin-top: 2rem;
 }
