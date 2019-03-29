@@ -16131,7 +16131,7 @@ hr.short {
   display: block; }
 
 .navicon .lines {
-  top: 50%; }
+  top: 6px; }
   .navicon .lines:before, .navicon .lines:after {
     display: inline-block;
     width: 70%;
@@ -17647,6 +17647,9 @@ img {
     position: absolute;
     width: 100%;
     height: 100%; }
+    @media screen and (max-width: 768px) {
+      .homesplash .homesplash__side {
+        display: none; } }
     .homesplash .homesplash__side .homesplash__text--2 {
       position: absolute;
       width: 100%;

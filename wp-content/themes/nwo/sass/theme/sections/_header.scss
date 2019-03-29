@@ -5,6 +5,7 @@
 #page {
   margin-left: 80px; //create space for the vertical nav
   background-color: $light;
+
   @media screen and (max-width: 767px) {
     margin-left: 0;
     margin-top: 60px;
@@ -58,6 +59,7 @@
   padding-top: 30px;
   height: 80px;
   margin-top: -30px;
+
   @media screen and (max-width: 768px) {
     left: auto;
     right: 0;
@@ -70,6 +72,7 @@
     height: 40px;
     margin-top: 0;
   }
+
   .lines {
     width: 100%;
     height: 1px;
@@ -86,8 +89,7 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
 
-    &--menu {
-    }
+    &--menu {}
 
     &--close {
       color: $white;
@@ -102,9 +104,11 @@
       bottom: 25px;
       left: 50%;
       transform: translateX(-50%);
+
       @media screen and (max-width: 768px) {
         bottom: 0;
       }
+
       &--menu {
         display: block;
       }
@@ -132,7 +136,9 @@
 
 .navicon {
   & .lines {
-    top: 50%;
+
+    top: 6px;
+
     &:before,
     &:after {
       display: inline-block;
@@ -147,8 +153,10 @@
       transform-origin: 0.28571rem center;
     }
   }
+
   &:hover {
     .lines {
+
       &:before,
       &:after {
         width: 100%;
@@ -205,25 +213,31 @@
     padding-left: 0;
     text-align: center;
   }
+
   .nav .nav__content {
     padding: 0 !important;
   }
+
   .nav .nav__content .wrapper {
     height: 100%;
     padding: 0;
   }
+
   .nav .nav__content .wrapper__scroll {
     overflow: scroll;
     height: 100%;
   }
+
   .nav .nav__content .site-nav {
     margin: 0;
     width: 100%;
     position: relative;
   }
+
   .nav .nav__content .site-nav ul li {
     padding: 5px;
   }
+
   .nav .nav__content .social {
     position: relative !important;
     padding: 60px 30px 30px;
@@ -331,6 +345,7 @@
 .nav .nav__content .site-nav ul li a:hover {
   text-decoration: none;
   padding-left: 25px;
+
   &:before {
     content: "";
     position: absolute;
@@ -352,10 +367,12 @@
       &--white {
         display: none;
       }
+
       &--black {
         display: block;
       }
     }
+
     &__mobile {
       display: none;
     }
@@ -363,6 +380,7 @@
     @media screen and (max-width: 769px) {
       padding: 20px;
       max-width: 280px;
+
       &__desktop {
         display: none;
       }
@@ -371,6 +389,7 @@
         &--white {
           display: none;
         }
+
         &--black {
           display: block;
         }
@@ -378,6 +397,7 @@
     }
   }
 }
+
 .site-header.open {
   .logo {
     padding: 25px;
@@ -387,6 +407,7 @@
       &--white {
         display: block;
       }
+
       &--black {
         display: none;
       }
@@ -399,6 +420,7 @@
     @media screen and (max-width: 769px) {
       padding: 20px;
       max-width: 280px;
+
       &__desktop {
         display: none;
       }
@@ -407,6 +429,7 @@
         &--white {
           display: block;
         }
+
         &--black {
           display: none;
         }
@@ -415,8 +438,7 @@
   }
 }
 
-@media screen and (max-width: 769px) {
-}
+@media screen and (max-width: 769px) {}
 
 @media screen and (max-width: 768px) {
   .social-nav {

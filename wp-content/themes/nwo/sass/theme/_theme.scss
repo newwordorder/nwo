@@ -83,7 +83,7 @@ section {
   &--ken-burns {
     overflow: hidden;
 
-    & > .background-image-holder {
+    &>.background-image-holder {
       animation: kenBurns 15s ease alternate infinite;
       -webkit-animation: kenBurns 15s ease alternate infinite;
     }
@@ -257,8 +257,7 @@ section {
   }
 }
 
-.work-tiles {
-}
+.work-tiles {}
 
 .related-posts {
   background: $light;
@@ -381,12 +380,12 @@ section {
   height: 0;
   position: relative;
 
-  & > svg,
-  & > img,
-  & > video,
-  & > iframe,
-  & > canvas,
-  & > .media-inner {
+  &>svg,
+  &>img,
+  &>video,
+  &>iframe,
+  &>canvas,
+  &>.media-inner {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -444,13 +443,13 @@ section {
   padding-top: calc((1 / 2) * 100%);
 }
 
-p > a,
-h1 > a,
-h2 > a,
-h3 > a,
-h4 > a,
-h5 > a,
-h6 > a {
+p>a,
+h1>a,
+h2>a,
+h3>a,
+h4>a,
+h5>a,
+h6>a {
   display: inline;
   text-decoration: none;
   position: relative;
@@ -643,6 +642,7 @@ h6 > a {
 
   &__link {
     transition: 0.2;
+
     &:hover {
       opacity: 0.8;
     }
@@ -671,12 +671,15 @@ h6 > a {
   .imagebg {
     background-color: transparent;
   }
+
   .people-img-2 {
     z-index: 2;
     opacity: 0 !important;
   }
+
   &:hover {
     background: $white;
+
     .people-img-2 {
       opacity: 1 !important;
     }
@@ -690,6 +693,7 @@ h6 > a {
 img {
   margin-bottom: 0;
 }
+
 .imagebg {
   background-color: $navy;
 }
@@ -709,6 +713,7 @@ img {
   #logo--navy {
     transition: 300ms;
     display: none;
+
     &.active {
       display: block;
     }
@@ -718,6 +723,7 @@ img {
     transition: 300ms;
 
     display: block;
+
     &.hidden {
       display: none;
     }
@@ -726,19 +732,24 @@ img {
   @media screen and (max-width: 1200px) {
     width: 100%;
     height: 60%;
+
     .row {
       margin: 2rem;
     }
   }
+
   @media screen and (max-width: 768px) {
     width: 100%;
     height: auto;
+
     .logo {
       display: none;
     }
   }
+
   &.brand--active {
     background-color: $green;
+
     .homesplash__text {
       &--1 {
         color: $heading-color;
@@ -748,14 +759,17 @@ img {
 
   &.campaign--active {
     background-color: $primary;
+
     .homesplash__text {
       &--1 {
         color: $heading-color;
       }
     }
   }
+
   &.change--active {
     background-color: $secondary;
+
     .homesplash__text {
       &--1 {
         color: $heading-color;
@@ -771,6 +785,7 @@ img {
     margin-left: 5rem;
     margin-right: 5rem;
     width: 100%;
+
     @media screen and (max-width: 768px) {
       width: 100%;
       height: auto;
@@ -788,16 +803,19 @@ img {
       font-weight: 300;
       color: $success;
       line-height: 1;
+
       @media screen and (max-width: 1200px) {
         font-size: 4rem;
       }
     }
+
     &--2 {
       font-size: 1.875rem;
       color: $heading-color;
       display: block;
       opacity: 0;
       transition: 300ms;
+
       &.active {
         opacity: 1;
       }
@@ -811,6 +829,11 @@ img {
     position: absolute;
     width: 100%;
     height: 100%;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+
     .homesplash__text--2 {
       position: absolute;
       width: 100%;
@@ -840,6 +863,7 @@ img {
   position: absolute;
   top: 0%;
 }
+
 #line--2 {
   width: 8px;
   height: 0px;
@@ -847,6 +871,7 @@ img {
   position: absolute;
   top: 6.875rem;
 }
+
 #line--3 {
   width: 8px;
   height: 0px;
