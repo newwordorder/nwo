@@ -16,6 +16,13 @@
 		"oAP": "\/404.php",
 		"oF": 0
 		},
+	"\/archive-projects.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/archive-projects.php",
+		"oF": 0
+		},
 	"\/archive.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -43,13 +50,6 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/codesniffer.ruleset.xml",
-		"oF": 0
-		},
-	"\/comments.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/comments.php",
 		"oF": 0
 		},
 	"\/composer.json": {
@@ -579,34 +579,6 @@
 		"oAP": "\/functions.php",
 		"oF": 0
 		},
-	"\/global-templates\/hero.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/global-templates\/hero.php",
-		"oF": 0
-		},
-	"\/global-templates\/left-sidebar-check.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/global-templates\/left-sidebar-check.php",
-		"oF": 0
-		},
-	"\/global-templates\/pagination.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/global-templates\/pagination.php",
-		"oF": 0
-		},
-	"\/global-templates\/right-sidebar-check.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/global-templates\/right-sidebar-check.php",
-		"oF": 0
-		},
 	"\/gulpconfig.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -789,6 +761,36 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/img\/logo-stacked--white.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/logo-stacked--white.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/logo-stacked-navy.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/logo-stacked-navy.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/logo-stacked.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/logo-stacked.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/img\/mobile__logo--black.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -799,11 +801,31 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/img\/mobile__logo--black_.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/mobile__logo--black_.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/img\/mobile__logo--white.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/img\/mobile__logo--white.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/nwo-horizontal.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/nwo-horizontal.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -887,13 +909,6 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/inc\/jetpack.php",
-		"oF": 0
-		},
-	"\/inc\/landing-pages.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/inc\/landing-pages.php",
 		"oF": 0
 		},
 	"\/inc\/loadmore.php": {
@@ -1019,16 +1034,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"\/js\/datepicker.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/datepicker-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"\/js\/easypiechart.min.js": {
 		"ft": 64,
 		"ma": 0,
@@ -1089,6 +1094,26 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/js\/home-transpiled.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/home-transpiled-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/home.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/home-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/js\/hover.js": {
 		"ft": 64,
 		"ma": 0,
@@ -1135,16 +1160,6 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/js\/jquery-3.1.1.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/js\/jquery.steps.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/jquery.steps.min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1309,13 +1324,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"\/js\/service.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/js\/service.php",
-		"oF": 0
-		},
 	"\/js\/skip-link-focus-fix.js": {
 		"ft": 64,
 		"ma": 0,
@@ -1402,36 +1410,6 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/js\/TweenMax.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/js\/twitterfetcher.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/twitterfetcher.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/js\/typed.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/typed.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/js\/ytplayer.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/ytplayer.min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -2293,13 +2271,6 @@
 		"oAP": "\/searchform.php",
 		"oF": 0
 		},
-	"\/sidebar.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/sidebar.php",
-		"oF": 0
-		},
 	"\/single-landing_page.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -2833,6 +2804,16 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/src\/sass\/bootstrap4\/bootstrap-grid.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/src\/sass\/bootstrap4\/bootstrap-grid-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/src\/sass\/bootstrap4\/bootstrap-grid.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2846,6 +2827,16 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/src\/sass\/bootstrap4\/bootstrap-reboot.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/src\/sass\/bootstrap4\/bootstrap-reboot-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/src\/sass\/bootstrap4\/bootstrap-reboot.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2858,6 +2849,16 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"\/src\/sass\/bootstrap4\/bootstrap.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/src\/sass\/bootstrap4\/bootstrap-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"\/src\/sass\/bootstrap4\/bootstrap.scss": {
 		"aP": 0,
@@ -3693,223 +3694,6 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/woocommerce.php",
-		"oF": 0
-		},
-	"\/woocommerce\/cart\/cart-empty.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/woocommerce\/cart\/cart-empty.php",
-		"oF": 0
-		},
-	"\/woocommerce\/cart\/cart.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/woocommerce\/cart\/cart.php",
-		"oF": 0
-		},
-	"\/woocommerce\/cart\/mini-cart.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/woocommerce\/cart\/mini-cart.php",
-		"oF": 0
-		},
-	"\/woocommerce\/cart\/proceed-to-checkout-button.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/woocommerce\/cart\/proceed-to-checkout-button.php",
-		"oF": 0
-		},
-	"\/woocommerce\/checkout\/form-checkout.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/woocommerce\/checkout\/form-checkout.php",
-		"oF": 0
-		},
-	"\/woocommerce\/checkout\/form-coupon.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/woocommerce\/checkout\/form-coupon.php",
-		"oF": 0
-		},
-	"\/woocommerce\/checkout\/form-pay.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/woocommerce\/checkout\/form-pay.php",
-		"oF": 0
-		},
-	"\/woocommerce\/checkout\/payment.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/woocommerce\/checkout\/payment.php",
-		"oF": 0
-		},
-	"\/woocommerce\/global\/form-login.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/woocommerce\/global\/form-login.php",
-		"oF": 0
-		},
-	"\/woocommerce\/global\/quantity-input.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/woocommerce\/global\/quantity-input.php",
-		"oF": 0
-		},
-	"\/woocommerce\/global\/wrapper-end.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/woocommerce\/global\/wrapper-end.php",
-		"oF": 0
-		},
-	"\/woocommerce\/global\/wrapper-start.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/woocommerce\/global\/wrapper-start.php",
-		"oF": 0
-		},
-	"\/woocommerce\/loop\/add-to-cart.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/woocommerce\/loop\/add-to-cart.php",
-		"oF": 0
-		},
-	"\/woocommerce\/loop\/orderby.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/woocommerce\/loop\/orderby.php",
-		"oF": 0
-		},
-	"\/woocommerce\/myaccount\/downloads.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/woocommerce\/myaccount\/downloads.php",
-		"oF": 0
-		},
-	"\/woocommerce\/myaccount\/form-edit-account.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/woocommerce\/myaccount\/form-edit-account.php",
-		"oF": 0
-		},
-	"\/woocommerce\/myaccount\/form-edit-address.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/woocommerce\/myaccount\/form-edit-address.php",
-		"oF": 0
-		},
-	"\/woocommerce\/myaccount\/form-login.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/woocommerce\/myaccount\/form-login.php",
-		"oF": 0
-		},
-	"\/woocommerce\/myaccount\/form-lost-password.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/woocommerce\/myaccount\/form-lost-password.php",
-		"oF": 0
-		},
-	"\/woocommerce\/myaccount\/form-reset-password.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/woocommerce\/myaccount\/form-reset-password.php",
-		"oF": 0
-		},
-	"\/woocommerce\/myaccount\/my-address.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/woocommerce\/myaccount\/my-address.php",
-		"oF": 0
-		},
-	"\/woocommerce\/myaccount\/my-orders.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/woocommerce\/myaccount\/my-orders.php",
-		"oF": 0
-		},
-	"\/woocommerce\/myaccount\/navigation.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/woocommerce\/myaccount\/navigation.php",
-		"oF": 0
-		},
-	"\/woocommerce\/myaccount\/orders.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/woocommerce\/myaccount\/orders.php",
-		"oF": 0
-		},
-	"\/woocommerce\/product-searchform.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/woocommerce\/product-searchform.php",
-		"oF": 0
-		},
-	"\/woocommerce\/single-product\/add-to-cart\/simple.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/woocommerce\/single-product\/add-to-cart\/simple.php",
-		"oF": 0
-		},
-	"\/woocommerce\/single-product\/add-to-cart\/variation-add-to-cart-button.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/woocommerce\/single-product\/add-to-cart\/variation-add-to-cart-button.php",
-		"oF": 0
-		},
-	"\/woocommerce\/single-product\/product-thumbnails.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/woocommerce\/single-product\/product-thumbnails.php",
-		"oF": 0
-		},
-	"\/woocommerce\/single-product\/rating.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/woocommerce\/single-product\/rating.php",
-		"oF": 0
-		},
-	"\/woocommerce\/single-product\/review-rating.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/woocommerce\/single-product\/review-rating.php",
-		"oF": 0
-		},
-	"\/woocommerce\/single-product\/short-description.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/woocommerce\/single-product\/short-description.php",
 		"oF": 0
 		}
 	},

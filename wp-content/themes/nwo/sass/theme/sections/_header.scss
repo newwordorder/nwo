@@ -75,7 +75,7 @@
 
   .lines {
     width: 100%;
-    height: 1px;
+    height: 2px;
     background: $navy;
     display: block;
     transition: 0.3s;
@@ -143,11 +143,12 @@
     &:after {
       display: inline-block;
       width: 70%;
-      height: 1px;
+      height: 2px;
       background: $navy;
       transition: 0.3s;
       position: absolute;
       left: 0;
+      border-radius: 2px;
       content: "";
       -webkit-transform-origin: 0.28571rem center;
       transform-origin: 0.28571rem center;
@@ -324,8 +325,8 @@
   text-decoration: none;
   margin: 10px 0;
   color: #fff;
-  font-size: 2em;
-  font-weight: 700;
+  font-size: 2.4em;
+  font-weight: 400;
   position: relative;
   z-index: 1;
 

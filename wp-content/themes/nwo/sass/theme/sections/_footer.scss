@@ -1,32 +1,36 @@
 #footer {
-    background: $navy;
-    font-size: 0.875em;
-    padding: 100px 0;
+  background: $navy;
+  font-size: 0.875em;
+  padding: 100px 0;
 
-    .row {
-      margin-bottom: 30px;
-    }
+  .row {
+    margin-bottom: 30px;
+  }
 
-    .col-* {
-      margin-bottom: 30px;
-    }
+  .col-* {
+    margin-bottom: 30px;
+  }
 
-    h1, h2, h3, h4, h5, h6, p {
-        color: #fff;
-        margin-bottom: 0;
-    }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    color: #fff;
+    margin-bottom: 0;
+  }
 
-    a, a:visited {
-        color: #fff;
-        text-decoration: underline;
-        opacity: 1;
-        transition: 0.2s;
-    }
-    a:hover, a:active {
-        opacity: 0.6;
-    }
+  a,
+  a:visited {
+    color: #fff;
+    text-decoration: none;
+    opacity: 1;
+    transition: 0.2s;
+  }
 }
 
 .footer__logo {
-  width: 150px;
+  max-width: 150px;
 }
