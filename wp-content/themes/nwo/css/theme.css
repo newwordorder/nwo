@@ -10606,12 +10606,6 @@ a {
 .imageblock.allow-overflow .imageblock__content {
   overflow: visible; }
 
-@media all and (max-height: 992px) {
-  .imageblock > .container,
-  .imageblock > div[class*='col-']:not(.imageblock__content) {
-    padding-top: 3.71428571em;
-    padding-bottom: 3.71428571em; } }
-
 @media all and (max-width: 992px) {
   .imageblock[class*='space-'] {
     padding-bottom: 0;
@@ -17590,9 +17584,6 @@ h6 > a {
 
 img {
   margin-bottom: 0; }
-
-.image--light {
-  background-color: #f8f9fa; }
 
 .homesplash {
   width: 75%;

@@ -82,10 +82,14 @@ if (get_row_layout() == 'projects') :
                             // vars
                             $url = $workImage['url'];
                             $alt = $workImage['alt'];
+                            $size = 'large';
+                            $thumb = $workImage['sizes'][ $size ];
+                            $width = $workImage['sizes'][ $size . '-width' ];
+                            $height = $workImage['sizes'][ $size . '-height' ];
 
                             ?>
                         <div class="background-image-holder">
-                            <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>" />
+                            <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" />
                         </div>
                         <?php endif; ?>
                     </div>

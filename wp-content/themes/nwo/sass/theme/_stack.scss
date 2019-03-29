@@ -3096,14 +3096,6 @@ a {
   overflow: visible;
 }
 
-@media all and (max-height: 992px) {
-
-  .imageblock>.container,
-  .imageblock>div[class*='col-']:not(.imageblock__content) {
-    padding-top: 3.71428571em;
-    padding-bottom: 3.71428571em;
-  }
-}
 
 @media all and (max-width: 992px) {
   .imageblock[class*='space-'] {

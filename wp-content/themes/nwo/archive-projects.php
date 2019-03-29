@@ -19,13 +19,19 @@ get_header();
 
 
 
-				<?php if ( have_posts() ) : ?>
+				<?php $custom_query = new WP_Query( 
+    array(
+        'post_type' => 'projects', 
+        'posts_per_page' => -1
+    ) 
+);
+if ( $custom_query->have_posts() ) : ?>
 
 					<?php /* Start the Loop */ ?>
 
 					<div id="posts_row" class="row">
 
-					<?php while ( have_posts() ) : the_post(); ?>
+					<?php while ( $custom_query->have_posts() ) : $custom_query->the_post(); ?>
 						<div class="col-sm-4">
 						
 
@@ -47,7 +53,7 @@ get_header();
 										$height = $workImage['sizes'][ $size . '-height' ];
 
 										?>
-										<div class="background-image-holder ">
+										<div class="background-image-holder " style="background-image: url("<?php echo $thumb; ?>")">
 											<img class="rounded" src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
 										</div>
 									<?php endif; ?>
@@ -81,15 +87,6 @@ get_header();
 
 
 
-
-			<!-- The pagination component -->
-			<div class="row justify-content-center mt-4 p-4">
-			<?php global $wp_query; // you can remove this line if everything works for you
-			
-			// don't display the button if there are not enough posts
-			if (  $wp_query->max_num_pages > 1 )
-				echo '<div class="btn btn--outline loadmore m-auto">More posts</div>'; 
-			?>
 		
 </div>
 </div><!-- Container end -->

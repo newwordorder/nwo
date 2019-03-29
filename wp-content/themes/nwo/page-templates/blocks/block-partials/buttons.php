@@ -8,9 +8,10 @@
       $url = get_sub_field('url');
       $pageUrl = get_sub_field('page_url');
       $buttonStyle = get_sub_field('button_style');
+      $targetBlank = get_sub_field('open_in_new_window');
       ?>
 
-      <a href="<?php if($linkType == 'page'):  echo $pageUrl; endif; ?><?php if($linkType == 'url'):  echo $url; endif; ?>" class="btn btn--<?php echo $buttonStyle; ?>"><?php echo $buttonText; ?> </a>
+      <a href="<?php if($linkType == 'page'):  echo $pageUrl; endif; ?><?php if($linkType == 'url'):  echo $url; endif; ?>" class="btn btn--<?php echo $buttonStyle; ?>" <?php if($targetBlank == 'yes'): ?>target="_blank"<?php endif; ?>><?php echo $buttonText; ?> </a>
 
     <?php endwhile; ?>
   </div>

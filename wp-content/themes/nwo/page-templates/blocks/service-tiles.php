@@ -17,7 +17,9 @@ if( get_row_layout() == 'services' ):
       <div class="row">
 
         <?php	// loop through the rows of data
-        while ( have_rows('service_tile') ) : the_row(); ?>
+        while ( have_rows('service_tile') ) : the_row();
+        $targetBlank = get_sub_field('open_in_new_window');
+        ?>
 
         <div class="col-md-4 col-sm-6 service-tile" data-aos="fadein" data-aos-delay="<?php echo $counter;?>00"">
             <div class="service-tile__body">
@@ -26,7 +28,7 @@ if( get_row_layout() == 'services' ):
 
               <?php if (get_sub_field('button_text')): ?>
 
-                <a class="service-tile__link" href="<?php the_sub_field('url'); ?>"><?php the_sub_field('button_text'); ?><i class="fal fa-long-arrow-right"></i></a>
+                <a class="service-tile__link" href="<?php the_sub_field('url'); ?>" <?php if($targetBlank == 'yes'): ?>target="_blank"<?php endif; ?>><?php the_sub_field('button_text'); ?><i class="fal fa-long-arrow-right"></i></a>
 
               <?php endif; ?>
 
