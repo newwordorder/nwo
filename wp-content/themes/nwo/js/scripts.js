@@ -1414,7 +1414,7 @@ mr = (function (mr, $, window, document){
                 jQuery('.gmaps-active').each(function(){
                     var mapElement      = this,
                         mapInstance     = jQuery(this),
-                        isDraggable     = jQuery(document).width() > 766 ? true : false,
+                        isDraggable     = jQuery(document).width() > 768 ? true : false,
                         showZoomControl = typeof mapInstance.attr('data-zoom-controls') !== typeof undefined ? true : false,
                         zoomControlPos  = typeof mapInstance.attr('data-zoom-controls') !== typeof undefined ? mapInstance.attr('data-zoom-controls'): false,
                         latlong         = typeof mapInstance.attr('data-latlong') !== typeof undefined ? mapInstance.attr('data-latlong') : false,
